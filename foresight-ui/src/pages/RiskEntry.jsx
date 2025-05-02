@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container, Typography, TextField, Button, Box } from "@mui/material";
 import { useForm } from "react-hook-form";
-import axios from "axios";
+import axiosInstance from "../api/axiosInstance";   // ✅ use global axios
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../contexts/AuthContext";
@@ -13,18 +13,14 @@ function RiskEntry() {
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
-    const token = localStorage.getItem("token");
     try {
-      await axios.post(
-        "http://localhost:5000/api/risks",
+      await axiosInstance.post(
+        "/risks",
         {
           ...data,
           probability: parseInt(data.probability),
           impact: parseInt(data.impact),
           likelihood: parseInt(data.likelihood)
-        },
-        {
-          headers: { Authorization: `Bearer ${token}` }
         }
       );
       toast.success("Risk created successfully!");

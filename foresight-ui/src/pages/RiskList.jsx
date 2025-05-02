@@ -17,7 +17,7 @@ import {
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
-import axios from "axios";
+import axiosInstance from "../api/axiosInstance";   // ✅ use global axios
 import { toast, ToastContainer } from "react-toastify";
 
 function RiskList() {
@@ -26,8 +26,8 @@ function RiskList() {
   const [currentRisk, setCurrentRisk] = useState({});
 
   const fetchRisks = () => {
-    axios
-      .get("http://localhost:5000/api/risks")
+    axiosInstance
+      .get("/risks")
       .then((response) => {
         setRisks(response.data);
       })
@@ -41,11 +41,8 @@ function RiskList() {
   }, []);
 
   const deleteRisk = (id) => {
-    const token = localStorage.getItem("token");
-    axios
-      .delete(`http://localhost:5000/api/risks/${id}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      })
+    axiosInstance
+      .delete(`/risks/${id}`)
       .then(() => {
         toast.success("Risk deleted successfully");
         fetchRisks();
@@ -67,18 +64,14 @@ function RiskList() {
   };
 
   const submitEdit = () => {
-    const token = localStorage.getItem("token");
-    axios
+    axiosInstance
       .put(
-        `http://localhost:5000/api/risks/${currentRisk.id}`,
+        `/risks/${currentRisk.id}`,
         {
           ...currentRisk,
           probability: parseInt(currentRisk.probability),
           impact: parseInt(currentRisk.impact),
           likelihood: parseInt(currentRisk.likelihood)
-        },
-        {
-          headers: { Authorization: `Bearer ${token}` }
         }
       )
       .then(() => {
