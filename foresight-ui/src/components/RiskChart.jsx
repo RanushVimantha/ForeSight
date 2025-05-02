@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -11,66 +10,48 @@ import {
   Legend
 } from "chart.js";
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
-function RiskChart() {
-  const [chartData, setChartData] = useState({
-    labels: ["Low", "Medium", "High"],
+const RiskChart = () => {
+  const data = {
+    labels: ["Low", "Medium", "High", "Critical"],
     datasets: [
       {
-        label: "Number of Risks",
-        data: [0, 0, 0],
-        backgroundColor: ["#4caf50", "#ff9800", "#f44336"]
+        label: "Risk Levels",
+        data: [5, 8, 3, 2], // Example data
+        backgroundColor: ["#81c784", "#fff176", "#ffb74d", "#e57373"]
       }
     ]
-  });
-
-  const fetchData = () => {
-    axios
-      .get("http://localhost:5000/api/risks")
-      .then((response) => {
-        const risks = response.data;
-        let low = 0, medium = 0, high = 0;
-
-        risks.forEach((risk) => {
-          const score = risk.probability * (risk.impact || 1);
-          if (score < 200) low++;
-          else if (score <= 500) medium++;
-          else high++;
-        });
-
-        setChartData({
-          labels: ["Low", "Medium", "High"],
-          datasets: [
-            {
-              label: "Number of Risks",
-              data: [low, medium, high],
-              backgroundColor: ["#4caf50", "#ff9800", "#f44336"]
-            }
-          ]
-        });
-      })
-      .catch((error) => {
-        console.error("Error fetching chart data:", error);
-      });
   };
-
-  useEffect(() => {
-    fetchData(); // Initial load
-    const interval = setInterval(fetchData, 10000); // Auto-refresh every 10 seconds
-
-    return () => clearInterval(interval); // Cleanup
-  }, []);
 
   const options = {
     responsive: true,
     plugins: {
-      legend: { position: "top" },
-      title: { display: true, text: "Risk Levels Distribution (Live Data)" }
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            return `Count: ${context.raw}`;
+          }
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: { stepSize: 1 }
+      }
     }
   };
 
-  return <Bar data={chartData} options={options} />;
-}
+  return <Bar data={data} options={options} />;
+};
 
 export default RiskChart;
