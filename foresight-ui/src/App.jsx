@@ -1,61 +1,31 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Login from "./pages/Login";
-import RiskEntry from "./pages/RiskEntry";
-import RiskList from "./pages/RiskList";
-import Profile from "./pages/Profile";
-import NotFound from "./pages/NotFound";
-import ProtectedRoute from "./components/ProtectedRoute";
-import Layout from "./components/Layout";
-
-import { ThemeProvider, CssBaseline } from "@mui/material";
-import theme from "./theme/theme";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/Layout';
+import Dashboard from './pages/Dashboard';
+import RiskList from './pages/RiskList';
+import RiskEntry from './pages/RiskEntry';
+import Profile from './pages/Profile';
+import Login from './pages/Login';
+import { AuthProvider } from './contexts/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/login" element={<Login />} />
-
-          <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute>
-                <Layout><Dashboard /></Layout>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/profile"
-            element={
-              <ProtectedRoute>
-                <Layout><Profile /></Layout>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/risks/new"
-            element={
-              <ProtectedRoute>
-                <Layout><RiskEntry /></Layout>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/risks"
-            element={
-              <ProtectedRoute>
-                <Layout><RiskList /></Layout>
-              </ProtectedRoute>
-            }
-          />
-          <Route path="*" element={<NotFound />} />
+          <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/risks" element={<RiskList />} />
+            <Route path="/risks/new" element={<RiskEntry />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/dashboard" />} />
         </Routes>
       </Router>
-    </ThemeProvider>
+    </AuthProvider>
   );
 }
 

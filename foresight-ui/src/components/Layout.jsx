@@ -1,21 +1,36 @@
-import React from "react";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
-import { Toolbar, Box } from "@mui/material";
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import { Box, Toolbar, CssBaseline } from '@mui/material';
+import Sidebar from './Sidebar';
+import Header from './Header';
 
-function Layout({ children }) {
+const drawerWidth = 240;
+
+function Layout() {
+  const [open, setOpen] = useState(true);
+
+  const toggleDrawer = () => {
+    setOpen(!open);
+  };
+
   return (
     <Box sx={{ display: 'flex' }}>
-      <Sidebar />
+      <CssBaseline />
+      <Header toggleDrawer={toggleDrawer} />
+      <Sidebar open={open} toggleDrawer={toggleDrawer} />
       <Box
         component="main"
-        sx={{ flexGrow: 1, bgcolor: '#f5f5f5', minHeight: '100vh' }}
+        sx={{
+          flexGrow: 1,
+          bgcolor: 'background.default',
+          p: 3,
+          marginLeft: open ? `${drawerWidth}px` : '0px',
+          transition: 'margin-left 0.3s',
+          width: `calc(100% - ${open ? drawerWidth : 0}px)`,
+        }}
       >
-        <Header />
-        <Toolbar /> {/* To push content below the header */}
-        <Box sx={{ p: 3 }}>
-          {children}
-        </Box>
+        <Toolbar /> {/* Push content below the AppBar */}
+        <Outlet />
       </Box>
     </Box>
   );
