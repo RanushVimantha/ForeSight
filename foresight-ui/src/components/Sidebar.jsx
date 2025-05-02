@@ -37,6 +37,7 @@ function Sidebar() {
               component={Link}
               to={item.path}
               selected={location.pathname === item.path}
+              sx={{ '&.Mui-selected': { bgcolor: '#e3f2fd' } }}
             >
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.text} />
