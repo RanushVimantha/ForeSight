@@ -72,10 +72,10 @@ function RiskList() {
       .put(
         `http://localhost:5000/api/risks/${currentRisk.id}`,
         {
-          project: currentRisk.project,
-          description: currentRisk.description,
+          ...currentRisk,
           probability: parseInt(currentRisk.probability),
-          impact: parseInt(currentRisk.impact)
+          impact: parseInt(currentRisk.impact),
+          likelihood: parseInt(currentRisk.likelihood)
         },
         {
           headers: { Authorization: `Bearer ${token}` }
@@ -105,6 +105,10 @@ function RiskList() {
             <TableCell>Description</TableCell>
             <TableCell>Probability</TableCell>
             <TableCell>Impact</TableCell>
+            <TableCell>Type</TableCell>
+            <TableCell>Control Performance</TableCell>
+            <TableCell>Issue Impact</TableCell>
+            <TableCell>Likelihood</TableCell>
             <TableCell>Actions</TableCell>
           </TableRow>
         </TableHead>
@@ -115,6 +119,10 @@ function RiskList() {
               <TableCell>{r.description}</TableCell>
               <TableCell>{r.probability}%</TableCell>
               <TableCell>{r.impact}</TableCell>
+              <TableCell>{r.type}</TableCell>
+              <TableCell>{r.controlPerformance}</TableCell>
+              <TableCell>{r.issueImpact}</TableCell>
+              <TableCell>{r.likelihood}</TableCell>
               <TableCell>
                 <IconButton color="primary" onClick={() => openEditModal(r)}>
                   <EditIcon />
@@ -128,49 +136,22 @@ function RiskList() {
         </TableBody>
       </Table>
 
+      {/* Edit Modal */}
       <Dialog open={editOpen} onClose={() => setEditOpen(false)}>
         <DialogTitle>Edit Risk</DialogTitle>
         <DialogContent>
-          <TextField
-            fullWidth
-            margin="normal"
-            label="Project"
-            name="project"
-            value={currentRisk.project || ""}
-            onChange={handleEditChange}
-          />
-          <TextField
-            fullWidth
-            margin="normal"
-            label="Description"
-            name="description"
-            value={currentRisk.description || ""}
-            onChange={handleEditChange}
-          />
-          <TextField
-            fullWidth
-            margin="normal"
-            label="Probability"
-            name="probability"
-            type="number"
-            value={currentRisk.probability || ""}
-            onChange={handleEditChange}
-          />
-          <TextField
-            fullWidth
-            margin="normal"
-            label="Impact"
-            name="impact"
-            type="number"
-            value={currentRisk.impact || ""}
-            onChange={handleEditChange}
-          />
+          <TextField fullWidth label="Project" name="project" value={currentRisk.project || ""} onChange={handleEditChange} margin="normal" />
+          <TextField fullWidth label="Description" name="description" value={currentRisk.description || ""} onChange={handleEditChange} margin="normal" />
+          <TextField fullWidth label="Probability" type="number" name="probability" value={currentRisk.probability || ""} onChange={handleEditChange} margin="normal" />
+          <TextField fullWidth label="Impact" type="number" name="impact" value={currentRisk.impact || ""} onChange={handleEditChange} margin="normal" />
+          <TextField fullWidth label="Type" name="type" value={currentRisk.type || ""} onChange={handleEditChange} margin="normal" />
+          <TextField fullWidth label="Control Performance" name="controlPerformance" value={currentRisk.controlPerformance || ""} onChange={handleEditChange} margin="normal" />
+          <TextField fullWidth label="Issue Impact" name="issueImpact" value={currentRisk.issueImpact || ""} onChange={handleEditChange} margin="normal" />
+          <TextField fullWidth label="Likelihood" type="number" name="likelihood" value={currentRisk.likelihood || ""} onChange={handleEditChange} margin="normal" />
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setEditOpen(false)}>Cancel</Button>
-          <Button variant="contained" onClick={submitEdit}>
-            Save
-          </Button>
+          <Button variant="contained" onClick={submitEdit}>Save</Button>
         </DialogActions>
       </Dialog>
     </Container>
