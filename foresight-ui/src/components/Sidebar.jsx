@@ -32,12 +32,16 @@ function Sidebar() {
         <List>
           {menuItems.map((item) => (
             <ListItem
-              button
               key={item.text}
               component={Link}
               to={item.path}
               selected={location.pathname === item.path}
-              sx={{ '&.Mui-selected': { bgcolor: '#e3f2fd' } }}
+              sx={{
+                '&.Mui-selected': {
+                  backgroundColor: '#e3f2fd',
+                  fontWeight: 'bold',
+                }
+              }}
             >
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.text} />
