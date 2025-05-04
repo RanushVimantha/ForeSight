@@ -6,6 +6,7 @@ import {
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import WarningIcon from '@mui/icons-material/Warning';
+import PeopleIcon from '@mui/icons-material/People';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
@@ -21,6 +22,7 @@ const AppDrawer = ({ mobileOpen, handleDrawerToggle }) => {
         { text: 'Dashboard', icon: <DashboardIcon />, route: '/' },
         { text: 'Projects', icon: <AssessmentIcon />, route: '/projects' },
         { text: 'Risk List', icon: <WarningIcon />, route: '/risks' },
+        { text: 'Users', icon: <PeopleIcon />, route: '/users' }, 
         { text: 'Settings', icon: <SettingsIcon />, route: '/settings' },
     ];
 

@@ -9,10 +9,12 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 import SearchIcon from '@mui/icons-material/Search';
 import { useTheme } from '@mui/material/styles';
 import { ColorModeContext } from '@theme/ColorModeContext';
+import { useNavigate } from 'react-router-dom';   // ✅ Add this import
 
 const AppHeader = ({ handleDrawerToggle }) => {
     const theme = useTheme();
     const colorMode = useContext(ColorModeContext);
+    const navigate = useNavigate();   // ✅ Hook to redirect
 
     const [anchorEl, setAnchorEl] = useState(null);
 
@@ -39,6 +41,12 @@ const AppHeader = ({ handleDrawerToggle }) => {
             />
         </Box>
     );
+
+    // ✅ Logout function
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        navigate('/login');
+    };
 
     return (
         <AppBar
@@ -86,7 +94,7 @@ const AppHeader = ({ handleDrawerToggle }) => {
                     >
                         <MenuItem>Profile</MenuItem>
                         <MenuItem>Settings</MenuItem>
-                        <MenuItem>Logout</MenuItem>
+                        <MenuItem onClick={handleLogout}>Logout</MenuItem>  {/* ✅ Updated */}
                     </Menu>
                 </Box>
             </Toolbar>

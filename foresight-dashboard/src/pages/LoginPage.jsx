@@ -1,56 +1,64 @@
 import React, { useState } from 'react';
-import { Box, Button, Container, TextField, Typography, Paper } from '@mui/material';
-import axios from '../api/axios';
+import axiosInstance from '../api/axiosInstance';  // Use the same axiosInstance everywhere
+import { useNavigate } from 'react-router-dom';
+import { Box, Button, TextField, Typography } from '@mui/material';
+import { toast } from 'react-toastify';
 
-const LoginPage = () => {
-    const [username, setUsername] = useState('');
+function LoginPage() {
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const navigate = useNavigate();
 
-    const handleLogin = async (e) => {
-        e.preventDefault();
-        setError('');
-
+    const handleLogin = async () => {
         try {
-            const response = await axios.post('/api/auth/login', { username, password });
-            localStorage.setItem('token', response.data.token);
-            window.location.href = '/dashboard';
-        } catch (err) {
-            console.error(err);
-            setError('Invalid username or password.');
+            const res = await axiosInstance.post('/auth/login', {
+                email,
+                password
+            });
+
+            const token = res.data.token;
+            console.log('Received JWT Token:', token);
+
+            // // ✅ Save JWT token and user info
+            localStorage.setItem('token', token);
+            localStorage.setItem('userId', res.data.user.id);
+
+            toast.success('Login successful');
+            
+
+            // Redirect after login
+            navigate('/');
+        } catch (error) {
+            console.error('Login failed:', error);
+            toast.error(error.response?.data?.message || 'Login failed. Please check your credentials.');
         }
     };
 
     return (
-        <Container maxWidth="xs">
-            <Paper sx={{ p: 4, mt: 8, backgroundColor: (theme) => theme.palette.background.paper }}>
-                <Typography variant="h5" gutterBottom>Login</Typography>
-                <Box component="form" onSubmit={handleLogin}>
-                    <TextField
-                        label="Username"
-                        fullWidth
-                        margin="normal"
-                        required
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                    />
-                    <TextField
-                        label="Password"
-                        type="password"
-                        fullWidth
-                        margin="normal"
-                        required
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                    {error && <Typography color="error">{error}</Typography>}
-                    <Button type="submit" variant="contained" fullWidth sx={{ mt: 2 }}>
-                        Login
-                    </Button>
-                </Box>
-            </Paper>
-        </Container>
+        <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
+            <Box width={300}>
+                <Typography variant="h5" mb={2}>Login</Typography>
+                <TextField
+                    label="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    fullWidth
+                    margin="normal"
+                />
+                <TextField
+                    label="Password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    fullWidth
+                    margin="normal"
+                />
+                <Button variant="contained" fullWidth onClick={handleLogin}>
+                    Login
+                </Button>
+            </Box>
+        </Box>
     );
-};
+}
 
 export default LoginPage;
