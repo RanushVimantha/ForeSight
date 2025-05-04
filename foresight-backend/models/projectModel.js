@@ -7,29 +7,32 @@ const Project = sequelize.define('Project', {
         allowNull: false
     },
     description: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT,
+        allowNull: true
     },
     status: {
         type: DataTypes.ENUM('Active', 'Planning', 'Completed', 'On Hold'),
+        allowNull: true,
         defaultValue: 'Planning'
     },
     duration_days: {
         type: DataTypes.INTEGER,
-        defaultValue: 30
+        allowNull: true
     },
     team_size: {
         type: DataTypes.INTEGER,
-        defaultValue: 5
+        allowNull: true
     },
     budget_lkr: {
         type: DataTypes.INTEGER,
-        defaultValue: 100000
+        allowNull: true
     },
     scope_description: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT,
+        allowNull: true
     }
 }, {
-    tableName: 'projects'
+    timestamps: true
 });
 
 module.exports = Project;

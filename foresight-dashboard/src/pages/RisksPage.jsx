@@ -10,20 +10,33 @@ import SearchIcon from '@mui/icons-material/Search';
 
 function RisksPage() {
     const [risks, setRisks] = useState([]);
-    const [newRisk, setNewRisk] = useState({ title: '', category: '', status: 'Open' });
+    const [projects, setProjects] = useState([]); // 🆕 All available projects
+    const [newRisk, setNewRisk] = useState({
+        title: '', category: '', probability: 3, impact: 3, status: 'Open', project_id: ''
+    });
     const [loading, setLoading] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
 
+    // 👉 Fetch all risks
     const fetchRisks = async () => {
         setLoading(true);
         try {
             const res = await axiosInstance.get('/risks');
             setRisks(res.data);
         } catch (err) {
-            console.error('Failed to load risks:', err);
             toast.error('Failed to load risks');
         }
         setLoading(false);
+    };
+
+    // 👉 Fetch all projects
+    const fetchProjects = async () => {
+        try {
+            const res = await axiosInstance.get('/projects');
+            setProjects(res.data);
+        } catch {
+            toast.error('Failed to load projects');
+        }
     };
 
     const handleChange = (e) => {
@@ -31,29 +44,34 @@ function RisksPage() {
     };
 
     const handleCreateRisk = async () => {
-        if (!newRisk.title || !newRisk.category) {
+        if (!newRisk.title || !newRisk.category || !newRisk.project_id) {
             toast.error('Please fill all fields');
             return;
         }
 
         try {
-            await axiosInstance.post('/risks', newRisk);
+            await axiosInstance.post('/risks', {
+                ...newRisk,
+                probability: parseInt(newRisk.probability),
+                impact: parseInt(newRisk.impact)
+            });
             toast.success('Risk created');
-            setNewRisk({ title: '', category: '', status: 'Open' });
+            setNewRisk({
+                title: '', category: '', probability: 3, impact: 3, status: 'Open', project_id: ''
+            });
             fetchRisks();
         } catch (err) {
-            console.error('Failed to create risk:', err);
             toast.error('Failed to create risk');
         }
     };
 
     const handleToggleStatus = async (id, status) => {
         try {
-            await axiosInstance.put(`/risks/${id}`, { status: status === 'Open' ? 'Closed' : 'Open' });
-            toast.success('Risk status updated');
+            await axiosInstance.put(`/risks/${id}`, {
+                status: status === 'Open' ? 'Closed' : 'Open'
+            });
             fetchRisks();
-        } catch (err) {
-            console.error('Failed to update risk status:', err);
+        } catch {
             toast.error('Failed to update status');
         }
     };
@@ -63,15 +81,12 @@ function RisksPage() {
 
         try {
             await axiosInstance.delete(`/risks/${id}`);
-            toast.success('Risk deleted');
             fetchRisks();
-        } catch (err) {
-            console.error('Failed to delete risk:', err);
+        } catch {
             toast.error('Failed to delete risk');
         }
     };
 
-    // ✅ Filter risks by search term
     const filteredRisks = risks.filter(risk =>
         risk.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         risk.category.toLowerCase().includes(searchTerm.toLowerCase())
@@ -79,13 +94,14 @@ function RisksPage() {
 
     useEffect(() => {
         fetchRisks();
+        fetchProjects();
     }, []);
 
     return (
         <Box>
             <Typography variant="h4" mb={2}>Risks</Typography>
 
-            {/* Search Bar */}
+            {/* Search */}
             <TextField
                 placeholder="Search by title or category"
                 value={searchTerm}
@@ -101,7 +117,7 @@ function RisksPage() {
                 }}
             />
 
-            {/* New Risk Form */}
+            {/* Create new risk form */}
             <Box display="flex" gap={2} mb={3} flexWrap="wrap">
                 <TextField
                     label="Title"
@@ -117,6 +133,28 @@ function RisksPage() {
                 />
                 <TextField
                     select
+                    label="Probability"
+                    name="probability"
+                    value={newRisk.probability}
+                    onChange={handleChange}
+                >
+                    {[1, 2, 3, 4, 5].map(v => (
+                        <MenuItem key={v} value={v}>{v}</MenuItem>
+                    ))}
+                </TextField>
+                <TextField
+                    select
+                    label="Impact"
+                    name="impact"
+                    value={newRisk.impact}
+                    onChange={handleChange}
+                >
+                    {[1, 2, 3, 4, 5].map(v => (
+                        <MenuItem key={v} value={v}>{v}</MenuItem>
+                    ))}
+                </TextField>
+                <TextField
+                    select
                     label="Status"
                     name="status"
                     value={newRisk.status}
@@ -124,13 +162,30 @@ function RisksPage() {
                 >
                     <MenuItem value="Open">Open</MenuItem>
                     <MenuItem value="Closed">Closed</MenuItem>
+                    <MenuItem value="Monitoring">Monitoring</MenuItem>
                 </TextField>
+
+                {/* Project select */}
+                <TextField
+                    select
+                    label="Assign to Project"
+                    name="project_id"
+                    value={newRisk.project_id}
+                    onChange={handleChange}
+                >
+                    {projects.map(p => (
+                        <MenuItem key={p.id} value={p.id}>
+                            {p.name}
+                        </MenuItem>
+                    ))}
+                </TextField>
+
                 <Button variant="contained" onClick={handleCreateRisk}>
                     Create Risk
                 </Button>
             </Box>
 
-            {/* Loading or Table */}
+            {/* Risks Table */}
             {loading ? (
                 <Box display="flex" justifyContent="center" mt={5}>
                     <CircularProgress />
@@ -142,6 +197,9 @@ function RisksPage() {
                             <TableCell>ID</TableCell>
                             <TableCell>Title</TableCell>
                             <TableCell>Category</TableCell>
+                            <TableCell>Project</TableCell>
+                            <TableCell>Probability</TableCell>
+                            <TableCell>Impact</TableCell>
                             <TableCell>Status</TableCell>
                             <TableCell>Actions</TableCell>
                         </TableRow>
@@ -152,6 +210,9 @@ function RisksPage() {
                                 <TableCell>{risk.id}</TableCell>
                                 <TableCell>{risk.title}</TableCell>
                                 <TableCell>{risk.category}</TableCell>
+                                <TableCell>{risk.project_id || '—'}</TableCell>
+                                <TableCell>{risk.probability}</TableCell>
+                                <TableCell>{risk.impact}</TableCell>
                                 <TableCell>{risk.status}</TableCell>
                                 <TableCell>
                                     <Button
