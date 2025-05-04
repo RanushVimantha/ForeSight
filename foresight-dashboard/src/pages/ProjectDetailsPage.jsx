@@ -9,9 +9,6 @@ import {
 import { toast } from 'react-toastify';
 import InfoIcon from '@mui/icons-material/Info';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import DescriptionIcon from '@mui/icons-material/Description';
-import ListAltIcon from '@mui/icons-material/ListAlt';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import EditIcon from '@mui/icons-material/Edit';
 import SaveIcon from '@mui/icons-material/Save';
 import CloseIcon from '@mui/icons-material/Close';
@@ -33,8 +30,11 @@ function ProjectDetailsPage() {
     const [editedProject, setEditedProject] = useState({});
     const [risks, setRisks] = useState([]);
 
-    // 👇 New risk form state
+    // New risk form
     const [newRisk, setNewRisk] = useState({ title: '', category: '', probability: 3, impact: 3 });
+
+    const likelihoodLabels = ['Rare', 'Unlikely', 'Possible', 'Likely', 'Almost Certain'];
+    const impactLabels = ['Negligible', 'Minor', 'Moderate', 'Major', 'Severe'];
 
     const fetchProject = async () => {
         setLoading(true);
@@ -92,7 +92,6 @@ function ProjectDetailsPage() {
         }
     };
 
-    // 👇 New Risk Create Handler
     const handleCreateRisk = async () => {
         if (!newRisk.title || !newRisk.category) {
             toast.error('Please fill all fields');
@@ -119,6 +118,15 @@ function ProjectDetailsPage() {
     if (loading) return <Box display="flex" justifyContent="center"><CircularProgress /></Box>;
     if (!project) return <Typography>Project not found</Typography>;
 
+    // 🔥 Cell background color based on score (prob * impact)
+    const getCellColor = (prob, impact) => {
+        const score = prob * impact;
+        return score >= 20 ? '#f28b82' :     // Red
+            score >= 12 ? '#fbbc04' :        // Orange
+                score >= 6 ? '#fff475' :        // Yellow
+                    '#ccff90';         // Green
+    };
+
     return (
         <Box>
             <Button onClick={() => navigate('/projects')} sx={{ mb: 2 }}>← Back to Projects</Button>
@@ -131,7 +139,6 @@ function ProjectDetailsPage() {
                 {/* === Project Card === */}
                 <Card sx={{ maxWidth: 900, padding: 3, boxShadow: 4, borderRadius: 3, position: 'relative', flex: 1 }}>
                     <CardContent>
-
                         <Button
                             variant="contained"
                             color="secondary"
@@ -190,7 +197,6 @@ function ProjectDetailsPage() {
                         <Typography variant="body2">Updated: {new Date(project.updatedAt).toLocaleString()}</Typography>
 
                         <Divider sx={{ my: 2 }} />
-
                         {editMode ? (
                             <Box display="flex" gap={2}>
                                 <Button startIcon={<SaveIcon />} onClick={handleSave}>Save</Button>
@@ -199,48 +205,82 @@ function ProjectDetailsPage() {
                         ) : (
                             <Button startIcon={<EditIcon />} onClick={handleEdit}>Edit</Button>
                         )}
-
                     </CardContent>
                 </Card>
 
                 {/* === Risk Matrix === */}
-                <Card sx={{ padding: 2, borderRadius: 3, width: '100%', maxWidth: 500 }}>
+                <Card sx={{ padding: 2, borderRadius: 3, width: '100%', maxWidth: 600 }}>
                     <Typography variant="h6" align="center" mb={2}>
                         5x5 Risk Matrix
                     </Typography>
-                    <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gridGap={1}>
+                    <Box
+                        display="grid"
+                        gridTemplateColumns="repeat(6, 1fr)"
+                        gridGap={1}
+                        alignItems="center"
+                        sx={{
+                            border: '2px solid #ccc',
+                            borderRadius: 2,
+                            overflow: 'hidden'
+                        }}
+                    >
+
+                        {/* Top row: Impact labels */}
+                        <Box></Box>
+                        {impactLabels.map(lbl => (
+                            <Box
+                                key={lbl}
+                                textAlign="center"
+                                fontWeight="bold"
+                                sx={{ padding: '8px', backgroundColor: '#f0f0f0', borderBottom: '1px solid #ccc' }}
+                            >
+                                {lbl}
+                            </Box>
+                        ))}
+
+                        {/* Matrix rows */}
                         {[5, 4, 3, 2, 1].map(prob =>
-                            [1, 2, 3, 4, 5].map(impact =>
+                            <>
                                 <Box
-                                    key={`p${prob}-i${impact}`}
-                                    sx={{
-                                        border: '1px solid #ccc',
-                                        height: 60,
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        backgroundColor:
-                                            prob >= 4 && impact >= 4 ? '#f28b82' :
-                                            prob >= 3 && impact >= 3 ? '#fbbc04' :
-                                            '#ccff90',
-                                    }}
+                                    fontWeight="bold"
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    sx={{ padding: '8px', backgroundColor: '#f0f0f0', borderRight: '1px solid #ccc' }}
                                 >
-                                    {risks
-                                        .filter(r => r.probability === prob && r.impact === impact)
-                                        .map(r => `#${r.id}`)
-                                        .join(', ') || '-'}
+                                    {likelihoodLabels[5 - prob]}
                                 </Box>
-                            )
+                                {[1, 2, 3, 4, 5].map(impact =>
+                                    <Box
+                                        key={`p${prob}-i${impact}`}
+                                        sx={{
+                                            border: '1px solid #ccc',
+                                            height: 60,
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            backgroundColor: getCellColor(prob, impact),
+                                            borderRadius: 1,
+                                            fontWeight: 'bold'
+                                        }}
+                                    >
+                                        {risks
+                                            .filter(r => r.probability === prob && r.impact === impact)
+                                            .map(r => `#${r.id}`)
+                                            .join(', ') || '-'}
+                                    </Box>
+                                )}
+                            </>
                         )}
                     </Box>
                     <Typography variant="caption" align="center" display="block" mt={1}>
-                        Cells show Risk IDs by Probability & Impact
+                        Cells show Risk IDs by Likelihood & Impact
                     </Typography>
                 </Card>
 
             </Box>
 
-            {/* === Insights & Mitigations Section === */}
+            {/* === Insights & Mitigations === */}
             <Box mt={5} display="flex" flexDirection={{ xs: 'column', md: 'row' }} gap={3}>
                 <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
                     <CardContent>
@@ -307,10 +347,10 @@ function ProjectDetailsPage() {
                         <TextField label="Title" value={newRisk.title} onChange={e => setNewRisk({ ...newRisk, title: e.target.value })} />
                         <TextField label="Category" value={newRisk.category} onChange={e => setNewRisk({ ...newRisk, category: e.target.value })} />
                         <TextField select label="Probability" value={newRisk.probability} onChange={e => setNewRisk({ ...newRisk, probability: parseInt(e.target.value) })}>
-                            {[1,2,3,4,5].map(v => <MenuItem key={v} value={v}>{v}</MenuItem>)}
+                            {[1, 2, 3, 4, 5].map(v => <MenuItem key={v} value={v}>{v}</MenuItem>)}
                         </TextField>
                         <TextField select label="Impact" value={newRisk.impact} onChange={e => setNewRisk({ ...newRisk, impact: parseInt(e.target.value) })}>
-                            {[1,2,3,4,5].map(v => <MenuItem key={v} value={v}>{v}</MenuItem>)}
+                            {[1, 2, 3, 4, 5].map(v => <MenuItem key={v} value={v}>{v}</MenuItem>)}
                         </TextField>
                         <Button variant="contained" onClick={handleCreateRisk}>Create Risk</Button>
                     </Box>
