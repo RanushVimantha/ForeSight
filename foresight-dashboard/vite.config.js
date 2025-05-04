@@ -12,7 +12,13 @@ export default defineConfig({
             '@hooks': path.resolve(__dirname, './src/hooks'),
             '@store': path.resolve(__dirname, './src/store'),
             '@theme': path.resolve(__dirname, './src/theme'),
-            '@utils': path.resolve(__dirname, './src/utils')
+            '@utils': path.resolve(__dirname, './src/utils'),
+            '@api': path.resolve(__dirname, './src/api')
         }
+    },
+    test: {
+        globals: true,
+        environment: 'jsdom',
+        setupFiles: './src/tests/setupTests.js' 
     }
 });
