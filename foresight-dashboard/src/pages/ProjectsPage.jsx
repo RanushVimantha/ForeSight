@@ -2,17 +2,19 @@ import React, { useEffect, useState } from 'react';
 import axiosInstance from '../api/axiosInstance';
 import {
     Box, Typography, Button, Table, TableHead, TableRow,
-    TableCell, TableBody, TextField, MenuItem, IconButton, CircularProgress
+    TableCell, TableBody, TextField, MenuItem, IconButton, CircularProgress, Chip
 } from '@mui/material';
 import { toast } from 'react-toastify';
 import DeleteIcon from '@mui/icons-material/Delete';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 function ProjectsPage() {
     const [projects, setProjects] = useState([]);
-    const [newProject, setNewProject] = useState({ name: '', description: '', status: 'Active' });
+    const [newProject, setNewProject] = useState({
+        name: '', description: '', status: 'Active'
+    });
     const [loading, setLoading] = useState(false);
 
-    // ✅ Fetch projects
     const fetchProjects = async () => {
         setLoading(true);
         try {
@@ -29,7 +31,6 @@ function ProjectsPage() {
         setNewProject({ ...newProject, [e.target.name]: e.target.value });
     };
 
-    // ✅ Create project
     const handleCreateProject = async () => {
         if (!newProject.name || !newProject.description) {
             toast.error('Please fill all fields');
@@ -47,11 +48,14 @@ function ProjectsPage() {
         }
     };
 
-    // ✅ Update status
-    const handleToggleStatus = async (id, status) => {
+    const handleToggleStatus = async (id, currentStatus) => {
+        let newStatus = 'Active';
+        if (currentStatus === 'Active') newStatus = 'Completed';
+        else if (currentStatus === 'Completed') newStatus = 'Active';
+
         try {
-            await axiosInstance.put(`/projects/${id}`, { status: status === 'Active' ? 'Inactive' : 'Active' });
-            toast.success('Project status updated');
+            await axiosInstance.put(`/projects/${id}`, { status: newStatus });
+            toast.success(`Project status updated to ${newStatus}`);
             fetchProjects();
         } catch (err) {
             console.error('Failed to update project status:', err);
@@ -59,7 +63,6 @@ function ProjectsPage() {
         }
     };
 
-    // ✅ Delete project
     const handleDelete = async (id) => {
         if (!window.confirm('Are you sure you want to delete this project?')) return;
 
@@ -162,29 +165,38 @@ function ProjectsPage() {
                                 <TableCell>{project.id}</TableCell>
                                 <TableCell>{project.name}</TableCell>
                                 <TableCell>{project.description}</TableCell>
-                                <TableCell>{project.status}</TableCell>
                                 <TableCell>
-                                    <Button
-                                        size="small"
-                                        variant="contained"
-                                        color="primary"
-                                        onClick={() => window.location.href = `/projects/${project.id}`}
-                                    >
-                                        View
-                                    </Button>{' '}
-                                    <Button
-                                        size="small"
-                                        variant="outlined"
-                                        onClick={() => handleToggleStatus(project.id, project.status)}
-                                    >
-                                        {project.status === 'Active' ? 'Deactivate' : 'Activate'}
-                                    </Button>{' '}
-                                    <IconButton
-                                        color="error"
-                                        onClick={() => handleDelete(project.id)}
-                                    >
-                                        <DeleteIcon />
-                                    </IconButton>
+                                    <Chip
+                                        label={project.status}
+                                        color={
+                                            project.status === 'Active' ? 'success' :
+                                            project.status === 'Completed' ? 'primary' :
+                                            'default'
+                                        }
+                                    />
+                                </TableCell>
+                                <TableCell>
+                                    <Box display="flex" gap={1} alignItems="center">
+                                        <IconButton
+                                            color="primary"
+                                            onClick={() => window.location.href = `/projects/${project.id}`}
+                                        >
+                                            <VisibilityIcon />
+                                        </IconButton>
+                                        <Button
+                                            size="small"
+                                            variant="outlined"
+                                            onClick={() => handleToggleStatus(project.id, project.status)}
+                                        >
+                                            {project.status === 'Active' ? 'Complete' : 'Activate'}
+                                        </Button>
+                                        <IconButton
+                                            color="error"
+                                            onClick={() => handleDelete(project.id)}
+                                        >
+                                            <DeleteIcon />
+                                        </IconButton>
+                                    </Box>
                                 </TableCell>
                             </TableRow>
                         ))}
