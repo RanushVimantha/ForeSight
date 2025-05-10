@@ -1,7 +1,6 @@
 foresight-backend/.env
 /foresight-backend/node_modules
 /node_modules
-/RiskAnalysis
 RiskAnalysis.zip
 /.idea
 foresight-dashboard.zip

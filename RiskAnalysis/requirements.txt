@@ -1,0 +1,10 @@
+streamlit
+yfinance
+pandas
+scikit-learn
+newsapi-python
+joblib
+sentence_transformers
+shap
+transformers
+matplotlib
