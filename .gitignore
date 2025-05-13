@@ -7,3 +7,4 @@ foresight-dashboard.zip
 *.zip
 foresight-ui.zip
 foresight-dashboard.zip
+/.venv
