@@ -8,3 +8,8 @@ foresight-dashboard.zip
 foresight-ui.zip
 foresight-dashboard.zip
 /.venv
+/ai-engine/venv
+/ai-engine/venv
+/ai-engine/__pycache__
+/ai-engine/venv
+ai-engine/venv/Lib/site-packages/fontTools/cu2qu/cu2qu.c
