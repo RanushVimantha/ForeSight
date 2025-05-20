@@ -4,25 +4,41 @@ import joblib
 import os
 import numpy as np
 import pandas as pd
+import json
+from sklearn.preprocessing import LabelEncoder
+
 from simulate import run_simulation
 from explain_instance import explain_instance
 
 app = Flask(__name__)
 CORS(app)
 
-# Model paths
+# === Load model & metadata ===
 MODEL_PATH = os.path.join("models", "risk_model.pkl")
-FEATURES_PATH = os.path.join("models", "feature_columns.pkl")
+META_PATH = os.path.join("models", "model_meta.json")
 
-# Load model and feature list at startup
 try:
     model = joblib.load(MODEL_PATH)
-    feature_columns = joblib.load(FEATURES_PATH)
-    print("✅ Model and features loaded successfully.")
+    with open(META_PATH, "r") as f:
+        meta = json.load(f)
+        class_labels = meta["target_classes"]
+        feature_columns = meta["feature_columns"]
+        label_columns = meta["label_columns"]
+    print("✅ Model and metadata loaded.")
 except Exception as e:
-    print(f"❌ Error loading model: {e}")
-    model = None
-    feature_columns = []
+    print(f"❌ Error loading model/meta: {e}")
+    model, class_labels, feature_columns, label_columns = None, [], [], []
+
+# === Encoders per column ===
+encoders = {}
+def encode_input(df):
+    for col in label_columns:
+        if col not in encoders:
+            encoders[col] = LabelEncoder()
+            df[col] = encoders[col].fit_transform(df[col])
+        else:
+            df[col] = encoders[col].transform(df[col])
+    return df
 
 @app.route("/", methods=["GET"])
 def home():
@@ -32,17 +48,11 @@ def home():
 def predict_risk():
     try:
         data = request.get_json()
-
-        # Defensive defaults if frontend sends null
-        budget = data.get("budget_rs") or 1000000
-        duration = data.get("duration_days") or 90
-        team = data.get("team_size") or 5
-
         features = [
             data.get("project_type", "Web"),
-            budget,
-            duration,
-            team,
+            data.get("budget_rs", 1000000),
+            data.get("duration_days", 90),
+            data.get("team_size", 5),
             data.get("scope_changes", 1),
             data.get("client_type", "Local"),
             data.get("technology_stack", "React"),
@@ -52,24 +62,19 @@ def predict_risk():
             data.get("past_delays", 1)
         ]
 
-        # Reshape and predict
-        features_df = pd.DataFrame([features], columns=[
-            "project_type", "budget_rs", "duration_days", "team_size", "scope_changes",
-            "client_type", "technology_stack", "developer_experience_avg", "agile_practice",
-            "client_rating", "past_delays"
-        ])
+        df = pd.DataFrame([features], columns=feature_columns)
+        df = encode_input(df)
 
-        prediction = model.predict(features_df)[0]
-        confidence = max(model.predict_proba(features_df)[0]) * 100
+        prediction = model.predict(df)[0]
+        confidence = max(model.predict_proba(df)[0]) * 100
 
         return jsonify({
-            "prediction": prediction,
+            "prediction": class_labels[prediction],
             "confidence": round(confidence, 2)
         })
     except Exception as e:
         print("❌ Error in /predict-risk:", e)
-        return jsonify({"error": "Server crashed", "details": str(e)}), 500
-
+        return jsonify({"error": str(e)}), 500
 
 @app.route("/simulate-risk", methods=["POST"])
 def simulate_risk():
@@ -80,7 +85,6 @@ def simulate_risk():
         duration_mean = data.get("duration_mean") or 90
         duration_std = data.get("duration_std") or 10
 
-        # Run the simulation (replace with your actual logic)
         budget_results = np.random.normal(budget_mean, budget_std, 1000)
         duration_results = np.random.normal(duration_mean, duration_std, 1000)
 
@@ -100,10 +104,8 @@ def simulate_risk():
         })
     except Exception as e:
         print("❌ Error in /simulate-risk:", e)
-        return jsonify({"error": "Simulation error", "details": str(e)}), 500
+        return jsonify({"error": str(e)}), 500
 
-    
-    
 @app.route("/explain-instance", methods=["POST"])
 def explain_instance_api():
     try:
@@ -113,7 +115,39 @@ def explain_instance_api():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/update-model", methods=["POST"])
+def update_model():
+    try:
+        data = request.get_json()
+        actual_label = data.get("actual_risk_level")
+        if not actual_label:
+            return jsonify({"error": "Missing 'actual_risk_level'"}), 400
 
+        features = [
+            data.get("project_type", "Web"),
+            data.get("budget_rs", 1000000),
+            data.get("duration_days", 90),
+            data.get("team_size", 5),
+            data.get("scope_changes", 1),
+            data.get("client_type", "Local"),
+            data.get("technology_stack", "React"),
+            data.get("developer_experience_avg", 3.0),
+            data.get("agile_practice", "Yes"),
+            data.get("client_rating", 3),
+            data.get("past_delays", 1)
+        ]
+
+        df = pd.DataFrame([features], columns=feature_columns)
+        df = encode_input(df)
+
+        y_encoded = class_labels.index(actual_label)
+        model.partial_fit(df, [y_encoded])
+        joblib.dump(model, MODEL_PATH)
+
+        return jsonify({"message": "Model updated successfully"}), 200
+    except Exception as e:
+        print("❌ Error in /update-model:", e)
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
