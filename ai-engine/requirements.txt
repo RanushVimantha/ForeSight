@@ -1,5 +1,7 @@
 flask
-pandas
-numpy
-scikit-learn
 joblib
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn

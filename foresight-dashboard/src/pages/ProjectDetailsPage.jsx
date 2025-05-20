@@ -19,6 +19,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import SecurityIcon from '@mui/icons-material/Security';
 import SearchIcon from '@mui/icons-material/Search';
 import InsightsIcon from '@mui/icons-material/Insights';
+import AIRiskInsights from '../components/dashboard/AIRiskInsights';
 
 function ProjectDetailsPage() {
     const { id } = useParams();
@@ -282,16 +283,10 @@ function ProjectDetailsPage() {
 
             {/* === Insights & Mitigations === */}
             <Box mt={5} display="flex" flexDirection={{ xs: 'column', md: 'row' }} gap={3}>
-                <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
-                    <CardContent>
-                        <Typography variant="h5">📌 PM Summary Insights</Typography>
-                        <List dense>
-                            <ListItem><ListItemIcon><WarningAmberIcon /></ListItemIcon><ListItemText primary="Risk level is High, with 49% confidence." /></ListItem>
-                            <ListItem><ListItemIcon><InsightsIcon /></ListItemIcon><ListItemText primary="Budget limited for high-scope projects." /></ListItem>
-                            <ListItem><ListItemIcon><SecurityIcon /></ListItemIcon><ListItemText primary="Scope includes sensitive data — plan compliance." /></ListItem>
-                        </List>
-                    </CardContent>
-                </Card>
+<Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
+  <AIRiskInsights project={project} />
+</Card>
+
 
                 <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
                     <CardContent>
