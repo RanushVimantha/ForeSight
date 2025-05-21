@@ -1,3 +1,8 @@
 project_id,timestamp,project_type,budget_rs,duration_days,team_size,scope_changes,client_type,technology_stack,developer_experience_avg,agile_practice,client_rating,past_delays,actual_risk_level
 2,2025-05-21T10:40:34.638567,Web,,,,2,Local,React,3.5,Yes,3,1,Medium
 2,2025-05-21T10:43:13.961133,Web,2000,120,1,2,Local,React,3.5,Yes,3,1,High
+4,2025-05-21T13:05:41.512884,Web,29999999,90,5,2,Local,React,3.5,Yes,3,1,Low
+2,2025-05-21T13:05:58.338319,Web,2000,120,1,2,Local,React,3.5,Yes,3,1,Low
+2,2025-05-21T15:23:10.305141,Web,2000,120,1,2,Local,React,3.5,Yes,3,1,Medium
+5,2025-05-21T17:03:24.113300,Web,,,,2,Local,React,3.5,Yes,3,1,Medium
+4,2025-05-21T20:48:38.964194,Web,29999999,90,5,2,Local,React,3.5,Yes,3,1,Medium

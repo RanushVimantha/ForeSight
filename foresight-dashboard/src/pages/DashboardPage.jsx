@@ -1,4 +1,3 @@
-// src/pages/DashboardPage.jsx
 import React, { useState, useEffect } from 'react';
 import { Box, Container, Grid, Typography, Divider } from '@mui/material';
 import SummaryCards             from '@components/dashboard/SummaryCards';

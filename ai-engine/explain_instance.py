@@ -1,11 +1,8 @@
-from flask import request, jsonify
 import joblib
 import shap
 import numpy as np
 import pandas as pd
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import SGDClassifier
 
 def load_model_and_features():
     model = joblib.load("models/risk_model.pkl")
@@ -13,42 +10,38 @@ def load_model_and_features():
     return model, features
 
 def explain_instance(request_json):
-    # Load model and features
-    model, feature_columns = load_model_and_features()
+    try:
+        # Load model and expected features
+        model, feature_columns = load_model_and_features()
 
-    # Check classifier type
-    classifier = model.named_steps["classifier"]
-    if not isinstance(classifier, RandomForestClassifier):
-        return {"error": "SHAP currently supports RandomForestClassifier only."}
+        if not isinstance(model, SGDClassifier):
+            return {"error": "SHAP currently supports SGDClassifier only."}
 
-    # Prepare input
-    input_data = [request_json.get(f, 0) for f in feature_columns]
-    input_df = pd.DataFrame([request_json])
+        # Convert and validate input
+        input_row = {}
+        for col in feature_columns:
+            value = request_json.get(col, 0)
+            try:
+                value = float(value) if col not in ["project_type", "client_type", "technology_stack", "agile_practice"] else str(value)
+            except:
+                value = 0
+            input_row[col] = value
 
-    # Recreate the encoder for SHAP input
-    categorical_features = ["project_type", "client_type", "technology_stack", "agile_practice"]
-    encoder = ColumnTransformer(transformers=[
-        ("cat", OneHotEncoder(handle_unknown="ignore"), categorical_features)
-    ], remainder="passthrough")
-    encoder.fit(input_df[feature_columns])
-    encoded_input = encoder.transform(input_df[feature_columns])
+        input_df = pd.DataFrame([input_row])
+        input_df = input_df.fillna(0)
 
-    # SHAP Explanation
-    explainer = shap.TreeExplainer(classifier)
-    shap_values = explainer.shap_values(encoded_input)
+        explainer = shap.Explainer(model, input_df)
+        shap_values = explainer(input_df)
 
-    # Get class index predicted
-    class_index = classifier.predict(encoded_input)[0]
-    class_idx = list(classifier.classes_).index(class_index)
+        contributions = dict(zip(input_df.columns, shap_values.values[0]))
+        sorted_contributions = sorted(contributions.items(), key=lambda x: abs(x[1]), reverse=True)
 
-    # Get SHAP values for this instance
-    feature_names = encoder.get_feature_names_out()
-    shap_contrib = shap_values[class_idx][0]  # First row
-    feature_contributions = dict(zip(feature_names, shap_contrib))
+        prediction = model.predict(input_df)[0]
+        return {
+            "prediction": prediction,
+            "explanation": sorted_contributions[:10]
+        }
 
-    # Sort and return top contributions
-    sorted_contributions = sorted(feature_contributions.items(), key=lambda x: abs(x[1]), reverse=True)
-    return {
-        "prediction": class_index,
-        "explanation": sorted_contributions[:8]  # Top 8 features
-    }
+    except Exception as e:
+        print("❌ SHAP explanation error:", e)
+        return {"error": str(e), "explanation": []}

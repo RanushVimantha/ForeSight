@@ -1,40 +1,32 @@
-# generate_mitigations.py
-import os
 import pandas as pd
+from sentence_transformers import SentenceTransformer, util
 
-def generate_mitigations(risks):
-    """
-    Very basic rule-based suggestions.
-    You can replace this with AI later (transformers, NLP).
-    """
-    suggestions = []
+# Load the curated dataset
+DATA_PATH = "data/mitigation_examples.csv"
+examples_df = pd.read_csv(DATA_PATH)
 
-    for r in risks:
-        category = r.get("category", "").lower()
-        impact = r.get("impact", 3)
-        probability = r.get("probability", 3)
-        title = r.get("title", "")
+# Load pre-trained transformer model
+model = SentenceTransformer('all-MiniLM-L6-v2')  # Fast and lightweight
 
-        recs = []
+def suggest_mitigations(project_risks, top_n=2):
+    if not project_risks:
+        return []
 
-        if "delay" in title.lower() or category == "schedule":
-            recs.append("Review project schedule and milestones.")
+    risk_titles = [r['title'] for r in project_risks if r.get('title')]
+    example_titles = examples_df['risk_title'].tolist()
 
-        if category == "technical":
-            recs.append("Assign more experienced developers.")
-            recs.append("Plan buffer time for technical risks.")
+    # Encode risks and examples
+    example_embeddings = model.encode(example_titles, convert_to_tensor=True)
+    risk_embeddings = model.encode(risk_titles, convert_to_tensor=True)
 
-        if category == "budget" or impact >= 4:
-            recs.append("Review budget allocations.")
+    all_suggestions = []
 
-        if probability >= 4:
-            recs.append("Increase stakeholder communication.")
-            recs.append("Conduct early testing and prototyping.")
+    for i, risk_embedding in enumerate(risk_embeddings):
+        scores = util.pytorch_cos_sim(risk_embedding, example_embeddings)[0]
+        top_indices = scores.argsort(descending=True)[:top_n]
 
-        suggestions.append({
-            "risk_id": r.get("id"),
-            "title": title,
-            "recommendations": recs or ["No specific recommendations."]
-        })
+        for idx in top_indices:
+            mitigation = examples_df.iloc[int(idx)]['mitigation']
+            all_suggestions.append(mitigation)
 
-    return suggestions
+    return list(set(all_suggestions))  # Remove duplicates

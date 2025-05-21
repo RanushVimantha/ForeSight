@@ -17,7 +17,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import ScienceIcon from '@mui/icons-material/Science';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import SecurityIcon from '@mui/icons-material/Security';
 import SearchIcon from '@mui/icons-material/Search';
 import InsightsIcon from '@mui/icons-material/Insights';
 import AIRiskInsights from '../components/dashboard/AIRiskInsights';
@@ -35,6 +34,7 @@ function ProjectDetailsPage() {
   const [newRisk, setNewRisk] = useState({ title: '', category: '', probability: 3, impact: 3 });
   const [latestRiskLevel, setLatestRiskLevel] = useState(null);
   const [mitigations, setMitigations] = useState([]);
+  
 
   const likelihoodLabels = ['Rare', 'Unlikely', 'Possible', 'Likely', 'Almost Certain'];
   const impactLabels = ['Negligible', 'Minor', 'Moderate', 'Major', 'Severe'];
@@ -57,10 +57,9 @@ function ProjectDetailsPage() {
       const projectRisks = res.data.filter(r => r.project_id == id);
       setRisks(projectRisks);
 
-      // Fetch AI mitigations for project risks
       if (projectRisks.length > 0) {
-        const response = await generateMitigations(projectRisks);
-        setMitigations(response.data.mitigations || []);
+        const aiRes = await generateMitigations(projectRisks);
+        setMitigations(aiRes.data.mitigations || []);
       }
     } catch {
       toast.error('Failed to load risks');
@@ -156,10 +155,7 @@ function ProjectDetailsPage() {
         <AssignmentIcon sx={{ mr: 1 }} /> Project Details
       </Typography>
 
-      {/* Project Info + Matrix */}
       <Box display="flex" gap={3} flexDirection={{ xs: 'column', md: 'row' }} alignItems="flex-start">
-
-        {/* Project Info */}
         <Card sx={{ maxWidth: 900, padding: 3, boxShadow: 4, borderRadius: 3, position: 'relative', flex: 1 }}>
           <CardContent>
             <Button
@@ -235,7 +231,6 @@ function ProjectDetailsPage() {
           </CardContent>
         </Card>
 
-        {/* Risk Matrix */}
         <Card sx={{ padding: 2, borderRadius: 3, width: '100%', maxWidth: 600 }}>
           <Typography variant="h6" align="center" mb={2}>
             5x5 Risk Matrix
@@ -277,30 +272,38 @@ function ProjectDetailsPage() {
         </Card>
       </Box>
 
-      {/* Insights & Mitigations */}
-      <Box mt={5} display="flex" flexDirection={{ xs: 'column', md: 'row' }} gap={3}>
-        <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
-          <AIRiskInsights project={project} />
-        </Card>
-        <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
-          <CardContent>
-            <Typography variant="h5">🤖 AI-Suggested Mitigations</Typography>
-            <List dense>
-              {mitigations.length > 0 ? mitigations.map((m, i) => (
-                <ListItem key={i}><ListItemIcon><InsightsIcon /></ListItemIcon><ListItemText primary={m} /></ListItem>
-              )) : (
-                <Typography variant="body2" color="text.secondary">No mitigations available.</Typography>
-              )}
-            </List>
-          </CardContent>
-        </Card>
-      </Box>
+{/* === Insights & Mitigations === */}
+<Box mt={5} display="flex" flexDirection={{ xs: 'column', md: 'row' }} gap={3}>
+  <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
+    <AIRiskInsights project={project} />
+  </Card>
+
+  <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
+    <CardContent>
+      <Typography variant="h5" gutterBottom>🤖 AI-Suggested Mitigations</Typography>
+      {mitigations.length > 0 ? (
+        <List dense>
+          {mitigations.map((m, i) => (
+            <ListItem key={i}>
+              <ListItemIcon><InsightsIcon /></ListItemIcon>
+              <ListItemText primary={m} />
+            </ListItem>
+          ))}
+        </List>
+      ) : (
+        <Typography variant="body2" color="text.secondary">
+          No AI mitigation suggestions available yet.
+        </Typography>
+      )}
+    </CardContent>
+  </Card>
+</Box>
+
 
       <Box mt={4}>
         {project && <UpdateRiskModelForm project={project} />}
       </Box>
 
-      {/* Risk Table */}
       <Box mt={5}>
         <Typography variant="h5">Linked Risks</Typography>
         {risks.length === 0 ? <Typography>No risks yet.</Typography> : (

@@ -11,7 +11,7 @@ import csv
 
 from simulate import run_simulation
 from explain_instance import explain_instance
-from generate_mitigations import generate_mitigations
+from generate_mitigations import suggest_mitigations
 app = Flask(__name__)
 CORS(app)
 
@@ -201,40 +201,15 @@ def get_latest_risk(project_id):
         print("❌ Error in /latest-risk:", e)
         return jsonify({"error": str(e)}), 500
     
+
+
 @app.route("/generate-mitigations", methods=["POST"])
-def generate_mitigations():
+def generate_mitigations_api():
     try:
         data = request.get_json()
         risks = data.get("risks", [])
-
-        # Risk category to strategy mapping
-        strategy_map = {
-            "Technical": ["Conduct integration testing", "Use standard frameworks"],
-            "Budget": ["Strict budget monitoring", "Use open-source libraries"],
-            "Security": ["Encrypt sensitive data", "Implement firewalls", "Educate team on best practices"],
-            "Data": ["Engage early with data providers", "Use placeholder datasets"],
-            "Usability": ["Add onboarding training", "Iterative UX testing"],
-            "Scope": ["Break down scope into phases", "Apply agile sprint planning"],
-        }
-
-        suggested = set()
-        for risk in risks:
-            category = risk.get("category")
-            if category and category in strategy_map:
-                for s in strategy_map[category]:
-                    suggested.add(s)
-
-        return jsonify({"mitigations": sorted(list(suggested))})
-    except Exception as e:
-        print("❌ Error in /generate-mitigations:", e)
-        return jsonify({"error": str(e)}), 500
-    
-@app.route("/generate-mitigations", methods=["POST"])
-def suggest_mitigations():
-    try:
-        risks = request.get_json()
-        output = generate_mitigations(risks)
-        return jsonify({"mitigations": output}), 200
+        mitigations = suggest_mitigations(risks)
+        return jsonify({"mitigations": mitigations})
     except Exception as e:
         print("❌ Error in /generate-mitigations:", e)
         return jsonify({"error": str(e)}), 500
