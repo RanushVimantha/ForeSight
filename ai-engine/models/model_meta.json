@@ -1,0 +1,1 @@
+{"target_classes": ["High", "Low", "Medium"], "feature_columns": ["project_type", "budget_rs", "duration_days", "team_size", "scope_changes", "client_type", "technology_stack", "developer_experience_avg", "agile_practice", "client_rating", "past_delays"], "label_columns": ["project_type", "client_type", "technology_stack", "agile_practice"]}

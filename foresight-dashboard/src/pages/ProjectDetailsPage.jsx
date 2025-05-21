@@ -20,6 +20,8 @@ import SecurityIcon from '@mui/icons-material/Security';
 import SearchIcon from '@mui/icons-material/Search';
 import InsightsIcon from '@mui/icons-material/Insights';
 import AIRiskInsights from '../components/dashboard/AIRiskInsights';
+import UpdateRiskModelForm from '../components/dashboard/UpdateRiskModelForm';
+
 
 function ProjectDetailsPage() {
     const { id } = useParams();
@@ -283,9 +285,9 @@ function ProjectDetailsPage() {
 
             {/* === Insights & Mitigations === */}
             <Box mt={5} display="flex" flexDirection={{ xs: 'column', md: 'row' }} gap={3}>
-<Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
-  <AIRiskInsights project={project} />
-</Card>
+                <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
+                    <AIRiskInsights project={project} />
+                </Card>
 
 
                 <Card sx={{ flex: 1, backgroundColor: '#f9f9f9' }}>
@@ -298,6 +300,9 @@ function ProjectDetailsPage() {
                         </List>
                     </CardContent>
                 </Card>
+            </Box>
+            <Box mt={4}>
+                {project && <UpdateRiskModelForm project={project} />}
             </Box>
 
             {/* === Risks Table === */}

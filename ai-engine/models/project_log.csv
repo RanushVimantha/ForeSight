@@ -1,0 +1,2 @@
+timestamp,project_type,budget_rs,duration_days,team_size,scope_changes,client_type,technology_stack,developer_experience_avg,agile_practice,client_rating,past_delays,actual_risk_level
+2025-05-21T08:07:41.713733,Web,,,,2,Local,React,3.5,Yes,3,1,Medium

@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 import json
 from sklearn.preprocessing import LabelEncoder
+from datetime import datetime
+import csv
 
 from simulate import run_simulation
 from explain_instance import explain_instance
@@ -64,7 +66,6 @@ def predict_risk():
 
         df = pd.DataFrame([features], columns=feature_columns)
         df = encode_input(df)
-
         prediction = model.predict(df)[0]
         confidence = max(model.predict_proba(df)[0]) * 100
 
@@ -139,10 +140,42 @@ def update_model():
 
         df = pd.DataFrame([features], columns=feature_columns)
         df = encode_input(df)
+        df = df.fillna(0)
 
         y_encoded = class_labels.index(actual_label)
         model.partial_fit(df, [y_encoded])
         joblib.dump(model, MODEL_PATH)
+
+        # === Log to CSV ===
+        try:
+            log_path = os.path.join("models", "project_log.csv")
+            row = {
+                "timestamp": datetime.now().isoformat(),
+                "project_type": data.get("project_type", "Web"),
+                "budget_rs": data.get("budget_rs", 1000000),
+                "duration_days": data.get("duration_days", 90),
+                "team_size": data.get("team_size", 5),
+                "scope_changes": data.get("scope_changes", 1),
+                "client_type": data.get("client_type", "Local"),
+                "technology_stack": data.get("technology_stack", "React"),
+                "developer_experience_avg": data.get("developer_experience_avg", 3.0),
+                "agile_practice": data.get("agile_practice", "Yes"),
+                "client_rating": data.get("client_rating", 3),
+                "past_delays": data.get("past_delays", 1),
+                "actual_risk_level": actual_label
+            }
+
+            file_exists = os.path.isfile(log_path)
+            with open(log_path, mode='a', newline='') as csvfile:
+                writer = csv.DictWriter(csvfile, fieldnames=row.keys())
+                if not file_exists:
+                    writer.writeheader()
+                writer.writerow(row)
+
+            print(f"✅ Project logged to {log_path}")
+
+        except Exception as log_err:
+            print(f"❌ Failed to log project: {log_err}")
 
         return jsonify({"message": "Model updated successfully"}), 200
     except Exception as e:
