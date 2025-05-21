@@ -11,7 +11,7 @@ import csv
 
 from simulate import run_simulation
 from explain_instance import explain_instance
-
+from generate_mitigations import generate_mitigations
 app = Flask(__name__)
 CORS(app)
 
@@ -150,21 +150,22 @@ def update_model():
         try:
             log_path = os.path.join("models", "project_log.csv")
             row = {
-                "timestamp": datetime.now().isoformat(),
-                "project_type": data.get("project_type", "Web"),
-                "budget_rs": data.get("budget_rs", 1000000),
-                "duration_days": data.get("duration_days", 90),
-                "team_size": data.get("team_size", 5),
-                "scope_changes": data.get("scope_changes", 1),
-                "client_type": data.get("client_type", "Local"),
-                "technology_stack": data.get("technology_stack", "React"),
-                "developer_experience_avg": data.get("developer_experience_avg", 3.0),
-                "agile_practice": data.get("agile_practice", "Yes"),
-                "client_rating": data.get("client_rating", 3),
-                "past_delays": data.get("past_delays", 1),
-                "actual_risk_level": actual_label
+               "project_id": data.get("project_id"),
+    "timestamp": datetime.now().isoformat(),
+    "project_type": data.get("project_type", "Web"),
+    "budget_rs": data.get("budget_rs", 1000000),
+    "duration_days": data.get("duration_days", 90),
+    "team_size": data.get("team_size", 5),
+    "scope_changes": data.get("scope_changes", 1),
+    "client_type": data.get("client_type", "Local"),
+    "technology_stack": data.get("technology_stack", "React"),
+    "developer_experience_avg": data.get("developer_experience_avg", 3.0),
+    "agile_practice": data.get("agile_practice", "Yes"),
+    "client_rating": data.get("client_rating", 3),
+    "past_delays": data.get("past_delays", 1),
+    "actual_risk_level": actual_label
             }
-
+            
             file_exists = os.path.isfile(log_path)
             with open(log_path, mode='a', newline='') as csvfile:
                 writer = csv.DictWriter(csvfile, fieldnames=row.keys())
@@ -181,6 +182,64 @@ def update_model():
     except Exception as e:
         print("❌ Error in /update-model:", e)
         return jsonify({"error": str(e)}), 500
+    
+@app.route("/latest-risk/<int:project_id>", methods=["GET"])
+def get_latest_risk(project_id):
+    try:
+        log_path = os.path.join("models", "project_log.csv")
+        if not os.path.exists(log_path):
+            return jsonify({"risk_level": None}), 200
+
+        df = pd.read_csv(log_path, on_bad_lines='skip')
+        df = df[df["project_id"] == project_id]
+        if df.empty:
+            return jsonify({"risk_level": None}), 200
+
+        latest_entry = df.sort_values("timestamp", ascending=False).iloc[0]
+        return jsonify({"risk_level": latest_entry["actual_risk_level"]}), 200
+    except Exception as e:
+        print("❌ Error in /latest-risk:", e)
+        return jsonify({"error": str(e)}), 500
+    
+@app.route("/generate-mitigations", methods=["POST"])
+def generate_mitigations():
+    try:
+        data = request.get_json()
+        risks = data.get("risks", [])
+
+        # Risk category to strategy mapping
+        strategy_map = {
+            "Technical": ["Conduct integration testing", "Use standard frameworks"],
+            "Budget": ["Strict budget monitoring", "Use open-source libraries"],
+            "Security": ["Encrypt sensitive data", "Implement firewalls", "Educate team on best practices"],
+            "Data": ["Engage early with data providers", "Use placeholder datasets"],
+            "Usability": ["Add onboarding training", "Iterative UX testing"],
+            "Scope": ["Break down scope into phases", "Apply agile sprint planning"],
+        }
+
+        suggested = set()
+        for risk in risks:
+            category = risk.get("category")
+            if category and category in strategy_map:
+                for s in strategy_map[category]:
+                    suggested.add(s)
+
+        return jsonify({"mitigations": sorted(list(suggested))})
+    except Exception as e:
+        print("❌ Error in /generate-mitigations:", e)
+        return jsonify({"error": str(e)}), 500
+    
+@app.route("/generate-mitigations", methods=["POST"])
+def suggest_mitigations():
+    try:
+        risks = request.get_json()
+        output = generate_mitigations(risks)
+        return jsonify({"mitigations": output}), 200
+    except Exception as e:
+        print("❌ Error in /generate-mitigations:", e)
+        return jsonify({"error": str(e)}), 500
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

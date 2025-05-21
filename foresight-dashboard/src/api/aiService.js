@@ -1,8 +1,14 @@
 // src/api/aiService.js
-import axios from './axiosInstance';
+import axios from 'axios';
 
-const API_BASE = 'http://127.0.0.1:5001'; // update if deployed
+const aiAxios = axios.create({
+  baseURL: 'http://127.0.0.1:5001', // Flask backend
+});
 
-export const predictRisk = (input) => axios.post(`${API_BASE}/predict-risk`, input);
-export const simulateRisk = (input) => axios.post(`${API_BASE}/simulate-risk`, input);
-export const explainInstance = (input) => axios.post(`${API_BASE}/explain-instance`, input);
+export const getLatestRiskLevel = (projectId) => aiAxios.get(`/latest-risk/${projectId}`);
+export const predictRisk = (input) => aiAxios.post('/predict-risk', input);
+export const simulateRisk = (input) => aiAxios.post('/simulate-risk', input);
+export const explainInstance = (input) => aiAxios.post('/explain-instance', input);
+export const updateModel = (input) => aiAxios.post('/update-model', input);
+export const generateMitigations = (risksArray) =>
+  axios.post(`${API_BASE}/generate-mitigations`, { risks: risksArray });

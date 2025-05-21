@@ -1,2 +1,3 @@
-timestamp,project_type,budget_rs,duration_days,team_size,scope_changes,client_type,technology_stack,developer_experience_avg,agile_practice,client_rating,past_delays,actual_risk_level
-2025-05-21T08:07:41.713733,Web,,,,2,Local,React,3.5,Yes,3,1,Medium
+project_id,timestamp,project_type,budget_rs,duration_days,team_size,scope_changes,client_type,technology_stack,developer_experience_avg,agile_practice,client_rating,past_delays,actual_risk_level
+2,2025-05-21T10:40:34.638567,Web,,,,2,Local,React,3.5,Yes,3,1,Medium
+2,2025-05-21T10:43:13.961133,Web,2000,120,1,2,Local,React,3.5,Yes,3,1,High

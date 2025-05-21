@@ -12,6 +12,7 @@ const UpdateRiskModelForm = ({ project }) => {
     if (!actualRisk) return;
 
     const payload = {
+      project_id: project.id,
       project_type: project.project_type || 'Web',
       budget_rs: project.budget_lkr,
       duration_days: project.duration_days,
@@ -25,6 +26,7 @@ const UpdateRiskModelForm = ({ project }) => {
       past_delays: 1,
       actual_risk_level: actualRisk
     };
+
 
     try {
       const res = await axios.post('http://127.0.0.1:5001/update-model', payload);
