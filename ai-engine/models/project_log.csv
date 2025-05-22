@@ -7,3 +7,4 @@ project_id,timestamp,project_type,budget_rs,duration_days,team_size,scope_change
 5,2025-05-21T17:03:24.113300,Web,,,,2,Local,React,3.5,Yes,3,1,Medium
 4,2025-05-21T20:48:38.964194,Web,29999999,90,5,2,Local,React,3.5,Yes,3,1,Medium
 2,2025-05-22T07:24:12.133277,Web,,,,2,Local,React,3.5,Yes,3,1,High
+2,2025-05-22T12:41:28.920601,Web,299999,30,5,2,Local,React,3.5,Yes,3,1,Medium
