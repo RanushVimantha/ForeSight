@@ -1,14 +1,24 @@
 // src/api/aiService.js
-import axios from 'axios';
+import axios from './axiosInstance';
 
-const aiAxios = axios.create({
-  baseURL: 'http://127.0.0.1:5001', // Flask backend
-});
+const AI_API = 'http://127.0.0.1:5001';     // Python AI backend
+const NODE_API = 'http://localhost:5000';   // Express backend
 
-export const getLatestRiskLevel = (projectId) => aiAxios.get(`/latest-risk/${projectId}`);
-export const predictRisk = (input) => aiAxios.post('/predict-risk', input);
-export const simulateRisk = (input) => aiAxios.post('/simulate-risk', input);
-export const explainInstance = (input) => aiAxios.post('/explain-instance', input);
-export const updateModel = (input) => aiAxios.post('/update-model', input);
-export const generateMitigations = (risks) =>
-  axios.post("http://127.0.0.1:5001/generate-mitigations", { risks });
+export const predictRisk = (input) => axios.post(`${AI_API}/predict-risk`, input);
+export const simulateRisk = (input) => axios.post(`${AI_API}/simulate-risk`, input);
+export const explainInstance = (input) => axios.post(`${AI_API}/explain-instance`, input);
+export const getLatestRiskLevel = (projectId) => axios.get(`${AI_API}/latest-risk/${projectId}`);
+
+export const generateMitigations = (risks) => axios.post(`${AI_API}/generate-mitigations`, { risks });
+
+// ✅ NEW: Save mitigations
+export const saveMitigations = (projectId, risks, mitigations) =>
+  axios.post(`${NODE_API}/api/mitigations/save`, {
+    projectId,
+    risks,
+    mitigations
+  });
+
+// ✅ NEW: Fetch saved mitigations
+export const fetchMitigations = (projectId) =>
+  axios.get(`${NODE_API}/api/mitigations/${projectId}`);

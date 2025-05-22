@@ -6,3 +6,4 @@ numpy
 joblib
 sentence-transformers
 torch
+mysql-connector-python

@@ -7,52 +7,68 @@ import InsightsIcon from '@mui/icons-material/Insights';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import TimelineIcon from '@mui/icons-material/Timeline';
 import RefreshIcon from '@mui/icons-material/Refresh';
-import { predictRisk, simulateRisk, explainInstance } from '../../api/aiService';
+import {
+  predictRisk,
+  simulateRisk,
+  explainInstance,
+  generateMitigations,
+  saveMitigations,
+  fetchMitigations
+} from '../../api/aiService';
 
 const AIRiskInsights = ({ project }) => {
   const [result, setResult] = useState(null);
+  const [mitigations, setMitigations] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const analyzeProjectRisk = async (projectData) => {
     setLoading(true);
     setError(null);
+
+    const input = {
+      project_type: projectData.project_type || 'Web',
+      budget_rs: projectData.budget_lkr || 1000000,
+      duration_days: projectData.duration_days || 90,
+      team_size: projectData.team_size || 5,
+      scope_changes: 2,
+      client_type: 'Local',
+      technology_stack: 'React',
+      developer_experience_avg: 3.5,
+      agile_practice: 'Yes',
+      client_rating: 3,
+      past_delays: 1
+    };
+
     try {
-      const input = {
-        project_type: projectData.project_type || 'Web',
-        budget_rs: projectData.budget_lkr || 1000000,
-        duration_days: projectData.duration_days || 90,
-        team_size: projectData.team_size || 5,
-        scope_changes: 2,
-        client_type: 'Local',
-        technology_stack: 'React',
-        developer_experience_avg: 3.5,
-        agile_practice: 'Yes',
-        client_rating: 3,
-        past_delays: 1
-      };
+      const [prediction, simulation, explanation] = await Promise.all([
+        predictRisk(input),
+        simulateRisk({
+          budget_mean: input.budget_rs,
+          budget_std: 250000,
+          duration_mean: input.duration_days,
+          duration_std: 25
+        }),
+        explainInstance(input)
+      ]);
 
-      const prediction = await predictRisk(input);
-      const simulation = await simulateRisk({
-        budget_mean: input.budget_rs,
-        budget_std: 250000,
-        duration_mean: input.duration_days,
-        duration_std: 25
-      });
-
-      let explanation;
-      try {
-        explanation = await explainInstance(input);
-      } catch (shapError) {
-        console.warn("⚠️ SHAP error:", shapError);
-        explanation = { data: { explanation: [] } };
-      }
+      // AI mitigation generation and save
+      const risks = projectData?.risks || []; // Optional fallback
+      const aiResponse = await generateMitigations(risks);
+      const aiMitigations = aiResponse.data?.mitigations || [];
 
       setResult({
         prediction: prediction.data,
         simulation: simulation.data,
         explanation: explanation?.data || { explanation: [] }
       });
+
+      setMitigations(aiMitigations);
+
+      // Save AI mitigations
+      if (aiMitigations.length > 0 && project?.id) {
+        await saveMitigations(project.id, risks, aiMitigations);
+      }
     } catch (err) {
       console.error("❌ AI Risk Evaluation Failed:", err);
       setError('Failed to fetch AI insights. Please ensure the backend is running.');
@@ -62,8 +78,19 @@ const AIRiskInsights = ({ project }) => {
   };
 
   useEffect(() => {
-    if (project) {
-      analyzeProjectRisk(project);
+    if (project?.id) {
+      fetchMitigations(project.id)
+        .then(res => {
+          if (res.data.length > 0) {
+            setMitigations(res.data.map(m => m.mitigation));
+          } else {
+            analyzeProjectRisk(project);
+          }
+        })
+        .catch(err => {
+          console.warn("⚠️ Failed to load saved mitigations", err);
+          analyzeProjectRisk(project);
+        });
     }
   }, [project]);
 
@@ -146,6 +173,22 @@ const AIRiskInsights = ({ project }) => {
             <ListItemIcon><WarningAmberIcon /></ListItemIcon>
             <ListItemText primary={`Duration Overrun: ${result.simulation.prob_duration_overrun}%`} />
           </ListItem>
+        </List>
+      </Box>
+
+      <Box mt={4}>
+        <Typography variant="subtitle2" gutterBottom>🤖 AI-Suggested Mitigations</Typography>
+        <List dense>
+          {mitigations.length > 0 ? mitigations.map((m, i) => (
+            <ListItem key={i}>
+              <ListItemIcon><InsightsIcon /></ListItemIcon>
+              <ListItemText primary={m} />
+            </ListItem>
+          )) : (
+            <Typography variant="body2" color="text.secondary">
+              No mitigations available.
+            </Typography>
+          )}
         </List>
       </Box>
     </CardContent>
