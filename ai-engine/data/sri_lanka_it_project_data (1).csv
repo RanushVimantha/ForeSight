@@ -1,0 +1,1001 @@
+project_id,project_name,project_type,budget_rs,duration_days,team_size,scope_changes,client_type,technology_stack,developer_experience_avg,agile_practice,client_rating,past_delays,actual_risk_level
+1,Re-Intermediate 24/7 Experiences Platform,ERP,1433912,72,7,1,Local,Angular,3.9,Yes,5,3,Low
+2,Facilitate Efficient Models Platform,Web,1285972,171,6,4,Local,Django,1.8,No,2,3,High
+3,Engage Integrated Networks Platform,Desktop,554515,141,9,2,International,Angular,1.9,No,1,0,Medium
+4,Redefine Efficient Technologies Platform,Web,3511337,236,12,2,Local,Spring Boot,2.8,Yes,4,0,High
+5,Innovate Compelling Web Services Platform,Desktop,3533614,355,6,5,Local,React,3.6,No,1,1,Low
+6,Incentivize Magnetic Users Platform,API,2831811,292,8,1,International,Vue,1.8,No,1,1,High
+7,Aggregate Front-End Infrastructures Platform,ERP,2553622,143,10,3,International,Spring Boot,3.8,Yes,3,0,Low
+8,Repurpose B2B Platforms Platform,Web,3146211,265,7,0,Local,Django,4.5,No,2,3,Medium
+9,Re-Intermediate Compelling Vortals Platform,ERP,4349128,133,7,1,Local,Spring Boot,3.2,No,5,3,High
+10,Reinvent Collaborative Applications Platform,API,3536646,172,5,4,International,React,4.0,Yes,2,1,High
+11,Transform B2B Deliverables Platform,API,1032909,257,9,4,International,Django,2.0,Yes,1,2,High
+12,Syndicate Distributed E-Markets Platform,Desktop,1435767,210,9,1,International,React,4.8,No,5,1,High
+13,Repurpose Ubiquitous Web Services Platform,Web,3003536,319,12,1,Local,Vue,4.1,Yes,5,2,Medium
+14,Target Interactive Architectures Platform,Web,1438414,245,7,1,Local,Angular,4.5,Yes,1,3,Low
+15,Seize Transparent Web-Readiness Platform,ML,1554955,125,10,4,Local,Vue,3.1,No,2,1,High
+16,Enhance Seamless Action-Items Platform,Desktop,3846989,251,10,4,International,React,2.0,Yes,3,0,High
+17,Re-Intermediate Plug-And-Play Systems Platform,ML,2430342,172,3,0,Local,Angular,1.3,Yes,3,0,High
+18,Disintermediate Plug-And-Play Paradigms Platform,Mobile,2836036,308,6,4,Local,Spring Boot,4.7,No,2,3,Medium
+19,Syndicate User-Centric Communities Platform,Mobile,1291262,109,9,2,International,Laravel,2.9,Yes,1,0,Medium
+20,Facilitate Mission-Critical Technologies Platform,ERP,3346276,115,6,1,Local,Django,2.8,No,2,2,Medium
+21,Revolutionize Turn-Key Technologies Platform,Mobile,1132374,286,11,0,Local,Spring Boot,5.0,Yes,1,1,Low
+22,Incubate 24/365 Synergies Platform,API,4573853,306,6,3,Local,Angular,2.5,No,3,3,Medium
+23,Strategize Plug-And-Play Functionalities Platform,API,4582495,139,6,2,Local,React,3.3,Yes,3,0,Low
+24,Enable Real-Time Channels Platform,ML,4499591,317,11,1,Local,Django,1.3,Yes,1,0,High
+25,Exploit Integrated E-Tailers Platform,Mobile,3887114,121,12,1,Local,Django,1.3,No,3,1,High
+26,Brand Granular Roi Platform,ERP,3135565,182,7,3,Local,Spring Boot,3.6,No,3,0,Low
+27,Re-Contextualize Open-Source Supply-Chains Platform,API,1338703,97,11,1,International,Angular,4.7,Yes,2,2,Medium
+28,Target Visionary Paradigms Platform,Mobile,4175758,338,7,4,Local,Spring Boot,4.3,No,1,1,Medium
+29,Facilitate Value-Added Infrastructures Platform,Web,1397882,343,5,2,International,Django,1.8,No,2,2,High
+30,Expedite Extensible Platforms Platform,API,2606557,86,4,5,International,Flutter,2.1,Yes,3,1,High
+31,Integrate Enterprise Eyeballs Platform,Desktop,1855447,286,11,5,International,Django,1.0,Yes,2,0,Medium
+32,Facilitate Best-Of-Breed E-Services Platform,ML,1742300,280,5,0,International,Vue,4.6,Yes,3,1,High
+33,Syndicate End-To-End E-Commerce Platform,Mobile,1362295,241,11,3,Local,Angular,4.5,Yes,4,0,Low
+34,Generate Frictionless Content Platform,ERP,3286573,270,6,2,Local,Flutter,3.8,No,1,3,Low
+35,Orchestrate Magnetic Roi Platform,Mobile,4361303,239,7,1,Local,React,3.6,No,3,2,Low
+36,Drive Cross-Media Web Services Platform,Desktop,3445627,320,9,5,International,React,1.5,No,2,2,Low
+37,Deliver B2B Infrastructures Platform,Web,4145385,236,8,3,Local,Laravel,4.6,Yes,3,0,High
+38,Re-Contextualize 24/7 Platforms Platform,API,514187,326,11,5,Local,Vue,2.7,No,5,2,High
+39,Transition Viral Communities Platform,Web,3019285,319,7,5,International,Vue,2.6,No,5,1,Low
+40,Expedite Customized Portals Platform,API,3680501,149,12,4,International,Laravel,3.2,Yes,3,2,Low
+41,Unleash Integrated Convergence Platform,API,3203222,298,10,3,Local,Django,2.9,Yes,1,2,High
+42,Embrace Mission-Critical Models Platform,ERP,3311762,107,6,5,International,Angular,4.2,Yes,1,0,Low
+43,Unleash Wireless Paradigms Platform,API,1110927,293,9,5,Local,Spring Boot,3.8,No,4,1,Low
+44,Morph Web-Enabled Paradigms Platform,ERP,546513,114,9,1,Local,Flutter,4.8,No,1,1,Low
+45,Grow Rich Niches Platform,API,1618529,297,11,4,International,Flutter,4.6,No,5,3,Low
+46,Synthesize Impactful Functionalities Platform,ERP,4481857,290,7,1,International,Flutter,4.1,No,2,2,Medium
+47,Deliver Turn-Key Paradigms Platform,Web,2896861,180,7,2,International,Django,1.3,Yes,2,3,High
+48,Synergize Intuitive Communities Platform,Mobile,2294766,92,9,3,International,Django,2.9,Yes,2,3,Medium
+49,Synthesize Integrated Content Platform,ML,663845,354,9,3,Local,Vue,2.2,No,4,1,Medium
+50,Morph Efficient Communities Platform,Mobile,2789547,283,10,0,International,Vue,3.7,No,2,3,Low
+51,Streamline Dot-Com Action-Items Platform,ML,4980553,73,9,4,Local,React,3.6,Yes,4,1,Low
+52,Matrix Revolutionary Interfaces Platform,Desktop,3680153,227,6,3,International,Vue,4.0,No,3,3,Medium
+53,Expedite Wireless Deliverables Platform,Web,4445219,69,11,0,International,Angular,3.6,Yes,1,1,Low
+54,Transform Visionary Communities Platform,Web,1778275,182,5,3,Local,Django,4.8,No,3,2,Low
+55,Reinvent Cross-Platform Infrastructures Platform,ML,1460771,143,7,0,Local,Vue,3.3,No,4,1,Low
+56,Implement 24/7 E-Services Platform,ML,2537168,112,7,5,Local,Flutter,4.9,Yes,3,3,High
+57,Integrate One-To-One Architectures Platform,Desktop,1078451,319,8,0,International,Flutter,3.0,No,3,3,High
+58,Seize Cutting-Edge Schemas Platform,Mobile,4153130,150,11,5,International,Django,4.2,No,4,3,High
+59,Enhance Innovative Partnerships Platform,ML,2751464,225,6,0,International,Laravel,2.0,No,5,3,Medium
+60,Envisioneer Dot-Com Mindshare Platform,Web,4646543,226,5,3,Local,Vue,4.2,No,3,2,High
+61,Syndicate Viral Systems Platform,Web,4833783,157,4,1,International,Laravel,3.2,Yes,4,3,Medium
+62,Redefine Virtual Action-Items Platform,Web,1280588,210,6,3,Local,Vue,3.7,No,4,2,Medium
+63,Implement Value-Added Web Services Platform,ERP,3274878,240,10,2,International,Vue,1.9,Yes,3,0,High
+64,Expedite Bleeding-Edge Architectures Platform,ML,2053149,158,6,5,International,Vue,3.9,No,1,1,Medium
+65,Reinvent Cutting-Edge Action-Items Platform,Mobile,3527289,151,7,0,Local,Vue,1.2,Yes,5,2,High
+66,Extend Impactful Users Platform,Mobile,4617788,112,3,4,International,Laravel,2.9,No,2,0,Medium
+67,Mesh Killer Synergies Platform,API,1457032,93,9,3,Local,Django,3.5,Yes,2,1,High
+68,Mesh Next-Generation Systems Platform,Desktop,1214549,187,4,4,International,Django,3.4,Yes,5,3,Medium
+69,Mesh Scalable Models Platform,API,2994378,279,7,4,Local,Django,4.8,Yes,2,1,Medium
+70,Scale Out-Of-The-Box Deliverables Platform,ERP,1181049,140,6,1,Local,Angular,1.0,No,5,3,Medium
+71,Maximize 24/7 Technologies Platform,Web,2441763,207,7,5,International,React,3.7,No,5,1,Medium
+72,Brand Ubiquitous Systems Platform,Web,2385838,136,7,1,Local,React,1.7,No,5,2,Medium
+73,Drive Compelling Metrics Platform,Web,4431723,215,9,2,International,Laravel,1.3,Yes,4,2,High
+74,Seize B2B Action-Items Platform,Desktop,716970,106,6,5,Local,Flutter,3.7,No,5,0,Low
+75,Expedite Turn-Key Supply-Chains Platform,API,4853384,286,7,1,International,Spring Boot,4.3,Yes,4,2,Medium
+76,Innovate Bricks-And-Clicks Metrics Platform,Desktop,3193231,113,5,2,International,Spring Boot,3.0,No,5,0,Medium
+77,Evolve Seamless Models Platform,Web,3138361,189,8,0,International,Flutter,3.1,Yes,5,3,Medium
+78,Deliver Viral Initiatives Platform,Web,2073556,325,8,4,International,Spring Boot,2.8,Yes,2,2,High
+79,Evolve Seamless Platforms Platform,Mobile,2916163,284,10,0,Local,Spring Boot,3.4,Yes,2,2,High
+80,E-Enable Transparent Initiatives Platform,Web,3922473,107,6,0,International,React,3.6,Yes,4,2,High
+81,Deliver Real-Time Users Platform,ERP,2793654,272,10,3,Local,Laravel,3.2,No,2,1,Low
+82,Streamline Next-Generation Experiences Platform,Desktop,3980789,234,11,2,Local,Vue,3.9,No,2,3,High
+83,Grow Back-End Schemas Platform,API,3395109,230,11,4,International,Laravel,4.7,Yes,2,3,Low
+84,E-Enable Robust Metrics Platform,API,866140,222,10,5,International,Laravel,5.0,Yes,4,0,Low
+85,Aggregate Killer E-Services Platform,ML,3284973,111,10,0,International,React,3.9,No,2,0,Medium
+86,Benchmark Cross-Platform Models Platform,Desktop,3340057,263,4,2,International,Vue,3.5,No,5,0,High
+87,Enable Rich Systems Platform,Web,2469395,207,6,5,Local,Laravel,4.9,Yes,4,1,High
+88,Streamline Intuitive Convergence Platform,Desktop,742827,83,8,0,International,Vue,2.5,Yes,2,3,High
+89,Synergize Plug-And-Play Partnerships Platform,ERP,2010426,147,5,0,International,Django,3.7,No,5,1,Low
+90,Incentivize Rich Communities Platform,API,2630516,295,7,5,Local,Flutter,2.9,No,5,1,Low
+91,Whiteboard Cross-Platform Portals Platform,API,3398814,360,7,5,International,Spring Boot,2.0,No,2,3,Medium
+92,Evolve Plug-And-Play Bandwidth Platform,Web,2489825,255,12,2,International,Spring Boot,2.2,No,3,0,High
+93,Integrate Dynamic Models Platform,ERP,911412,314,7,1,International,Angular,3.5,No,2,0,High
+94,Empower Sticky E-Business Platform,ERP,830700,218,10,0,International,Spring Boot,1.5,No,3,3,Low
+95,Innovate Ubiquitous Functionalities Platform,Mobile,1608636,336,8,4,International,Flutter,1.7,No,3,2,Low
+96,Utilize Innovative Interfaces Platform,API,1131656,132,6,5,International,Flutter,4.2,No,1,3,Low
+97,Iterate Back-End Action-Items Platform,Desktop,1536737,292,8,5,International,Django,2.5,No,1,1,Medium
+98,Synergize Magnetic Web Services Platform,Web,3251516,173,4,5,International,Spring Boot,2.2,No,1,1,Low
+99,Expedite Vertical Architectures Platform,Web,3053195,312,4,0,Local,Django,1.5,No,3,3,High
+100,Scale Bricks-And-Clicks Web-Readiness Platform,ERP,1796232,272,4,3,International,Vue,1.1,No,2,3,Medium
+101,Visualize Enterprise Convergence Platform,Mobile,3542431,110,8,4,International,React,2.6,Yes,1,3,Low
+102,Incubate Holistic Info-Mediaries Platform,ERP,2279272,70,3,2,Local,Angular,4.1,Yes,1,1,High
+103,Scale Impactful E-Tailers Platform,Mobile,2454534,228,5,4,Local,Vue,4.4,Yes,2,2,Low
+104,Engage Seamless Models Platform,Web,716259,127,3,2,Local,Django,2.3,Yes,3,0,Low
+105,Orchestrate Transparent Synergies Platform,ERP,4031273,329,4,5,Local,Laravel,2.8,No,5,0,Medium
+106,Leverage Cutting-Edge Eyeballs Platform,ML,2358494,82,11,2,International,Spring Boot,4.9,Yes,4,3,Medium
+107,Brand Web-Enabled Experiences Platform,ERP,1405649,311,10,0,Local,Vue,3.4,Yes,2,2,High
+108,Syndicate Interactive Mindshare Platform,ERP,3227853,255,12,4,International,Laravel,3.0,No,1,0,High
+109,Benchmark Cross-Platform E-Markets Platform,ERP,2303744,280,10,1,International,Vue,4.3,No,4,0,Medium
+110,Repurpose Intuitive Niches Platform,API,3121637,190,8,1,International,React,1.4,Yes,1,3,Low
+111,Syndicate Bleeding-Edge Content Platform,ERP,3625988,126,11,0,International,Spring Boot,1.5,No,4,0,Medium
+112,Engage B2B Deliverables Platform,ML,3121011,240,4,4,Local,Angular,3.6,Yes,1,2,High
+113,Enable Strategic Paradigms Platform,Desktop,1463727,202,12,1,International,Flutter,3.2,Yes,5,2,Low
+114,Whiteboard 24/7 Paradigms Platform,Mobile,2792358,218,8,2,Local,Angular,4.5,No,1,1,High
+115,Monetize Out-Of-The-Box Action-Items Platform,ERP,757170,106,11,1,International,Laravel,2.8,Yes,3,2,High
+116,Empower Cross-Platform Eyeballs Platform,Desktop,1212671,86,5,1,Local,Spring Boot,1.3,No,4,3,High
+117,Repurpose Back-End Deliverables Platform,API,3974425,199,6,4,Local,Vue,2.7,No,5,3,High
+118,Transform End-To-End Web-Readiness Platform,ERP,3087209,83,6,3,Local,React,1.8,Yes,2,2,Medium
+119,Iterate Intuitive Relationships Platform,Desktop,1506501,63,10,5,International,Angular,1.5,Yes,5,2,Low
+120,Extend Cross-Media Models Platform,API,854857,283,3,3,Local,Flutter,2.3,No,5,3,High
+121,Expedite User-Centric Supply-Chains Platform,ERP,4003870,208,4,3,Local,Vue,1.7,No,3,0,Medium
+122,Seize Best-Of-Breed Niches Platform,Web,2541086,283,12,3,Local,Laravel,4.5,No,2,2,Low
+123,Envisioneer World-Class Partnerships Platform,Web,4782244,118,11,4,Local,Flutter,2.4,Yes,2,0,Low
+124,Implement Frictionless Relationships Platform,Desktop,2154835,148,12,1,Local,Angular,4.8,No,4,3,High
+125,Incentivize B2C Bandwidth Platform,ML,3211267,221,5,3,Local,Laravel,2.8,No,3,0,Medium
+126,Transform Vertical Metrics Platform,ML,1122356,218,10,3,Local,React,2.5,No,1,0,High
+127,Productize B2B Paradigms Platform,ML,4753593,256,10,4,Local,Laravel,4.6,Yes,3,3,High
+128,Seize Next-Generation Schemas Platform,Mobile,1019034,290,4,2,Local,Django,3.6,Yes,2,3,Medium
+129,Unleash Seamless E-Tailers Platform,ML,4885128,141,8,2,International,Laravel,2.6,No,5,0,High
+130,Embrace Cross-Platform Mindshare Platform,ERP,3307242,93,8,0,International,Vue,2.0,Yes,3,0,High
+131,Enhance Bleeding-Edge Models Platform,ERP,1686387,239,7,5,International,Angular,3.4,Yes,3,3,High
+132,Orchestrate Visionary Solutions Platform,Desktop,1572011,329,4,5,International,Django,2.4,No,3,1,Low
+133,Implement Enterprise Infrastructures Platform,Desktop,4579136,158,6,1,Local,React,2.2,Yes,5,0,High
+134,Re-Intermediate Web-Enabled Users Platform,Desktop,1599319,252,5,1,Local,Flutter,3.8,Yes,4,0,Medium
+135,Streamline Proactive Partnerships Platform,Desktop,2492547,287,12,2,International,Angular,3.1,No,4,1,Medium
+136,Re-Intermediate Cross-Media Applications Platform,ERP,4195998,296,7,3,International,Angular,4.3,Yes,3,0,High
+137,Seize Viral Technologies Platform,API,3613952,343,4,5,Local,Vue,1.3,Yes,3,3,High
+138,Mesh Scalable Channels Platform,Mobile,4169785,106,6,3,International,React,2.7,No,5,2,Low
+139,Enable Sticky Schemas Platform,API,1184556,251,6,0,International,React,4.4,No,2,1,Low
+140,Envisioneer Revolutionary Models Platform,Desktop,4463239,131,10,3,Local,React,1.1,Yes,2,3,Low
+141,Leverage Efficient Portals Platform,Desktop,2493470,214,4,0,Local,Laravel,3.6,No,1,0,Medium
+142,Maximize Revolutionary Solutions Platform,ML,4996745,68,11,4,Local,Spring Boot,1.6,No,1,2,Low
+143,Optimize Web-Enabled Web Services Platform,ML,3994422,155,4,4,International,React,4.8,Yes,4,3,Low
+144,Orchestrate Wireless E-Markets Platform,ERP,3745395,251,7,5,Local,Vue,4.2,No,2,0,High
+145,Re-Intermediate Interactive Technologies Platform,ERP,3289368,128,3,2,International,Flutter,3.6,No,4,1,Low
+146,Streamline 24/7 Platforms Platform,Web,4339294,78,7,1,Local,Flutter,1.8,Yes,3,2,High
+147,Enhance Sticky Architectures Platform,API,4471165,189,3,5,Local,Vue,2.4,Yes,3,2,Low
+148,Iterate 24/7 E-Commerce Platform,Desktop,4165413,264,10,3,International,Angular,3.0,No,3,2,Low
+149,Scale Next-Generation Technologies Platform,ERP,4060961,100,9,4,Local,Django,2.2,Yes,1,2,High
+150,Generate Open-Source Architectures Platform,Desktop,3071073,288,12,5,International,Angular,3.8,No,4,0,High
+151,Architect Dynamic Networks Platform,Desktop,4148545,200,3,0,International,Vue,3.1,Yes,1,1,High
+152,Incentivize Dynamic Interfaces Platform,ERP,4175660,77,5,0,Local,Flutter,3.6,No,4,0,High
+153,Transform Seamless Deliverables Platform,Mobile,4274224,249,8,3,Local,Django,1.6,No,4,2,High
+154,Repurpose Strategic Infrastructures Platform,Desktop,2593894,118,3,5,Local,Laravel,3.1,Yes,3,2,High
+155,Incubate Vertical E-Business Platform,API,2299947,206,10,1,Local,Angular,4.4,No,2,3,Low
+156,Visualize Cutting-Edge E-Business Platform,ERP,3180896,237,4,4,International,Vue,4.4,Yes,3,1,Low
+157,Empower Virtual Relationships Platform,Mobile,1664983,181,10,0,International,Django,3.3,No,5,1,High
+158,Implement 24/7 Experiences Platform,Web,1051535,218,9,5,International,Django,2.6,No,5,0,Low
+159,Disintermediate Efficient Synergies Platform,Desktop,1122141,290,10,5,International,Angular,4.5,Yes,2,3,High
+160,Transition Vertical Relationships Platform,Web,1541538,325,5,2,Local,Angular,2.3,Yes,3,2,Low
+161,Benchmark Customized Communities Platform,Desktop,2146699,342,7,1,International,Django,3.1,Yes,5,1,Low
+162,Matrix Holistic Convergence Platform,ERP,3332158,348,3,0,Local,React,4.8,No,2,3,High
+163,Repurpose Intuitive Info-Mediaries Platform,ERP,754056,314,11,2,International,Laravel,2.0,No,3,3,Low
+164,Deploy Next-Generation Metrics Platform,ERP,1002586,140,10,3,International,Laravel,1.8,Yes,3,2,High
+165,Productize Bricks-And-Clicks Interfaces Platform,Desktop,3844677,126,8,4,Local,Vue,2.0,Yes,3,3,Low
+166,Transition Mission-Critical Relationships Platform,Mobile,1312115,85,7,3,International,Angular,4.9,Yes,3,2,Low
+167,Leverage Best-Of-Breed Systems Platform,Mobile,4679754,323,10,3,International,Laravel,1.1,No,5,3,Low
+168,Monetize Dynamic Content Platform,Mobile,3460298,84,3,2,International,Django,4.5,No,3,0,Low
+169,Engage E-Business Supply-Chains Platform,API,1623527,195,8,3,International,React,2.6,Yes,3,2,Low
+170,Aggregate Plug-And-Play Solutions Platform,API,4730001,290,11,2,Local,Angular,4.9,No,3,2,High
+171,Productize Cutting-Edge Platforms Platform,Desktop,1710202,161,12,4,International,Django,1.2,Yes,2,2,Medium
+172,Utilize Compelling Platforms Platform,ML,4333497,136,12,4,Local,Vue,4.7,No,2,3,High
+173,Productize Magnetic Communities Platform,ERP,3010159,232,11,4,International,Spring Boot,3.3,No,1,2,Medium
+174,Brand Holistic Initiatives Platform,ERP,1419429,273,12,2,Local,Django,2.9,Yes,1,3,Low
+175,Matrix Value-Added Users Platform,ML,3689267,135,6,0,Local,Angular,1.1,No,4,1,Medium
+176,Orchestrate Enterprise Interfaces Platform,ERP,2210367,270,11,4,International,Flutter,4.4,Yes,2,1,High
+177,Deploy B2C Bandwidth Platform,Desktop,4512866,329,9,2,Local,Laravel,4.6,No,5,2,High
+178,E-Enable Interactive Eyeballs Platform,ERP,2717630,307,6,1,International,Django,2.2,No,3,1,High
+179,Transform Virtual Networks Platform,ERP,4602055,222,10,2,International,Vue,1.5,No,4,2,Low
+180,Disintermediate Revolutionary E-Business Platform,Desktop,852879,207,4,2,International,Spring Boot,2.0,No,2,1,High
+181,Seize Mission-Critical Schemas Platform,Desktop,2778526,130,4,4,Local,Angular,1.2,Yes,2,0,Low
+182,Re-Intermediate Viral Paradigms Platform,API,3270703,301,4,5,Local,React,4.9,Yes,4,3,Medium
+183,Grow Innovative Interfaces Platform,ERP,2173157,207,8,2,Local,Flutter,1.4,Yes,5,0,Low
+184,Reinvent Out-Of-The-Box Interfaces Platform,API,1974622,78,9,3,Local,Spring Boot,4.8,No,1,0,Medium
+185,Enable Turn-Key Schemas Platform,ML,1400103,231,7,3,International,Angular,4.4,No,3,1,Low
+186,Iterate Distributed Communities Platform,Desktop,1863100,294,7,5,Local,React,3.9,No,5,1,Low
+187,Target Cross-Platform Web-Readiness Platform,ML,3901499,278,11,2,Local,Laravel,3.7,Yes,2,3,Medium
+188,Integrate Leading-Edge Metrics Platform,Mobile,557295,193,9,1,International,Flutter,2.1,No,3,0,Medium
+189,Deliver Turn-Key Niches Platform,ERP,3516141,180,3,5,Local,Laravel,2.2,No,5,2,High
+190,Aggregate Value-Added Experiences Platform,Web,2974954,248,12,1,Local,Angular,2.9,No,5,2,Medium
+191,Evolve Killer Networks Platform,ERP,4449592,335,6,1,Local,Django,2.8,No,1,0,Low
+192,Matrix Value-Added Markets Platform,ML,4740332,163,12,4,Local,Angular,2.3,No,1,1,High
+193,Revolutionize Bricks-And-Clicks Deliverables Platform,ML,4600586,106,11,3,Local,Laravel,1.5,No,4,0,High
+194,Productize 24/7 Markets Platform,API,3085113,71,9,2,Local,Spring Boot,1.9,Yes,1,3,Medium
+195,Matrix Innovative E-Business Platform,ERP,1034856,337,3,0,International,React,2.1,Yes,2,3,Medium
+196,Scale Sticky Mindshare Platform,API,4262602,253,9,0,Local,Spring Boot,4.4,Yes,2,3,High
+197,Envisioneer Next-Generation Experiences Platform,Mobile,2368060,61,3,2,International,Spring Boot,3.9,No,5,3,Low
+198,Incentivize Bleeding-Edge E-Services Platform,Mobile,4364004,237,5,2,Local,Spring Boot,4.1,Yes,4,0,Low
+199,Disintermediate B2B Schemas Platform,Mobile,1064477,111,12,0,International,Django,3.7,Yes,2,0,Medium
+200,Re-Intermediate Compelling Users Platform,API,2465780,336,6,0,Local,Django,5.0,Yes,5,2,High
+201,Morph Frictionless Vortals Platform,ML,3189933,181,7,1,Local,Laravel,2.2,Yes,5,1,High
+202,Deploy World-Class E-Business Platform,ERP,4083618,344,10,0,International,Spring Boot,3.7,No,4,3,Low
+203,Repurpose Efficient Action-Items Platform,Desktop,3657976,154,11,3,Local,Flutter,1.9,Yes,4,0,High
+204,Generate E-Business Communities Platform,API,3993921,345,11,1,International,Angular,2.0,No,1,3,Medium
+205,Engage E-Business Eyeballs Platform,Web,4993236,157,3,2,International,Spring Boot,3.4,Yes,1,1,High
+206,Transform Dot-Com E-Services Platform,ERP,2320466,305,6,2,International,React,1.8,Yes,1,3,Low
+207,Repurpose Compelling Roi Platform,ERP,2215580,263,6,4,International,Flutter,2.1,No,5,2,Medium
+208,Expedite Turn-Key Niches Platform,Desktop,3516917,322,10,3,Local,Flutter,4.9,No,3,1,Medium
+209,Scale Open-Source Experiences Platform,Desktop,3972297,83,12,1,Local,React,2.0,No,3,1,Low
+210,Innovate Real-Time Technologies Platform,Desktop,2429536,254,12,1,International,Django,3.6,No,3,3,High
+211,Visualize Granular Schemas Platform,ERP,4615414,295,5,5,International,Angular,1.6,No,2,0,High
+212,Morph Revolutionary Experiences Platform,Web,1123528,84,3,3,Local,Flutter,3.5,Yes,2,0,Low
+213,Enhance Global Channels Platform,ML,4325286,251,3,4,International,Spring Boot,3.0,Yes,5,3,Low
+214,Productize Back-End Vortals Platform,Web,4941077,200,11,2,Local,Django,4.3,No,2,0,Low
+215,Morph Mission-Critical Relationships Platform,ML,1749042,183,6,4,International,Flutter,2.4,No,1,2,Medium
+216,Transform Cross-Platform Mindshare Platform,API,2540175,175,7,5,Local,Spring Boot,5.0,Yes,1,3,Medium
+217,Scale Cutting-Edge Bandwidth Platform,API,4493020,88,3,5,Local,React,3.0,No,3,0,High
+218,Iterate Synergistic Web Services Platform,Web,2427421,168,12,3,International,React,4.7,No,5,0,Low
+219,Incentivize Robust Communities Platform,Desktop,631349,166,12,1,International,React,2.2,Yes,5,3,High
+220,Harness Visionary Content Platform,ML,3282751,256,5,5,Local,Django,4.0,No,1,0,Medium
+221,Engage One-To-One Schemas Platform,Mobile,1137687,234,12,4,International,Flutter,2.3,No,4,3,Low
+222,Scale Enterprise Portals Platform,Desktop,3649309,281,5,5,International,React,4.1,No,2,0,Low
+223,Leverage Turn-Key Interfaces Platform,Desktop,1793699,254,5,5,International,Vue,2.4,Yes,1,2,Medium
+224,Streamline Strategic Portals Platform,Desktop,2762964,112,5,0,Local,Laravel,2.8,No,1,0,Low
+225,Productize Robust Relationships Platform,Desktop,1280679,226,9,0,International,Laravel,2.6,Yes,5,1,High
+226,Re-Intermediate Enterprise Paradigms Platform,ML,1922564,254,5,1,International,Vue,2.1,Yes,1,1,Medium
+227,Seize Enterprise Models Platform,Desktop,4032462,213,10,0,International,Vue,4.8,No,5,1,Medium
+228,Enhance Best-Of-Breed Web-Readiness Platform,Web,1636568,215,3,3,International,Flutter,3.5,No,4,2,Medium
+229,Generate Vertical Vortals Platform,ERP,1641894,213,8,4,Local,Laravel,2.3,No,3,2,High
+230,Benchmark 24/365 Info-Mediaries Platform,ERP,4618867,354,6,2,International,Vue,4.3,No,3,0,High
+231,Facilitate Out-Of-The-Box Portals Platform,Mobile,2009338,341,3,5,International,Spring Boot,1.8,No,1,3,High
+232,Innovate World-Class Methodologies Platform,API,1667519,215,6,2,Local,Spring Boot,2.7,No,1,3,High
+233,Enable Revolutionary Web-Readiness Platform,API,3862196,333,11,5,International,Django,1.1,No,5,0,Low
+234,Envisioneer Best-Of-Breed Schemas Platform,Mobile,3478029,145,12,0,International,Flutter,2.3,No,1,0,Low
+235,Deploy Mission-Critical Infrastructures Platform,Desktop,2362280,321,11,4,Local,Laravel,2.5,No,5,1,Medium
+236,Disintermediate Clicks-And-Mortar Vortals Platform,Web,4549777,113,7,3,Local,React,4.3,Yes,3,2,Medium
+237,Incubate Cross-Media Solutions Platform,API,2235328,326,10,2,International,React,2.8,No,3,0,Medium
+238,Maximize Next-Generation Channels Platform,Web,1465405,71,8,5,Local,Spring Boot,4.2,Yes,5,1,High
+239,Exploit Real-Time Markets Platform,Mobile,3276542,346,9,3,Local,Flutter,2.6,Yes,2,3,Medium
+240,Disintermediate Integrated Info-Mediaries Platform,Web,2155277,290,12,3,International,React,3.8,Yes,3,0,High
+241,Re-Contextualize Seamless Info-Mediaries Platform,Web,2068332,247,8,1,International,React,2.0,No,5,2,High
+242,Unleash 24/7 Niches Platform,API,3792897,360,4,2,International,Flutter,2.8,Yes,3,0,High
+243,Seize Out-Of-The-Box Schemas Platform,Mobile,3127192,120,6,2,Local,Angular,2.5,Yes,5,3,Medium
+244,Syndicate Seamless Experiences Platform,ML,1656514,354,9,3,Local,Laravel,3.5,Yes,5,1,Medium
+245,Architect 24/365 Supply-Chains Platform,Desktop,1676892,155,8,3,Local,Flutter,2.4,Yes,4,1,Low
+246,Implement Viral Models Platform,API,4739921,313,9,5,International,Laravel,3.8,No,4,1,Low
+247,Generate Best-Of-Breed Web Services Platform,ML,758878,172,7,0,International,Angular,3.2,Yes,4,3,High
+248,Whiteboard Web-Enabled Initiatives Platform,ML,1449682,353,4,2,International,Django,4.3,Yes,4,1,Medium
+249,Architect Distributed Supply-Chains Platform,Web,2576445,212,3,3,International,Vue,4.4,Yes,4,0,Low
+250,Leverage Wireless Users Platform,Mobile,3441304,279,5,4,Local,Flutter,1.8,Yes,1,2,High
+251,Whiteboard Customized E-Markets Platform,Desktop,1912451,225,7,2,International,Flutter,3.1,Yes,2,3,Low
+252,Disintermediate Revolutionary Architectures Platform,Desktop,1564415,127,6,1,International,Flutter,2.0,No,4,1,High
+253,Monetize Ubiquitous Paradigms Platform,ERP,2754162,272,9,3,Local,Spring Boot,4.2,Yes,4,2,High
+254,Innovate Scalable Channels Platform,Desktop,4314263,309,8,4,Local,Flutter,4.1,Yes,4,2,Low
+255,Empower E-Business Initiatives Platform,ML,3836282,171,9,1,International,Vue,2.3,No,3,1,High
+256,Scale Bleeding-Edge Web-Readiness Platform,API,3383496,84,3,0,International,React,1.5,Yes,4,3,Low
+257,Synthesize User-Centric Bandwidth Platform,API,2197168,127,7,1,International,React,3.6,No,1,2,High
+258,Re-Contextualize Innovative Synergies Platform,ERP,1888525,86,9,5,International,Spring Boot,3.8,Yes,4,0,High
+259,Strategize Transparent Communities Platform,Web,509112,169,10,0,Local,Django,1.9,No,1,0,High
+260,Repurpose User-Centric Platforms Platform,Desktop,1511613,276,5,3,Local,Angular,2.5,Yes,1,2,Medium
+261,Unleash Interactive Functionalities Platform,Desktop,1650323,255,5,5,Local,React,3.1,Yes,5,1,Medium
+262,Revolutionize Efficient E-Tailers Platform,Desktop,2287238,137,9,4,International,Flutter,1.9,Yes,2,0,High
+263,Deploy Revolutionary Action-Items Platform,ERP,3721493,239,9,2,Local,Angular,2.1,Yes,2,2,High
+264,Target Compelling Functionalities Platform,Web,3030418,165,11,4,Local,Spring Boot,2.6,Yes,2,3,Medium
+265,Cultivate Visionary E-Markets Platform,Web,2522340,315,12,0,Local,Vue,4.7,Yes,4,3,Medium
+266,Aggregate Innovative Info-Mediaries Platform,ML,1949302,301,4,0,Local,React,2.0,Yes,1,3,High
+267,Syndicate Scalable Web-Readiness Platform,Desktop,4703103,272,9,5,International,React,3.6,Yes,3,0,Medium
+268,Enhance Web-Enabled Communities Platform,Web,4789134,164,5,4,International,Laravel,3.3,Yes,3,3,High
+269,Deploy Dynamic Content Platform,Mobile,985750,185,4,3,Local,Laravel,3.4,Yes,3,1,Low
+270,Re-Intermediate Seamless Partnerships Platform,Web,1651015,65,5,3,International,Django,3.1,No,2,2,Low
+271,Drive Cross-Platform E-Business Platform,ERP,2754559,120,3,2,International,Vue,3.1,No,5,0,Medium
+272,Visualize Global Mindshare Platform,API,4784748,244,3,3,Local,Vue,1.6,Yes,5,0,Low
+273,Deliver Dot-Com E-Markets Platform,ERP,4768332,61,3,0,Local,React,2.9,No,2,1,Low
+274,Engage Turn-Key Mindshare Platform,ML,4017924,174,8,1,International,Spring Boot,2.3,Yes,5,2,Low
+275,Morph Collaborative Partnerships Platform,ML,941846,151,6,4,Local,Laravel,1.3,No,3,2,Medium
+276,Expedite Best-Of-Breed Synergies Platform,Web,4331464,64,8,1,International,Django,4.1,Yes,4,2,High
+277,Enable Open-Source Infrastructures Platform,API,2139322,339,6,1,Local,Laravel,1.1,No,1,2,Low
+278,Aggregate Wireless Web-Readiness Platform,ERP,3656422,217,4,1,Local,Laravel,3.0,Yes,2,2,Low
+279,Integrate Integrated Infrastructures Platform,Web,2441732,326,9,5,International,Laravel,4.9,Yes,5,0,High
+280,Whiteboard Visionary Partnerships Platform,Mobile,3808058,98,12,4,Local,Laravel,3.6,Yes,2,2,Medium
+281,Orchestrate Open-Source Functionalities Platform,Desktop,3796325,227,8,3,International,Angular,1.3,Yes,2,0,Low
+282,Architect Bricks-And-Clicks E-Services Platform,Web,1878877,290,10,2,International,React,3.1,Yes,4,2,Medium
+283,Enhance User-Centric Networks Platform,Desktop,1505907,106,5,5,International,Flutter,3.8,Yes,2,2,Low
+284,Enhance Seamless E-Markets Platform,Web,2582210,242,9,4,Local,Spring Boot,2.2,Yes,1,3,Medium
+285,Unleash B2C Web Services Platform,ML,2595915,108,10,0,Local,React,1.0,Yes,2,1,Medium
+286,Orchestrate Transparent Models Platform,Desktop,1204973,358,12,2,Local,React,5.0,Yes,4,1,Low
+287,Revolutionize Rich Markets Platform,Desktop,1527836,81,10,0,Local,Django,2.7,No,4,0,Medium
+288,Target Enterprise Solutions Platform,ERP,4079117,148,8,1,Local,Vue,2.1,Yes,1,1,High
+289,Monetize Dot-Com Niches Platform,Desktop,4685006,270,11,3,Local,React,2.1,Yes,4,1,High
+290,Strategize Dot-Com Experiences Platform,ML,2590002,338,3,3,International,Laravel,3.2,No,3,2,Medium
+291,Strategize Robust Models Platform,Desktop,2008404,73,8,4,Local,React,4.6,No,1,3,High
+292,Harness Efficient Infrastructures Platform,Desktop,2452550,141,4,1,Local,Vue,3.1,Yes,2,3,Medium
+293,Productize Holistic Solutions Platform,Mobile,1977236,181,12,2,International,Django,1.1,No,5,1,High
+294,Empower Innovative Synergies Platform,Mobile,4629097,337,7,1,International,React,1.4,Yes,5,1,Low
+295,Re-Contextualize Dynamic Methodologies Platform,ML,4509662,60,8,4,Local,Flutter,1.5,Yes,3,0,Low
+296,Deliver Open-Source E-Services Platform,Mobile,1688268,116,11,2,Local,Vue,3.8,No,5,0,Medium
+297,Orchestrate Sticky Web-Readiness Platform,Desktop,3206191,129,5,5,International,Flutter,3.6,No,3,1,High
+298,Leverage Customized Web-Readiness Platform,ML,3493269,174,12,1,International,Vue,3.9,No,2,1,High
+299,Integrate Compelling Technologies Platform,Web,3784990,350,3,1,International,Flutter,4.9,Yes,5,0,Medium
+300,Seize User-Centric Action-Items Platform,Mobile,3278042,99,6,2,International,Angular,3.5,Yes,3,3,Low
+301,Transition Intuitive Info-Mediaries Platform,Desktop,2258959,187,4,2,International,Flutter,1.4,Yes,1,3,Medium
+302,Drive Wireless Niches Platform,ERP,4020306,145,9,3,International,Vue,3.2,Yes,4,1,Low
+303,Brand Viral Functionalities Platform,API,1118319,77,7,0,International,Vue,4.8,Yes,3,1,Medium
+304,Engage Holistic Convergence Platform,Mobile,1129165,340,4,2,International,Spring Boot,1.1,Yes,5,3,Low
+305,Embrace B2C Info-Mediaries Platform,Web,1349412,229,6,1,International,Spring Boot,3.2,No,3,2,Low
+306,Transform Dot-Com Initiatives Platform,Web,916372,261,12,4,International,Angular,1.2,Yes,4,0,Medium
+307,Whiteboard Visionary E-Markets Platform,ERP,4529286,162,4,0,Local,Angular,3.6,Yes,4,0,Medium
+308,Re-Contextualize Value-Added Infrastructures Platform,API,4450568,310,7,0,International,Angular,2.5,No,3,1,Medium
+309,Syndicate Bricks-And-Clicks E-Services Platform,Web,2708686,285,10,2,Local,Flutter,2.1,Yes,2,0,Low
+310,Leverage 24/7 Markets Platform,ERP,3383931,337,9,4,Local,Django,1.2,No,5,3,High
+311,Grow Frictionless Web Services Platform,ERP,4483115,353,6,3,International,React,2.6,Yes,5,1,Low
+312,Whiteboard Back-End Bandwidth Platform,API,1950213,145,6,1,Local,React,2.7,No,2,1,High
+313,Aggregate Ubiquitous Supply-Chains Platform,Desktop,3182253,94,4,3,International,Django,2.3,No,5,3,Low
+314,Streamline Revolutionary Roi Platform,ERP,4883567,274,4,3,Local,Angular,3.3,Yes,1,0,Medium
+315,Maximize Extensible Applications Platform,ML,3384583,270,7,3,International,Django,3.4,Yes,2,2,Medium
+316,Evolve Distributed E-Markets Platform,Mobile,3869870,79,9,2,Local,React,4.0,No,3,0,Medium
+317,Syndicate Granular Info-Mediaries Platform,Desktop,3108431,203,10,5,Local,Flutter,1.9,No,4,2,Medium
+318,Productize Customized Deliverables Platform,ERP,3996143,105,6,3,Local,Flutter,2.6,No,5,2,Low
+319,Incubate Open-Source Communities Platform,ML,1833557,93,7,5,International,Angular,4.1,Yes,2,1,Low
+320,Reinvent Magnetic Web Services Platform,Web,2592876,76,10,0,International,Spring Boot,1.8,No,4,3,High
+321,Reinvent Turn-Key Partnerships Platform,Web,756382,183,8,3,International,Angular,4.8,No,5,2,Medium
+322,Embrace Innovative Solutions Platform,Mobile,2669796,106,7,0,International,React,1.7,Yes,2,1,High
+323,Scale Impactful E-Business Platform,Mobile,2757236,269,11,0,Local,Laravel,4.6,Yes,5,0,Low
+324,Revolutionize 24/365 Networks Platform,Desktop,3062381,200,9,3,International,Laravel,2.0,No,3,3,High
+325,Generate Plug-And-Play Supply-Chains Platform,Web,561635,321,8,4,International,Vue,3.7,No,1,2,Medium
+326,Morph E-Business Deliverables Platform,ERP,3227447,201,7,5,International,Angular,1.6,Yes,1,3,High
+327,Synergize Interactive E-Markets Platform,Desktop,1673813,73,10,2,International,Laravel,2.6,Yes,5,1,Medium
+328,Integrate Bricks-And-Clicks Channels Platform,ERP,2365317,333,10,5,International,Django,2.2,Yes,5,1,Medium
+329,Scale B2C Metrics Platform,Web,4449196,125,7,5,Local,Spring Boot,4.6,Yes,2,2,Low
+330,Implement Cutting-Edge Partnerships Platform,ERP,3076017,275,8,2,International,Django,2.2,Yes,4,0,High
+331,Optimize Clicks-And-Mortar Experiences Platform,ML,1097400,301,6,4,Local,Flutter,3.7,No,4,0,Low
+332,Incentivize Mission-Critical Applications Platform,Mobile,2180209,235,9,4,International,Angular,2.3,Yes,1,3,Medium
+333,Enhance Dynamic Paradigms Platform,ERP,1983309,220,3,0,International,Vue,1.8,Yes,5,1,Medium
+334,Target Back-End Deliverables Platform,Web,1585535,282,9,3,International,Laravel,2.5,Yes,5,1,High
+335,Iterate Granular Portals Platform,Desktop,618087,224,11,1,Local,Spring Boot,1.0,Yes,2,2,Medium
+336,Deploy 24/365 E-Tailers Platform,Mobile,1361579,256,11,4,International,Angular,1.3,Yes,3,2,Medium
+337,Repurpose Intuitive E-Commerce Platform,ERP,4864495,328,8,3,Local,Vue,5.0,No,3,1,Low
+338,Re-Intermediate 24/365 Initiatives Platform,API,660429,176,6,5,Local,Angular,3.9,Yes,1,2,High
+339,Disintermediate Innovative Supply-Chains Platform,ERP,813427,252,7,4,Local,Django,5.0,Yes,1,0,High
+340,Monetize Synergistic Models Platform,Web,3996166,287,9,0,International,Laravel,3.8,Yes,1,2,Medium
+341,Generate Cross-Media Roi Platform,ERP,1347080,326,7,4,Local,Laravel,4.3,Yes,5,0,Medium
+342,Generate Turn-Key Supply-Chains Platform,Web,1391404,314,6,4,Local,Flutter,2.1,Yes,3,3,Medium
+343,Repurpose Seamless Web Services Platform,Mobile,830559,340,10,1,International,Vue,1.9,Yes,1,0,High
+344,Transition Next-Generation Niches Platform,ERP,4644845,136,4,4,Local,Spring Boot,3.9,No,2,3,Medium
+345,Orchestrate Proactive Applications Platform,Desktop,4394640,85,4,1,Local,Flutter,2.2,No,4,0,Low
+346,Benchmark Open-Source Functionalities Platform,Web,581137,130,5,2,International,Laravel,4.8,No,1,2,Medium
+347,Implement Cutting-Edge Synergies Platform,Mobile,1454892,265,9,3,International,Flutter,2.5,No,4,1,Low
+348,Incubate Collaborative Eyeballs Platform,Mobile,991961,141,4,3,International,Flutter,3.3,No,2,3,Medium
+349,E-Enable Innovative Content Platform,ML,741728,126,10,3,Local,Laravel,2.8,Yes,3,2,Low
+350,Redefine Revolutionary Info-Mediaries Platform,ERP,4902491,355,12,1,International,Django,3.1,Yes,4,1,Medium
+351,Unleash Rich E-Business Platform,Desktop,3728579,136,11,4,Local,React,3.6,Yes,5,3,Medium
+352,Implement Scalable Deliverables Platform,Mobile,1128015,311,8,1,International,Vue,1.2,Yes,5,3,Medium
+353,Leverage Rich Experiences Platform,Mobile,1161278,295,10,4,International,React,4.4,No,3,0,Medium
+354,Harness End-To-End Experiences Platform,ERP,649058,112,9,3,Local,Django,3.2,Yes,5,2,High
+355,Monetize 24/7 Mindshare Platform,ML,2235194,293,8,2,Local,Flutter,1.9,No,3,3,High
+356,Implement Impactful Infrastructures Platform,ERP,3547535,291,4,0,Local,React,2.4,No,5,2,High
+357,Unleash Transparent Communities Platform,Web,884014,144,10,1,International,React,2.0,Yes,2,0,Medium
+358,Synergize End-To-End Metrics Platform,Mobile,4333979,157,8,0,International,React,4.7,Yes,4,3,High
+359,Orchestrate World-Class Roi Platform,ML,4729515,128,10,0,Local,Django,4.7,No,5,1,High
+360,Synergize One-To-One Info-Mediaries Platform,ML,1956684,125,4,3,International,Django,4.5,No,5,1,Medium
+361,E-Enable Killer Vortals Platform,API,3376108,210,10,1,Local,Laravel,3.4,No,5,2,High
+362,Facilitate Collaborative Vortals Platform,ERP,2323201,162,6,4,International,Spring Boot,2.4,Yes,2,2,High
+363,Productize Scalable Platforms Platform,Web,3454784,347,10,4,International,Spring Boot,4.0,No,4,0,High
+364,Matrix Enterprise Paradigms Platform,Web,711998,255,5,0,Local,Angular,2.1,Yes,3,2,Low
+365,Harness Mission-Critical Niches Platform,Web,2975818,164,11,0,International,Flutter,2.8,Yes,5,3,Low
+366,Architect Extensible Platforms Platform,ML,2912887,84,9,3,International,Flutter,4.9,No,5,0,Low
+367,Innovate Global Channels Platform,ERP,2608402,163,12,3,Local,Spring Boot,3.8,No,5,1,High
+368,Transform Virtual Solutions Platform,Mobile,2967741,289,5,5,Local,Angular,4.8,Yes,4,0,Medium
+369,Seize World-Class Architectures Platform,Desktop,2716602,126,5,4,International,React,2.3,Yes,1,1,Medium
+370,Whiteboard Holistic Solutions Platform,ML,926606,214,10,4,International,React,4.1,No,5,1,Low
+371,Exploit Leading-Edge Experiences Platform,ML,1071905,318,5,3,International,React,2.4,Yes,3,2,Medium
+372,Visualize Best-Of-Breed Applications Platform,Desktop,2332451,331,10,4,Local,React,3.7,No,2,1,Low
+373,Visualize Front-End Niches Platform,ERP,3192214,255,4,3,International,Django,3.9,Yes,5,2,High
+374,Transition Best-Of-Breed E-Services Platform,ML,4237602,309,3,2,Local,Vue,3.1,Yes,2,0,High
+375,Strategize Proactive Networks Platform,Web,2268163,169,9,0,Local,Django,4.3,No,1,1,Low
+376,Matrix Extensible Schemas Platform,API,3282630,79,4,0,Local,Angular,4.2,Yes,5,1,Medium
+377,Harness Sticky Networks Platform,API,3755053,290,9,3,International,React,2.6,Yes,5,0,High
+378,Facilitate Vertical E-Markets Platform,ERP,1030475,359,3,5,Local,Vue,4.7,Yes,3,2,High
+379,Incentivize Distributed Web-Readiness Platform,Web,2861539,284,9,3,Local,Laravel,1.6,Yes,2,3,High
+380,Utilize End-To-End Web Services Platform,Desktop,1708593,212,8,0,Local,React,1.2,No,5,0,Medium
+381,Aggregate Out-Of-The-Box Niches Platform,Mobile,3384436,168,9,5,Local,Angular,1.7,No,2,0,Low
+382,Synergize Bleeding-Edge Convergence Platform,ERP,956242,341,10,5,Local,Vue,3.7,No,1,1,High
+383,Generate Vertical Content Platform,ML,4586849,229,8,1,Local,React,2.1,Yes,2,2,Medium
+384,Engage Scalable Users Platform,API,3254366,216,12,1,International,Flutter,2.3,No,2,0,Medium
+385,Optimize Best-Of-Breed Infrastructures Platform,Mobile,2358292,283,7,2,Local,Spring Boot,3.9,No,4,3,Medium
+386,Innovate Vertical Schemas Platform,Desktop,4585012,342,4,1,Local,Flutter,2.1,Yes,5,1,Medium
+387,Engage 24/365 Convergence Platform,ERP,1141412,98,3,4,Local,Flutter,3.3,No,5,1,Low
+388,Visualize Dot-Com Channels Platform,ML,2686208,338,11,3,Local,Vue,2.6,No,2,3,High
+389,Revolutionize Intuitive E-Tailers Platform,ML,1259622,263,8,4,Local,Spring Boot,2.0,Yes,5,1,Medium
+390,Enhance Interactive Initiatives Platform,Mobile,2002778,349,12,5,Local,Spring Boot,3.9,No,1,1,Medium
+391,Generate Extensible Platforms Platform,Mobile,1027317,195,8,1,Local,Spring Boot,1.8,No,4,3,Medium
+392,Reinvent Extensible Eyeballs Platform,Web,834744,225,4,5,International,Flutter,4.0,Yes,4,3,Medium
+393,Syndicate Killer Synergies Platform,ML,1152948,324,7,3,Local,Django,2.6,No,4,3,High
+394,Enhance Efficient Infrastructures Platform,Web,4709713,131,10,1,Local,React,3.1,No,2,1,Low
+395,Revolutionize User-Centric Applications Platform,Mobile,3538546,120,6,3,International,Spring Boot,1.5,No,4,1,High
+396,Grow Back-End E-Commerce Platform,Mobile,3946872,71,6,0,Local,Django,3.4,Yes,5,0,High
+397,Utilize Impactful Models Platform,Mobile,969023,145,7,1,International,Django,4.9,Yes,3,0,Low
+398,Disintermediate Web-Enabled Models Platform,API,4454502,306,5,1,International,Django,1.6,Yes,5,2,Low
+399,Enhance Dot-Com Vortals Platform,ERP,3374534,292,12,4,Local,Angular,2.5,Yes,1,0,Low
+400,E-Enable Integrated Roi Platform,ML,4730874,274,5,4,Local,Angular,2.9,Yes,5,0,Low
+401,Facilitate Visionary Technologies Platform,API,1593277,336,3,5,International,Django,2.7,Yes,5,3,Low
+402,Orchestrate Vertical Deliverables Platform,API,3698043,239,12,5,Local,Laravel,1.5,No,2,0,Medium
+403,Extend World-Class Info-Mediaries Platform,ML,3927977,191,6,0,Local,Django,3.1,Yes,4,1,High
+404,Target Best-Of-Breed Supply-Chains Platform,Desktop,3929641,245,4,1,International,Spring Boot,3.3,No,5,3,High
+405,Matrix Global E-Tailers Platform,Desktop,2811569,263,6,3,International,Angular,2.5,No,3,2,High
+406,Architect Virtual Relationships Platform,Desktop,3839754,130,4,5,Local,Laravel,4.1,Yes,1,1,High
+407,Scale Enterprise Applications Platform,API,3339022,341,12,5,Local,Angular,2.6,Yes,1,1,Medium
+408,Whiteboard Bricks-And-Clicks Deliverables Platform,ML,4152210,105,4,2,Local,Vue,1.3,Yes,4,3,High
+409,Optimize Synergistic Partnerships Platform,ERP,4870511,206,12,0,Local,Spring Boot,3.0,Yes,2,2,Low
+410,Monetize Clicks-And-Mortar Synergies Platform,Web,4782785,324,6,4,Local,Spring Boot,1.1,Yes,1,1,Low
+411,Maximize Best-Of-Breed Mindshare Platform,Desktop,3850692,240,9,3,Local,Django,1.1,Yes,1,2,High
+412,Envisioneer B2B Architectures Platform,ML,3420034,237,7,1,Local,Laravel,4.7,Yes,3,1,Medium
+413,Redefine Collaborative Deliverables Platform,ML,1393092,346,4,4,International,Vue,4.8,No,5,2,High
+414,Facilitate E-Business Markets Platform,API,3663178,348,10,1,International,Flutter,2.8,No,5,0,Medium
+415,Matrix B2B Synergies Platform,Web,2662748,94,9,5,Local,Spring Boot,3.8,No,4,2,High
+416,Deploy Compelling Markets Platform,ML,581564,194,6,2,Local,Laravel,3.7,No,1,1,Medium
+417,Incubate Vertical Solutions Platform,Desktop,3465691,171,12,2,Local,Spring Boot,3.7,Yes,4,1,Low
+418,Morph Killer Users Platform,ERP,2530517,195,6,1,Local,Flutter,2.0,No,2,0,Low
+419,Grow Distributed Partnerships Platform,Web,4632772,63,11,0,International,Vue,3.5,No,5,2,Medium
+420,Generate One-To-One Systems Platform,Mobile,4787699,203,9,1,Local,React,3.1,No,4,0,High
+421,Optimize B2B Solutions Platform,Desktop,3802736,149,10,0,International,Vue,3.8,Yes,2,3,High
+422,Repurpose Holistic Metrics Platform,Web,3229956,245,12,2,Local,Django,2.1,No,4,2,Medium
+423,Disintermediate Bricks-And-Clicks Action-Items Platform,Mobile,4683986,277,6,3,International,Vue,4.4,No,4,1,High
+424,Mesh Open-Source Partnerships Platform,Mobile,2417356,111,7,1,International,Flutter,2.5,Yes,2,3,Low
+425,Re-Intermediate Plug-And-Play Web Services Platform,Mobile,4035971,315,5,5,International,Flutter,2.9,No,5,0,Medium
+426,Re-Intermediate 24/7 Portals Platform,Web,1870211,90,6,2,International,Flutter,3.5,No,3,2,Medium
+427,Deploy Customized Metrics Platform,Desktop,2661868,236,3,3,Local,Vue,4.5,Yes,5,1,Medium
+428,Visualize Clicks-And-Mortar Roi Platform,Desktop,3227054,321,10,5,International,React,2.5,No,4,1,Low
+429,Engage Cross-Platform Methodologies Platform,ERP,3330218,275,12,4,International,Flutter,4.6,Yes,2,2,Low
+430,Maximize Value-Added Bandwidth Platform,Desktop,3158167,209,7,4,International,Vue,4.6,No,5,3,Medium
+431,Implement Rich Convergence Platform,Mobile,2042549,71,5,5,Local,Spring Boot,2.0,Yes,2,1,Medium
+432,Generate Web-Enabled Users Platform,Web,1301562,92,10,4,Local,React,4.1,Yes,1,2,High
+433,Enable Visionary Users Platform,Mobile,1207254,259,7,1,Local,Spring Boot,2.1,Yes,2,1,Low
+434,Revolutionize E-Business Synergies Platform,Web,3493401,226,10,3,International,Django,2.8,Yes,5,3,High
+435,Brand 24/365 Action-Items Platform,ERP,4148854,328,11,2,International,Laravel,3.2,Yes,4,2,Medium
+436,Embrace Efficient E-Markets Platform,API,2679419,139,7,0,Local,Django,4.3,Yes,3,2,Medium
+437,Transform Web-Enabled Eyeballs Platform,ML,569768,311,10,2,Local,Flutter,2.7,No,5,1,Low
+438,Generate Ubiquitous Applications Platform,ML,3634352,156,9,4,International,Laravel,2.0,No,4,1,Medium
+439,Morph Web-Enabled Users Platform,Web,4042000,182,11,4,International,Vue,3.6,No,4,1,Low
+440,Empower Strategic Applications Platform,Mobile,1646085,208,4,5,International,Django,2.8,No,2,2,Low
+441,Incentivize Front-End Technologies Platform,Mobile,916343,333,3,1,Local,Vue,2.1,No,1,1,Low
+442,Whiteboard Revolutionary E-Tailers Platform,Mobile,623520,312,6,2,International,Vue,4.1,No,3,3,High
+443,Target User-Centric Infrastructures Platform,Web,3270326,101,5,0,International,Flutter,2.6,No,2,1,Medium
+444,Matrix Mission-Critical Users Platform,API,605826,122,6,3,International,Angular,4.0,Yes,2,3,High
+445,Syndicate Customized Users Platform,Web,4871631,166,10,3,International,Vue,1.6,Yes,5,0,Medium
+446,Architect User-Centric Web Services Platform,API,3006625,161,8,0,Local,React,1.9,No,3,0,Low
+447,Monetize Robust Infrastructures Platform,Desktop,1503693,262,6,0,Local,Django,4.1,No,5,1,Medium
+448,Aggregate Integrated Action-Items Platform,Web,2586433,140,10,0,International,Flutter,3.5,Yes,3,1,High
+449,Transition Next-Generation Metrics Platform,ML,1400866,124,10,1,International,Django,4.2,No,4,1,Low
+450,Synergize Rich E-Markets Platform,ERP,3668955,243,5,2,Local,Laravel,3.8,No,5,3,Low
+451,Productize End-To-End Solutions Platform,ML,2065538,338,8,2,International,Vue,4.5,Yes,1,1,Medium
+452,Iterate Collaborative Roi Platform,Desktop,2709133,337,8,3,Local,Flutter,3.6,No,2,0,High
+453,Harness B2C Niches Platform,Desktop,2503086,224,4,5,International,Angular,3.1,No,5,1,High
+454,Iterate Rich Infrastructures Platform,Desktop,3206165,269,8,0,Local,Django,3.6,Yes,2,1,Low
+455,Incubate Intuitive Metrics Platform,Mobile,1398043,308,6,0,Local,Django,3.6,No,4,2,Low
+456,Incentivize Killer E-Markets Platform,Desktop,2351556,96,3,1,International,Flutter,1.3,Yes,3,3,Medium
+457,Transform One-To-One Convergence Platform,ERP,989056,196,11,0,Local,Flutter,2.2,Yes,5,0,Low
+458,Orchestrate Strategic Functionalities Platform,ERP,2437919,332,9,1,Local,Django,3.6,Yes,5,3,High
+459,Transition End-To-End Synergies Platform,Web,3502814,294,9,0,Local,Flutter,1.7,No,5,2,High
+460,Streamline Scalable Bandwidth Platform,Mobile,4978681,286,8,2,International,Flutter,2.5,No,3,1,High
+461,Aggregate Next-Generation Bandwidth Platform,ML,2294559,252,11,5,International,Vue,4.8,No,4,0,High
+462,Benchmark Scalable Deliverables Platform,Web,2886409,68,11,1,International,React,2.2,Yes,2,2,Low
+463,Whiteboard Next-Generation Functionalities Platform,ERP,2814896,343,11,4,Local,React,1.2,No,2,1,Medium
+464,Embrace Frictionless Roi Platform,Desktop,2595951,179,7,2,Local,Django,2.6,Yes,1,2,Medium
+465,Target Global Paradigms Platform,Mobile,4595959,355,4,4,International,React,3.9,No,1,0,Medium
+466,Revolutionize Seamless Experiences Platform,Desktop,4143209,273,4,1,Local,Spring Boot,4.1,No,1,2,High
+467,Re-Contextualize Next-Generation Eyeballs Platform,Web,3178621,336,12,1,International,Django,3.8,Yes,1,3,Medium
+468,Cultivate Holistic Paradigms Platform,ML,4733976,106,6,3,International,Flutter,2.6,Yes,3,0,Medium
+469,Implement Proactive Experiences Platform,ML,913651,340,9,2,Local,Laravel,3.0,Yes,2,3,High
+470,Unleash World-Class Eyeballs Platform,Mobile,4592475,262,12,1,Local,Angular,1.3,No,3,0,Low
+471,Expedite Clicks-And-Mortar Metrics Platform,ERP,3969377,276,8,2,Local,Vue,2.4,Yes,3,1,Medium
+472,Optimize Front-End E-Tailers Platform,ML,4209527,134,10,0,Local,Angular,3.7,Yes,1,0,High
+473,Re-Contextualize Viral Methodologies Platform,Web,2538836,135,7,0,International,Spring Boot,4.2,No,4,3,Low
+474,Brand B2B Functionalities Platform,Desktop,2253299,335,6,1,International,Django,2.9,Yes,1,3,High
+475,Redefine One-To-One E-Business Platform,ERP,4919111,82,7,1,Local,Vue,1.8,No,1,3,High
+476,Harness Magnetic Functionalities Platform,Web,1058662,258,7,5,International,Flutter,1.4,No,4,1,Medium
+477,Morph Web-Enabled Architectures Platform,ML,1335536,221,10,4,Local,Angular,1.8,No,5,0,Low
+478,Orchestrate Killer E-Commerce Platform,Mobile,4941057,216,8,3,International,Spring Boot,1.6,No,3,2,High
+479,Productize Value-Added Applications Platform,Desktop,2481429,316,7,0,International,Laravel,4.6,Yes,5,2,Low
+480,Facilitate Frictionless Schemas Platform,Mobile,3367110,261,5,0,International,Django,4.8,Yes,4,1,High
+481,Streamline Web-Enabled E-Business Platform,Mobile,4077447,219,12,2,International,Django,1.5,Yes,5,1,Low
+482,Incubate Cross-Platform Bandwidth Platform,Desktop,4893998,129,9,1,Local,Vue,1.3,Yes,2,2,Low
+483,Revolutionize Mission-Critical Bandwidth Platform,ERP,747324,223,9,3,International,Laravel,4.0,No,2,1,Low
+484,Seize Killer Platforms Platform,Mobile,2049765,73,12,4,International,Django,3.3,Yes,5,1,Low
+485,Benchmark Scalable Interfaces Platform,ERP,718812,243,4,5,International,Angular,3.0,No,3,1,Medium
+486,Engineer B2B Vortals Platform,API,4474916,130,5,1,Local,React,2.6,Yes,3,3,Low
+487,Implement Mission-Critical Roi Platform,ERP,2201491,164,4,1,International,Flutter,3.5,No,4,1,Medium
+488,Enhance Rich Networks Platform,API,850864,254,8,3,Local,Django,1.4,No,1,1,High
+489,Cultivate Intuitive Web Services Platform,ML,3818627,80,11,3,Local,Angular,2.2,No,3,2,Medium
+490,Transform Clicks-And-Mortar Channels Platform,Mobile,4043869,210,12,0,Local,Laravel,4.3,No,1,0,Low
+491,Optimize Out-Of-The-Box Channels Platform,ML,1635034,261,9,2,International,React,1.7,Yes,4,0,Medium
+492,Optimize Enterprise Relationships Platform,Desktop,1875681,123,4,0,International,Spring Boot,2.5,No,5,1,Medium
+493,Exploit Best-Of-Breed Eyeballs Platform,ML,3692763,82,5,2,Local,Angular,4.5,Yes,1,3,Medium
+494,Visualize Customized Web-Readiness Platform,Desktop,4243485,207,5,0,Local,Angular,1.0,No,1,3,Medium
+495,Leverage Sticky Portals Platform,API,548239,312,6,1,International,Laravel,2.6,Yes,5,0,Low
+496,Grow Transparent Solutions Platform,ML,2832980,345,6,0,Local,Angular,1.2,No,1,1,Low
+497,Engineer Proactive Methodologies Platform,ERP,3003509,229,4,0,Local,Laravel,5.0,Yes,3,1,Medium
+498,Productize Enterprise Methodologies Platform,ERP,3521481,78,4,2,International,Vue,4.6,Yes,4,0,Medium
+499,Iterate Turn-Key E-Business Platform,API,1628651,122,7,2,International,Django,1.8,Yes,5,0,Low
+500,Visualize Value-Added Schemas Platform,ML,4937125,104,10,5,International,Laravel,3.4,No,3,2,Low
+501,Whiteboard Cutting-Edge Mindshare Platform,ML,4664079,326,10,3,Local,Django,1.9,No,2,0,Low
+502,Target Bleeding-Edge E-Tailers Platform,Web,4399743,120,6,4,International,Laravel,1.2,No,5,1,Low
+503,Deliver Best-Of-Breed Infrastructures Platform,ERP,2187680,204,7,0,International,Vue,3.0,No,1,0,High
+504,Benchmark Real-Time Communities Platform,Desktop,3363548,262,12,4,Local,Flutter,1.7,No,3,3,Medium
+505,Harness Sticky Platforms Platform,Web,1638786,306,5,5,International,Flutter,3.1,No,4,3,High
+506,Enhance Seamless Action-Items Platform,Web,4871079,213,12,5,International,Django,3.1,Yes,5,2,Medium
+507,Deliver Impactful Interfaces Platform,Web,1752460,203,3,2,International,Spring Boot,3.1,Yes,5,3,Low
+508,Envisioneer Granular Vortals Platform,ML,1480163,217,8,5,Local,Vue,2.7,No,2,2,Medium
+509,Benchmark Transparent Solutions Platform,Desktop,2313112,328,7,1,Local,Vue,4.1,Yes,1,3,High
+510,Synergize Cross-Platform Technologies Platform,Web,4548872,316,5,1,International,Laravel,3.9,No,3,1,Low
+511,Harness Vertical Content Platform,ML,1613312,165,3,3,International,Spring Boot,4.5,Yes,1,2,Low
+512,Reinvent Strategic Deliverables Platform,ERP,1230445,230,10,0,Local,Django,4.1,No,1,2,High
+513,Empower Bleeding-Edge Convergence Platform,Mobile,3191739,162,6,2,International,Django,2.3,No,1,2,Low
+514,Visualize Leading-Edge Schemas Platform,Mobile,2795432,118,3,4,Local,Angular,3.2,No,3,1,High
+515,Innovate Killer E-Business Platform,Desktop,2553741,147,4,2,International,Django,2.8,Yes,1,3,High
+516,Streamline Front-End Vortals Platform,Web,1388579,256,3,0,International,Laravel,1.7,No,5,2,Medium
+517,Orchestrate Killer Portals Platform,Desktop,2162178,333,4,3,Local,React,4.3,No,1,3,Medium
+518,Maximize Bricks-And-Clicks Architectures Platform,ERP,4404029,300,6,1,Local,Flutter,4.6,No,3,3,Low
+519,Embrace Mission-Critical Interfaces Platform,ERP,3270991,226,10,3,Local,React,2.9,No,4,3,Low
+520,Productize Customized Convergence Platform,Desktop,3424398,354,5,4,Local,Laravel,4.3,Yes,3,0,Medium
+521,Redefine Magnetic Convergence Platform,ML,4366937,265,12,3,Local,Django,2.0,Yes,4,3,Low
+522,Whiteboard Granular E-Services Platform,Desktop,2246828,280,9,4,International,Django,3.8,Yes,1,3,Low
+523,Synthesize Next-Generation Models Platform,ML,4383157,226,11,0,International,Angular,2.2,No,1,0,High
+524,Whiteboard Extensible Roi Platform,ML,3678535,227,10,5,Local,React,1.9,Yes,5,0,Low
+525,Engage Best-Of-Breed Eyeballs Platform,ERP,1751718,291,11,2,International,Django,3.3,Yes,2,2,Medium
+526,Integrate Global Web-Readiness Platform,ML,3054751,282,8,0,Local,Django,4.9,No,2,2,Low
+527,Disintermediate Vertical Vortals Platform,Desktop,945664,60,11,2,Local,Flutter,2.1,Yes,2,3,High
+528,Envisioneer Innovative Markets Platform,ML,3807362,222,9,3,International,Laravel,3.2,Yes,4,1,Low
+529,Incentivize Robust Paradigms Platform,ML,3726217,244,9,1,International,Flutter,3.7,Yes,1,0,High
+530,Target Granular Action-Items Platform,Web,1707925,309,9,1,Local,Angular,3.6,No,4,3,High
+531,Integrate Dynamic Convergence Platform,Mobile,4311736,320,9,4,International,Laravel,2.4,Yes,4,0,High
+532,Visualize Out-Of-The-Box Content Platform,API,2486002,316,7,3,International,React,4.9,No,3,0,High
+533,Repurpose Web-Enabled Bandwidth Platform,API,1171618,132,11,2,International,Django,1.3,Yes,2,3,High
+534,Harness Vertical E-Services Platform,ERP,1154998,336,12,2,Local,Vue,3.1,Yes,4,3,High
+535,Generate User-Centric E-Business Platform,API,3280940,275,8,2,International,Angular,1.1,No,5,2,Low
+536,Maximize Real-Time E-Business Platform,ERP,4469158,356,5,4,Local,Spring Boot,5.0,Yes,3,3,Low
+537,Seize Viral Mindshare Platform,Mobile,4741247,99,7,2,Local,Django,2.1,No,1,0,High
+538,Leverage Real-Time Solutions Platform,Mobile,1767817,288,8,1,International,Flutter,3.8,No,2,0,Medium
+539,Visualize Distributed Content Platform,Web,1716937,138,10,3,International,Angular,3.6,Yes,2,2,Low
+540,Harness Clicks-And-Mortar Platforms Platform,ERP,2717910,119,3,1,International,Laravel,2.9,No,5,1,Medium
+541,Visualize Web-Enabled Synergies Platform,ERP,3772148,302,7,1,International,React,2.2,No,4,2,High
+542,Drive Leading-Edge Eyeballs Platform,ERP,844080,109,11,5,International,Flutter,2.7,No,3,2,Medium
+543,Expedite Intuitive Technologies Platform,Web,2641980,359,9,3,Local,Spring Boot,3.7,Yes,5,2,High
+544,Optimize Efficient Metrics Platform,ERP,2009250,220,11,0,Local,Flutter,1.3,No,1,0,High
+545,Cultivate World-Class Users Platform,API,3448733,172,7,2,Local,React,1.1,Yes,1,1,High
+546,Disintermediate Integrated Schemas Platform,ERP,1521649,121,4,4,Local,Laravel,3.6,Yes,1,1,Medium
+547,Innovate Rich Solutions Platform,Desktop,4417107,98,10,2,International,Spring Boot,4.6,No,3,1,Low
+548,Grow Vertical Vortals Platform,Desktop,1023343,255,9,2,Local,Vue,4.8,No,2,3,Low
+549,Disintermediate Ubiquitous Platforms Platform,API,2183334,261,5,5,International,React,1.6,No,2,0,Medium
+550,Re-Contextualize Magnetic Deliverables Platform,ERP,2672618,112,3,0,Local,Django,3.9,No,1,3,Low
+551,Redefine Dynamic Initiatives Platform,ERP,507278,79,9,2,Local,Spring Boot,2.3,No,5,0,High
+552,Exploit Extensible Functionalities Platform,ERP,4616117,304,9,3,Local,Django,1.9,No,4,0,High
+553,Harness Next-Generation Networks Platform,ML,3510825,230,7,3,Local,Spring Boot,5.0,Yes,3,2,Low
+554,E-Enable Impactful Supply-Chains Platform,API,2932349,163,5,4,Local,Laravel,3.6,No,4,0,High
+555,Drive Innovative Info-Mediaries Platform,ERP,3513700,309,4,5,International,Spring Boot,1.8,Yes,2,0,High
+556,Enhance Wireless Content Platform,ML,2500558,310,9,0,International,Laravel,3.1,No,1,0,Medium
+557,Incubate Cross-Platform Technologies Platform,Web,3332988,81,9,0,Local,Flutter,3.6,No,5,1,High
+558,Drive Synergistic Content Platform,ML,2454425,96,3,5,Local,Laravel,3.6,No,5,0,Low
+559,Generate Back-End Bandwidth Platform,ERP,1595029,67,5,5,Local,Vue,4.3,Yes,4,1,High
+560,E-Enable Customized Schemas Platform,Web,1391970,118,10,4,Local,React,4.2,No,3,3,Medium
+561,Repurpose E-Business Platforms Platform,Web,1652002,224,6,0,Local,Vue,1.3,No,2,3,Low
+562,Grow Intuitive Models Platform,ERP,3603175,343,5,3,Local,Django,1.2,Yes,5,3,Low
+563,Productize Synergistic Convergence Platform,Web,4584979,101,3,0,Local,React,3.8,No,4,3,High
+564,Monetize End-To-End Networks Platform,Mobile,2229397,133,7,4,International,Laravel,2.0,Yes,5,0,High
+565,Incubate Collaborative Methodologies Platform,Mobile,4693361,105,7,2,International,React,3.2,Yes,1,0,High
+566,Cultivate Magnetic Networks Platform,Desktop,4757560,172,10,5,Local,Vue,1.2,Yes,2,3,Medium
+567,Engage B2B Technologies Platform,Mobile,1840160,82,3,5,International,Vue,1.8,No,3,3,Low
+568,Whiteboard Killer Roi Platform,Web,940037,335,5,1,Local,Laravel,3.1,Yes,2,3,High
+569,Leverage Compelling E-Markets Platform,ML,3234453,274,6,5,International,Angular,4.1,No,2,0,Low
+570,Brand Frictionless Synergies Platform,ERP,3961101,162,9,1,Local,Laravel,3.3,Yes,4,1,Low
+571,Incubate Cutting-Edge Applications Platform,ML,4316740,151,9,2,Local,Laravel,3.9,No,3,1,Medium
+572,Mesh B2B E-Services Platform,Mobile,769228,351,3,2,Local,React,4.4,No,4,1,Medium
+573,Architect Compelling Vortals Platform,Mobile,2975994,140,12,1,Local,React,2.6,No,2,3,Medium
+574,Generate Intuitive Vortals Platform,Desktop,621667,279,6,1,International,Laravel,3.3,Yes,5,0,Medium
+575,Engineer Integrated Solutions Platform,Web,836036,300,11,0,International,Django,2.6,Yes,4,3,Low
+576,Drive Cross-Media Mindshare Platform,Web,604211,268,6,1,International,Vue,2.0,Yes,1,3,High
+577,Implement Strategic Metrics Platform,Desktop,1857300,295,12,5,Local,Laravel,2.9,Yes,4,1,Medium
+578,Visualize Intuitive Web-Readiness Platform,ERP,4394795,60,4,3,International,Django,1.1,No,3,1,High
+579,Transform One-To-One Methodologies Platform,Web,3316011,88,11,5,International,React,1.4,No,4,0,Medium
+580,Productize Real-Time Infrastructures Platform,Desktop,1970249,346,4,4,Local,Angular,4.9,Yes,5,0,High
+581,Incentivize Magnetic Infrastructures Platform,API,2259879,175,8,2,International,Django,3.7,No,1,0,Medium
+582,Brand Cross-Media Synergies Platform,Desktop,4295095,308,11,4,Local,Laravel,3.8,No,4,2,High
+583,Matrix Best-Of-Breed Supply-Chains Platform,ERP,1050524,156,10,0,Local,Laravel,4.6,No,1,0,Low
+584,Enable Front-End Relationships Platform,Desktop,1439730,135,10,1,Local,Django,4.8,Yes,3,3,High
+585,Reinvent Dot-Com Users Platform,ML,1607525,302,8,3,International,Spring Boot,3.6,No,2,0,Low
+586,Innovate Value-Added Bandwidth Platform,Mobile,4858892,231,9,4,International,Spring Boot,3.6,No,4,3,Medium
+587,Whiteboard Value-Added Functionalities Platform,Desktop,1606912,216,5,2,Local,Laravel,2.5,No,1,1,Medium
+588,Cultivate Next-Generation Partnerships Platform,Desktop,4324588,145,12,1,International,Angular,4.9,Yes,2,1,Low
+589,Deploy Proactive Interfaces Platform,Web,3156050,354,5,3,International,Vue,1.7,Yes,3,2,Low
+590,Enhance Collaborative Supply-Chains Platform,Desktop,4261695,336,5,4,International,React,4.7,No,4,1,Medium
+591,Harness Magnetic Communities Platform,Desktop,1809069,62,11,4,International,Spring Boot,3.8,No,3,1,High
+592,Enhance Best-Of-Breed E-Commerce Platform,ERP,4208650,233,4,5,International,React,1.6,Yes,3,0,Medium
+593,Streamline Efficient Applications Platform,ML,2348553,288,8,0,International,React,3.4,Yes,5,1,Medium
+594,Evolve Sticky Channels Platform,Mobile,689151,102,11,3,Local,Django,2.6,No,3,0,High
+595,Engineer Leading-Edge Content Platform,Desktop,3834958,135,9,2,International,Vue,1.0,No,3,2,Medium
+596,E-Enable Strategic Action-Items Platform,ML,1234830,170,10,5,International,Flutter,2.8,Yes,4,3,Low
+597,Grow Open-Source Web Services Platform,ML,1222074,133,6,2,International,Flutter,3.1,No,1,3,Low
+598,Exploit Plug-And-Play Communities Platform,Web,3934804,199,9,1,International,Spring Boot,3.3,Yes,2,1,Medium
+599,Target Intuitive Vortals Platform,Desktop,4615330,81,7,4,International,Laravel,3.2,No,2,0,Low
+600,Evolve E-Business Solutions Platform,Mobile,2703494,213,10,0,International,Laravel,1.7,Yes,1,0,Medium
+601,Synergize E-Business Networks Platform,API,1059728,245,12,3,International,Flutter,2.0,No,1,2,High
+602,Monetize Real-Time Web-Readiness Platform,ERP,647178,192,5,4,Local,Angular,2.3,Yes,3,1,Low
+603,Deliver Clicks-And-Mortar Markets Platform,Desktop,3529658,274,8,0,International,Vue,3.1,Yes,5,1,High
+604,E-Enable Compelling Technologies Platform,Mobile,1292796,145,11,2,International,Flutter,4.4,No,3,2,Low
+605,Morph End-To-End Metrics Platform,ML,3449680,133,3,1,International,Vue,4.1,No,3,1,Low
+606,Target Wireless Methodologies Platform,Mobile,1796500,317,6,1,Local,Laravel,2.8,Yes,1,1,Low
+607,Scale Viral E-Tailers Platform,API,3420996,219,8,1,International,Django,3.1,No,2,2,Low
+608,Orchestrate Integrated Action-Items Platform,ERP,1494862,173,5,5,Local,Spring Boot,1.9,Yes,2,1,Low
+609,Revolutionize Revolutionary Networks Platform,API,1437193,99,3,3,International,React,1.8,Yes,5,0,Medium
+610,Deliver Vertical Roi Platform,Web,2622422,82,4,2,Local,Flutter,1.4,Yes,5,1,High
+611,Redefine Clicks-And-Mortar E-Markets Platform,Mobile,2050062,239,3,0,Local,Flutter,4.0,No,5,2,Medium
+612,Utilize User-Centric Models Platform,Mobile,4699625,183,11,4,Local,React,4.3,Yes,5,1,High
+613,Envisioneer World-Class Web-Readiness Platform,Mobile,2864386,147,11,0,Local,Angular,4.7,No,3,1,Medium
+614,Strategize Sticky Users Platform,ERP,1400303,152,8,3,International,Angular,3.1,No,1,2,Low
+615,Extend Robust Partnerships Platform,API,1425399,326,5,3,International,Spring Boot,2.2,Yes,1,2,Medium
+616,Re-Intermediate Magnetic Experiences Platform,Web,3727777,205,10,4,International,Spring Boot,4.9,No,2,3,Medium
+617,Optimize Visionary Roi Platform,API,2083643,95,10,5,International,Angular,1.1,No,1,3,Medium
+618,Facilitate Viral E-Tailers Platform,ML,1213081,121,5,3,International,Spring Boot,3.4,Yes,2,0,Medium
+619,Synthesize Customized Bandwidth Platform,Mobile,3340648,162,12,3,Local,Angular,4.4,No,3,2,High
+620,Seize Visionary Schemas Platform,API,3487160,303,12,3,International,Django,2.1,No,1,0,Medium
+621,Incubate Synergistic Relationships Platform,API,4671434,178,5,0,Local,Spring Boot,1.2,Yes,4,0,Low
+622,Aggregate Bricks-And-Clicks Infrastructures Platform,API,3242704,138,7,4,Local,Flutter,1.3,No,4,1,Medium
+623,Revolutionize Back-End Niches Platform,ERP,4676679,311,11,2,International,Flutter,4.4,Yes,1,3,Low
+624,E-Enable Plug-And-Play Networks Platform,API,4275842,221,9,3,International,React,1.1,No,2,3,Medium
+625,Transition Sticky Relationships Platform,Mobile,3121101,259,10,0,International,Spring Boot,3.2,No,4,1,High
+626,Seize Dot-Com Markets Platform,Web,3783173,194,10,4,International,Django,3.7,No,3,0,Low
+627,Aggregate Plug-And-Play Channels Platform,ML,878481,125,8,2,Local,Flutter,4.6,No,4,0,Medium
+628,Empower Intuitive Eyeballs Platform,Desktop,3497803,270,8,0,Local,Angular,1.9,No,5,0,High
+629,Benchmark User-Centric Convergence Platform,Web,3057791,118,8,1,Local,Django,2.3,No,4,3,Medium
+630,Morph Granular Roi Platform,Web,4440128,71,8,3,International,Vue,3.3,No,1,1,Medium
+631,Expedite Viral Schemas Platform,API,4717528,233,5,4,International,Vue,4.9,Yes,4,0,High
+632,Harness Plug-And-Play Deliverables Platform,Mobile,2910513,195,3,2,International,Flutter,1.9,Yes,5,0,High
+633,Cultivate Wireless Content Platform,Desktop,2793151,94,12,4,International,Laravel,1.8,Yes,3,2,Medium
+634,Grow B2C Paradigms Platform,ERP,3128595,162,9,3,International,Django,3.1,Yes,1,1,High
+635,Transform Web-Enabled Mindshare Platform,API,2286377,299,7,5,International,Django,3.9,Yes,5,1,Medium
+636,Re-Contextualize Turn-Key Roi Platform,API,1739363,183,5,5,International,Flutter,2.7,No,1,1,Medium
+637,Repurpose Cross-Media Supply-Chains Platform,Desktop,2907904,142,7,5,Local,Laravel,2.0,Yes,2,0,Low
+638,Deliver Web-Enabled Deliverables Platform,Desktop,4393653,308,11,3,International,Spring Boot,4.6,Yes,2,2,Low
+639,Reinvent Innovative Users Platform,Web,2667589,202,11,1,Local,Spring Boot,2.9,Yes,1,0,Medium
+640,Incubate Real-Time Portals Platform,ML,2999630,92,9,2,Local,Laravel,4.8,Yes,2,0,High
+641,Generate Innovative Bandwidth Platform,ERP,4696388,121,11,5,International,Laravel,4.5,Yes,5,0,Medium
+642,Facilitate Value-Added Relationships Platform,Desktop,3771143,180,9,1,Local,React,1.7,No,4,3,Medium
+643,Leverage Bricks-And-Clicks Channels Platform,ML,969136,311,11,2,Local,Vue,3.2,No,2,2,Low
+644,Utilize Wireless Roi Platform,Desktop,4486449,248,7,0,Local,Flutter,4.0,Yes,2,2,High
+645,Facilitate Bleeding-Edge Roi Platform,API,3094332,245,4,4,Local,Flutter,2.8,Yes,4,2,Medium
+646,Visualize Extensible Info-Mediaries Platform,Web,2475185,212,6,1,International,Spring Boot,2.3,No,1,2,Low
+647,Optimize Back-End E-Commerce Platform,API,4451800,271,8,5,International,Flutter,1.4,Yes,3,0,Medium
+648,Seize Open-Source Web Services Platform,API,3241131,292,3,0,Local,Spring Boot,2.8,Yes,1,3,Low
+649,Innovate Customized Portals Platform,ERP,3063118,220,12,0,Local,Angular,2.0,Yes,5,3,Medium
+650,Extend Turn-Key Paradigms Platform,API,4512820,128,7,1,International,Flutter,2.1,Yes,4,2,Low
+651,Evolve Scalable Portals Platform,API,3665189,352,6,0,Local,Django,3.6,Yes,1,3,Low
+652,Empower Strategic Convergence Platform,Desktop,1915627,85,9,4,International,Django,2.0,Yes,3,1,High
+653,Engage One-To-One Niches Platform,Web,618404,329,9,3,International,React,1.9,Yes,2,2,Medium
+654,Utilize World-Class Web-Readiness Platform,ERP,4645382,255,5,3,Local,Django,1.9,No,2,3,Low
+655,Architect Impactful Web-Readiness Platform,API,1724257,74,7,2,Local,Django,2.8,Yes,3,3,Low
+656,Engage Extensible E-Services Platform,Web,4433264,128,8,5,International,Spring Boot,1.8,No,4,2,Low
+657,Harness Global Infrastructures Platform,Web,992850,86,8,1,International,Vue,5.0,Yes,1,2,High
+658,Facilitate Enterprise Technologies Platform,ML,3695536,214,9,5,International,Angular,4.9,Yes,5,1,Medium
+659,Embrace Sticky Convergence Platform,Mobile,4725733,312,8,3,Local,React,2.3,No,2,2,Low
+660,Architect Virtual Niches Platform,Desktop,870459,125,10,2,International,Laravel,2.1,No,5,2,High
+661,Aggregate Visionary Content Platform,Desktop,4155548,144,8,5,International,Flutter,4.8,No,1,1,Low
+662,Disintermediate Enterprise Bandwidth Platform,Web,2428210,153,3,3,International,Angular,3.8,No,1,3,Low
+663,Enhance Value-Added Mindshare Platform,API,3490707,347,10,3,International,React,4.4,Yes,1,2,Low
+664,Visualize Ubiquitous Roi Platform,Mobile,2883341,152,5,5,International,Django,4.6,Yes,5,0,High
+665,Benchmark Magnetic Systems Platform,ML,2014721,273,4,1,International,Spring Boot,1.4,No,1,2,High
+666,Synergize Revolutionary Models Platform,ERP,1523334,261,8,4,Local,Flutter,2.3,Yes,1,3,High
+667,Unleash Granular Paradigms Platform,ERP,4525316,292,7,4,Local,Vue,4.9,No,3,1,Low
+668,Repurpose B2B Vortals Platform,Web,2873590,225,3,5,Local,Django,4.8,No,1,3,Medium
+669,Generate Turn-Key Schemas Platform,Mobile,2513938,264,4,0,Local,Angular,2.6,No,3,1,Low
+670,Revolutionize Bricks-And-Clicks E-Tailers Platform,Desktop,4617507,281,7,5,Local,Vue,3.7,No,5,1,Medium
+671,Matrix One-To-One Markets Platform,API,3755530,303,7,4,International,React,4.0,No,5,1,Medium
+672,Drive Interactive Communities Platform,ERP,4073690,107,3,4,International,Laravel,3.7,Yes,4,0,Medium
+673,Redefine Viral Experiences Platform,API,4168804,100,10,2,Local,Angular,3.7,No,2,3,Medium
+674,Re-Contextualize Web-Enabled E-Services Platform,ML,900373,342,4,0,Local,Django,2.7,Yes,4,2,Medium
+675,Evolve Innovative Interfaces Platform,Desktop,1185932,317,3,0,International,Angular,4.1,No,1,0,Medium
+676,Disintermediate Efficient Bandwidth Platform,ERP,2996848,220,12,5,International,Flutter,3.7,No,3,1,Low
+677,Transition Value-Added Experiences Platform,Mobile,1156161,192,4,3,Local,React,2.6,Yes,2,3,Medium
+678,Target Seamless Markets Platform,ERP,3898154,309,7,4,International,Spring Boot,3.7,No,3,0,Low
+679,Redefine End-To-End Convergence Platform,Mobile,616399,157,4,0,Local,Flutter,1.1,No,2,1,Medium
+680,Transition Robust Niches Platform,ERP,2101506,104,7,3,Local,Laravel,2.7,Yes,2,1,High
+681,Evolve Distributed Web-Readiness Platform,ERP,4235161,308,10,0,International,Django,2.0,No,5,3,Low
+682,Expedite Cross-Media Architectures Platform,Desktop,566054,112,9,3,International,Spring Boot,3.3,No,1,3,Medium
+683,Syndicate Dynamic Channels Platform,API,4806339,309,6,5,Local,Django,1.1,No,5,0,Medium
+684,Utilize User-Centric Users Platform,ERP,3999202,302,4,3,International,Laravel,3.8,Yes,2,2,High
+685,Leverage Integrated Bandwidth Platform,Mobile,4436274,236,10,1,Local,Django,4.6,No,5,3,Low
+686,E-Enable Front-End Action-Items Platform,Desktop,3774671,273,8,3,Local,Django,1.8,Yes,4,1,Low
+687,Facilitate Cross-Platform Bandwidth Platform,Mobile,1811257,311,4,3,International,Vue,1.9,Yes,1,2,Medium
+688,Seize Killer Partnerships Platform,Desktop,1830479,149,11,0,Local,Vue,2.7,Yes,1,1,Medium
+689,Expedite Scalable Communities Platform,Desktop,3354846,241,3,4,International,Angular,4.4,Yes,1,3,Medium
+690,Cultivate B2B Relationships Platform,Web,1388285,112,11,0,Local,Angular,3.5,Yes,3,1,High
+691,Generate Seamless Portals Platform,Desktop,4203720,319,10,5,Local,Angular,3.6,No,2,0,Low
+692,Enhance Transparent E-Commerce Platform,API,3987562,63,6,3,International,Vue,3.0,Yes,3,2,High
+693,Target Enterprise Technologies Platform,API,3525296,185,5,4,International,Flutter,1.9,No,4,3,Medium
+694,Synthesize Bricks-And-Clicks Web-Readiness Platform,ML,3534783,75,10,1,Local,Spring Boot,4.2,Yes,1,2,Medium
+695,Brand Back-End Supply-Chains Platform,API,1878455,282,3,3,Local,Spring Boot,4.7,Yes,5,0,High
+696,Visualize Killer Experiences Platform,ERP,4860216,211,9,3,International,Spring Boot,4.0,No,1,2,High
+697,Aggregate Web-Enabled Metrics Platform,ML,1731966,266,10,5,Local,Django,3.5,No,3,3,Low
+698,Evolve Visionary Synergies Platform,Desktop,1206999,78,11,2,International,Spring Boot,3.9,Yes,5,2,Low
+699,Orchestrate Ubiquitous Action-Items Platform,Web,4792212,342,7,4,International,Flutter,3.5,Yes,1,2,Low
+700,Unleash Compelling Schemas Platform,Desktop,4046249,318,4,5,Local,Flutter,2.5,No,1,0,High
+701,Streamline Holistic Supply-Chains Platform,Web,4264277,212,12,5,Local,Laravel,2.4,Yes,5,1,Medium
+702,Implement World-Class Action-Items Platform,Desktop,2886856,353,5,5,International,Django,4.0,Yes,3,1,Medium
+703,Productize Killer Experiences Platform,API,1321981,135,9,3,Local,React,1.2,Yes,4,1,Medium
+704,Utilize Robust Content Platform,Web,3597864,329,9,4,International,Flutter,2.1,No,4,3,High
+705,Productize Strategic E-Business Platform,API,3997398,143,5,4,Local,Laravel,3.8,Yes,5,0,High
+706,Target Collaborative Initiatives Platform,Mobile,4320443,302,3,5,Local,Django,2.5,Yes,5,3,Low
+707,Leverage Next-Generation Vortals Platform,Web,3600311,352,7,0,Local,React,2.5,No,3,2,Medium
+708,Target Impactful E-Business Platform,Web,1698475,132,12,3,Local,Vue,4.6,Yes,2,3,Low
+709,Empower Cutting-Edge Convergence Platform,Web,3424679,94,3,3,International,Django,2.2,No,3,3,Medium
+710,Extend Next-Generation Solutions Platform,ERP,1614087,130,11,5,International,Flutter,2.8,No,2,2,Low
+711,Morph Next-Generation Deliverables Platform,ML,3936211,258,6,3,International,Django,1.2,No,3,0,Low
+712,Embrace Efficient Applications Platform,ERP,708071,352,7,4,Local,Spring Boot,3.2,Yes,5,0,High
+713,Enhance Frictionless Web-Readiness Platform,ML,2088767,303,11,0,Local,Spring Boot,4.7,Yes,1,2,Low
+714,Reinvent Robust Content Platform,Mobile,4226466,103,11,4,International,Laravel,3.4,No,1,2,Medium
+715,Revolutionize Proactive Interfaces Platform,Mobile,3980739,72,11,2,International,Vue,1.4,Yes,5,1,Medium
+716,Synergize Sticky Bandwidth Platform,Mobile,2032338,190,4,1,International,Laravel,3.7,Yes,5,2,Low
+717,Transform Intuitive Bandwidth Platform,Web,990748,212,9,0,International,Angular,2.7,No,3,3,Low
+718,Reinvent Collaborative Deliverables Platform,Web,2199191,182,12,4,Local,Laravel,3.0,No,1,2,Low
+719,Harness Real-Time E-Tailers Platform,Desktop,4399222,343,9,0,International,React,2.6,Yes,1,2,High
+720,Disintermediate Front-End Solutions Platform,ML,1351522,186,11,5,Local,Vue,3.3,No,1,1,Low
+721,Empower Cutting-Edge Methodologies Platform,Desktop,1910865,185,11,3,International,React,1.0,No,5,2,High
+722,Deliver Back-End Synergies Platform,Mobile,504554,90,10,2,International,Flutter,3.7,No,2,2,Low
+723,Seize Enterprise Markets Platform,Mobile,4980265,348,4,2,Local,Laravel,3.8,Yes,5,2,Medium
+724,Incubate Bleeding-Edge Methodologies Platform,Mobile,4734739,222,8,5,International,Flutter,3.8,No,2,2,Medium
+725,Enhance Mission-Critical Models Platform,Mobile,4357076,228,3,5,Local,Spring Boot,4.7,No,1,0,High
+726,Seize One-To-One Eyeballs Platform,Mobile,3965862,344,10,3,Local,Flutter,4.5,Yes,5,0,High
+727,Whiteboard Open-Source E-Markets Platform,API,1535285,240,9,4,International,Laravel,1.7,Yes,1,3,Medium
+728,Morph B2C Solutions Platform,Mobile,4229387,64,6,5,Local,Flutter,2.1,No,2,0,High
+729,Evolve Distributed E-Commerce Platform,ERP,3043245,173,6,3,International,React,2.1,Yes,1,1,High
+730,Architect 24/365 Applications Platform,API,1430686,202,12,4,International,Angular,3.2,Yes,1,1,High
+731,Redefine Innovative E-Markets Platform,Web,1568967,192,12,1,International,Angular,4.4,Yes,5,2,High
+732,Enable Sticky Schemas Platform,ML,4307808,61,9,5,Local,Flutter,4.8,No,4,2,Low
+733,Enable Ubiquitous Niches Platform,ERP,4847775,298,10,2,Local,Spring Boot,1.9,No,4,3,Medium
+734,Whiteboard Leading-Edge Experiences Platform,Web,3787150,159,8,0,Local,Spring Boot,1.9,No,1,1,Low
+735,Integrate Vertical Technologies Platform,Mobile,3261736,219,4,5,Local,React,2.9,Yes,5,2,Medium
+736,Reinvent Enterprise E-Services Platform,Mobile,1404632,302,6,2,Local,Flutter,2.3,Yes,1,3,Low
+737,Scale Integrated Methodologies Platform,ERP,4245145,356,4,0,Local,React,2.5,Yes,2,0,Medium
+738,Streamline Collaborative Web Services Platform,Web,3028922,281,4,0,Local,Django,1.2,No,4,0,High
+739,Redefine Extensible Networks Platform,API,2455485,65,10,3,International,Flutter,2.7,Yes,3,0,Medium
+740,Benchmark Innovative Channels Platform,ML,3253088,360,6,0,Local,React,3.4,Yes,5,1,High
+741,Integrate B2B Models Platform,Mobile,4768945,191,8,3,International,Spring Boot,3.5,Yes,2,1,Low
+742,Utilize Cross-Platform Action-Items Platform,Web,1571063,219,12,3,International,Vue,3.3,Yes,2,3,Medium
+743,Incubate Proactive Methodologies Platform,ML,3376456,209,8,0,Local,React,1.9,Yes,4,2,Low
+744,Deploy Collaborative Initiatives Platform,Mobile,2188301,95,8,1,International,Spring Boot,3.8,No,5,2,High
+745,Generate Seamless Networks Platform,ML,3315724,213,9,2,Local,React,2.8,Yes,4,1,Low
+746,Benchmark Impactful E-Services Platform,ERP,2370870,177,10,4,Local,Angular,2.9,No,4,1,Medium
+747,Engage Wireless Initiatives Platform,Mobile,556416,245,3,0,International,React,3.2,Yes,3,3,Low
+748,Benchmark Global Web-Readiness Platform,ERP,3519137,82,3,1,Local,Vue,1.7,No,2,2,High
+749,Architect Web-Enabled E-Markets Platform,Mobile,1997714,160,3,1,International,React,1.1,Yes,4,0,Medium
+750,Synergize Front-End Roi Platform,Mobile,3059132,293,6,2,International,Spring Boot,1.7,No,1,0,Low
+751,Revolutionize Open-Source Functionalities Platform,Mobile,2090825,158,11,3,International,Vue,3.4,Yes,1,1,High
+752,Reinvent Revolutionary Portals Platform,Desktop,1746269,227,6,0,International,Flutter,1.5,No,2,0,Medium
+753,Leverage Transparent Convergence Platform,ERP,1044194,145,11,3,International,Laravel,3.1,Yes,3,2,High
+754,Transform Synergistic Networks Platform,ERP,4554189,313,10,2,International,Spring Boot,4.7,Yes,2,1,Low
+755,Syndicate Strategic Metrics Platform,API,2466160,262,6,2,International,Laravel,3.3,No,3,0,Low
+756,Incubate Granular Convergence Platform,Web,2975042,287,11,2,Local,Django,1.2,No,4,3,Medium
+757,Benchmark Dot-Com Vortals Platform,API,3930544,248,10,2,International,Laravel,1.1,No,2,2,High
+758,Leverage Compelling Niches Platform,Web,3512289,102,7,4,Local,Flutter,2.1,Yes,1,0,Low
+759,Scale Impactful Functionalities Platform,Desktop,821127,339,6,2,Local,Spring Boot,2.3,No,3,1,High
+760,Integrate Mission-Critical Schemas Platform,ML,1656496,338,7,0,International,Vue,4.3,No,4,0,Medium
+761,Disintermediate Intuitive E-Tailers Platform,ERP,4800394,136,9,1,Local,Spring Boot,4.0,No,2,3,High
+762,Scale Intuitive Applications Platform,API,3357659,103,8,1,International,Flutter,4.8,No,2,3,Medium
+763,Optimize Magnetic Technologies Platform,ML,752531,251,5,4,Local,Vue,4.8,Yes,4,2,Medium
+764,Strategize 24/7 Bandwidth Platform,Mobile,4016062,277,9,5,International,Vue,3.3,Yes,2,1,Medium
+765,Incubate E-Business Interfaces Platform,ML,3778988,255,6,3,Local,Django,2.5,No,1,2,High
+766,Strategize End-To-End Systems Platform,API,3055551,107,5,0,Local,React,4.3,No,1,1,Low
+767,Whiteboard B2B Supply-Chains Platform,Web,3737114,205,6,1,International,Spring Boot,3.1,No,1,2,High
+768,Seize B2C Communities Platform,Web,1941378,227,9,3,Local,React,1.5,No,4,0,Medium
+769,Revolutionize Sticky Partnerships Platform,Mobile,1589950,165,7,3,International,Angular,3.4,No,5,1,High
+770,Extend User-Centric Metrics Platform,ERP,4350005,201,6,0,Local,Laravel,1.3,No,5,1,High
+771,Reinvent Transparent Convergence Platform,Desktop,4618459,295,10,4,Local,Spring Boot,1.4,No,3,2,Medium
+772,Unleash Virtual Relationships Platform,ML,1969065,272,6,1,International,Laravel,2.5,Yes,5,0,Medium
+773,Revolutionize Viral Bandwidth Platform,ERP,866284,182,5,2,International,Spring Boot,4.7,Yes,4,3,High
+774,Seize Impactful Portals Platform,Web,3593148,99,4,4,International,Laravel,2.8,No,2,0,Medium
+775,Engineer Mission-Critical Mindshare Platform,Web,1114008,296,9,2,International,Flutter,1.8,Yes,1,2,Low
+776,E-Enable Rich Web Services Platform,ERP,1644882,227,10,3,International,React,1.3,Yes,4,1,Medium
+777,Mesh Innovative Web Services Platform,Desktop,1853640,147,3,4,Local,Angular,2.2,No,2,0,High
+778,Re-Intermediate Interactive Experiences Platform,Web,2792206,138,10,2,Local,Angular,3.9,Yes,4,0,High
+779,Revolutionize Plug-And-Play Schemas Platform,ML,1362292,259,7,3,Local,Django,1.0,No,2,1,Medium
+780,Drive Best-Of-Breed Niches Platform,Mobile,2177601,106,3,3,Local,React,2.3,Yes,1,1,Low
+781,Transform Granular E-Services Platform,ERP,1908303,145,3,3,Local,Flutter,2.3,Yes,5,1,High
+782,Seize User-Centric E-Tailers Platform,API,4089320,121,6,1,Local,Vue,2.3,Yes,4,2,Low
+783,Exploit Ubiquitous Portals Platform,API,2284826,294,6,0,International,Spring Boot,3.5,Yes,1,1,Medium
+784,Cultivate Value-Added Models Platform,Desktop,4690747,112,11,4,Local,Vue,4.8,No,4,1,Medium
+785,Scale Real-Time Interfaces Platform,Mobile,3167300,306,4,2,Local,Django,4.6,No,4,1,High
+786,Productize Killer Schemas Platform,ML,611498,179,3,4,Local,Vue,1.9,No,2,0,Low
+787,Streamline Revolutionary Initiatives Platform,Mobile,3641731,315,7,1,Local,Laravel,1.8,Yes,2,3,High
+788,Synergize Compelling Relationships Platform,Desktop,1626313,202,8,5,Local,Django,4.2,No,3,0,Low
+789,Enable Rich Niches Platform,ERP,3278896,235,6,1,Local,Spring Boot,5.0,Yes,5,3,High
+790,Envisioneer Seamless Info-Mediaries Platform,Desktop,2039691,286,3,0,International,React,4.8,Yes,2,1,Low
+791,Strategize Cross-Media Communities Platform,Web,1956898,341,6,1,Local,Laravel,3.9,No,2,1,Low
+792,Re-Contextualize Dynamic Supply-Chains Platform,API,1980048,187,7,2,International,Spring Boot,1.8,No,1,2,Medium
+793,Target Killer Models Platform,API,1907323,301,10,3,International,Flutter,1.6,No,1,3,Medium
+794,Synthesize Real-Time Users Platform,Web,3018524,335,5,4,Local,Vue,2.5,No,4,2,Medium
+795,Revolutionize Turn-Key Bandwidth Platform,ML,4533614,96,8,1,International,Angular,1.6,Yes,1,0,High
+796,Enable Strategic Initiatives Platform,ERP,3639502,311,9,3,International,Spring Boot,2.5,No,3,0,Medium
+797,Architect Front-End Roi Platform,Web,1544193,257,12,1,Local,Flutter,2.7,No,3,3,High
+798,Drive Clicks-And-Mortar Action-Items Platform,ERP,3588522,89,9,3,Local,Angular,2.9,No,1,1,Medium
+799,Optimize Leading-Edge E-Markets Platform,ML,4320765,135,7,1,Local,React,1.5,Yes,4,3,High
+800,E-Enable Interactive Functionalities Platform,ML,1174010,325,6,3,Local,Flutter,2.7,No,5,3,High
+801,Generate Next-Generation Interfaces Platform,Desktop,3952826,105,4,5,International,Flutter,1.6,Yes,4,2,Low
+802,Integrate Open-Source Web Services Platform,Mobile,4624873,60,4,0,International,Django,2.7,No,4,1,Low
+803,Transition Revolutionary Initiatives Platform,Desktop,2063636,128,6,3,Local,Django,4.8,No,5,1,Low
+804,Streamline Synergistic E-Services Platform,Mobile,994777,153,6,2,International,Laravel,3.5,Yes,2,0,Medium
+805,Deliver Bleeding-Edge Action-Items Platform,Web,3668616,123,7,0,International,React,3.3,No,4,0,Low
+806,Grow Cross-Media Convergence Platform,Web,2732047,63,12,0,Local,Angular,3.1,Yes,4,2,Medium
+807,Engineer 24/7 Models Platform,API,3327212,279,8,2,International,Vue,4.3,No,4,3,High
+808,Re-Contextualize 24/365 Technologies Platform,Web,3486589,229,4,0,International,Flutter,3.8,Yes,1,0,High
+809,Architect Killer Web Services Platform,Desktop,2584884,248,10,4,International,Django,2.7,Yes,1,2,Low
+810,Repurpose Web-Enabled Schemas Platform,ERP,3521623,83,8,5,International,Angular,3.4,No,5,0,Medium
+811,Incubate Turn-Key Architectures Platform,API,4494000,111,9,2,Local,Spring Boot,1.6,Yes,2,3,Low
+812,Evolve Strategic Relationships Platform,Desktop,4415827,146,10,0,International,Spring Boot,3.2,Yes,2,1,High
+813,Maximize Wireless Portals Platform,ERP,1250208,114,9,5,Local,Angular,4.7,No,4,2,Low
+814,Leverage Killer Networks Platform,ERP,2661144,303,4,5,Local,Django,3.5,No,1,2,Low
+815,Enable Turn-Key Models Platform,ML,1042466,235,9,5,International,Spring Boot,3.6,No,2,1,Medium
+816,Architect Clicks-And-Mortar Platforms Platform,Web,2940887,104,4,0,International,Spring Boot,3.4,Yes,1,2,Low
+817,Strategize Bricks-And-Clicks Models Platform,Desktop,3689307,355,3,2,Local,Django,3.1,No,4,2,Medium
+818,Synthesize Efficient Users Platform,ERP,1559542,326,12,4,Local,React,2.6,No,3,1,Medium
+819,Generate E-Business Models Platform,Mobile,4692900,293,5,4,International,Angular,4.0,Yes,5,2,Medium
+820,Synthesize Seamless Functionalities Platform,ML,1535691,200,12,3,Local,Laravel,2.2,No,1,2,Low
+821,Unleash Revolutionary Architectures Platform,ERP,2266750,175,3,1,International,Spring Boot,2.6,Yes,1,3,Medium
+822,Orchestrate Proactive Metrics Platform,API,4471348,238,9,3,Local,Django,3.9,No,2,3,Low
+823,Iterate Mission-Critical Supply-Chains Platform,Mobile,3213031,357,3,5,International,Laravel,3.6,Yes,4,3,Medium
+824,Scale World-Class Experiences Platform,Mobile,2259647,171,6,5,Local,Vue,3.9,Yes,2,3,Medium
+825,Engage Mission-Critical Mindshare Platform,ERP,1911156,88,4,2,International,Angular,4.8,Yes,5,2,High
+826,Maximize Integrated Info-Mediaries Platform,API,1746281,266,6,0,Local,Angular,2.6,No,5,1,High
+827,Incubate End-To-End Web-Readiness Platform,ERP,3648845,105,10,5,International,Vue,3.5,No,3,0,Low
+828,Iterate Revolutionary Synergies Platform,Web,1193209,122,10,5,Local,React,3.3,No,3,0,High
+829,Maximize Efficient Channels Platform,Mobile,3720888,307,9,2,Local,React,2.3,Yes,4,0,Medium
+830,Productize Vertical Relationships Platform,ML,4999790,331,10,0,Local,Flutter,4.0,Yes,2,1,Low
+831,Monetize Collaborative Vortals Platform,ML,4251661,220,4,0,Local,Django,1.8,Yes,1,2,Low
+832,Revolutionize Compelling E-Business Platform,Web,1546203,319,7,2,Local,Laravel,4.9,Yes,2,2,Low
+833,Facilitate Virtual Bandwidth Platform,ML,2961190,333,10,1,International,Spring Boot,2.3,No,5,1,High
+834,Incentivize Best-Of-Breed Initiatives Platform,Web,875269,181,3,1,Local,Vue,4.4,Yes,2,1,High
+835,Visualize Distributed E-Services Platform,Desktop,2826963,125,12,3,Local,Django,2.0,No,2,3,Medium
+836,Scale Magnetic Content Platform,Web,2632211,277,5,4,Local,React,3.5,No,2,2,High
+837,Enable Granular Convergence Platform,ERP,4790164,143,9,1,International,Flutter,2.7,Yes,5,1,Low
+838,Reinvent Sticky Initiatives Platform,Desktop,1545398,332,4,5,International,React,2.3,Yes,3,2,Medium
+839,Strategize Clicks-And-Mortar Mindshare Platform,Mobile,2393858,200,3,0,International,Angular,2.5,Yes,1,1,High
+840,Morph Leading-Edge Synergies Platform,ERP,3071524,310,4,4,International,Spring Boot,3.3,No,5,2,High
+841,Enable 24/7 Partnerships Platform,Web,902345,147,8,3,Local,Vue,4.2,No,4,1,Medium
+842,Exploit Wireless Architectures Platform,Web,4808098,139,5,1,International,Django,3.9,Yes,3,1,High
+843,Productize Innovative Interfaces Platform,ML,4008482,294,5,3,International,Flutter,2.9,No,3,3,High
+844,Orchestrate Clicks-And-Mortar Mindshare Platform,ERP,2419012,216,4,2,International,Flutter,2.3,Yes,1,0,High
+845,Extend Holistic Platforms Platform,Mobile,1285455,144,12,0,Local,Spring Boot,2.1,No,1,3,High
+846,Visualize User-Centric Content Platform,ML,1644444,305,10,4,Local,Laravel,1.1,Yes,1,3,High
+847,Optimize World-Class Markets Platform,ML,3394578,185,11,5,Local,Django,2.8,Yes,5,1,Low
+848,Re-Contextualize Back-End Roi Platform,Web,3579046,128,11,2,Local,Laravel,3.0,Yes,3,0,Medium
+849,Monetize Vertical E-Services Platform,ERP,2595182,336,4,2,International,Laravel,2.2,Yes,1,3,Low
+850,Maximize Proactive Channels Platform,Desktop,4824570,78,10,4,International,React,2.4,No,3,2,Medium
+851,Facilitate Frictionless Relationships Platform,Web,543238,239,5,3,International,React,1.4,No,2,0,High
+852,Engage Turn-Key Communities Platform,ML,1789418,270,4,3,Local,Angular,4.1,No,2,3,Medium
+853,Strategize Real-Time Relationships Platform,Desktop,3010584,246,9,1,International,React,5.0,No,2,1,Medium
+854,Optimize Integrated Experiences Platform,ERP,4140321,62,8,5,Local,React,1.8,Yes,2,3,Medium
+855,Transform 24/365 Content Platform,ERP,3278420,76,5,5,Local,Laravel,4.8,No,1,3,Medium
+856,Redefine Intuitive Interfaces Platform,ML,4657122,125,8,3,International,Angular,1.4,Yes,1,1,Low
+857,Seize Innovative Architectures Platform,Desktop,4694311,66,6,0,International,Laravel,4.9,Yes,4,3,Medium
+858,Harness Dot-Com Paradigms Platform,Desktop,4576269,102,9,1,Local,Spring Boot,3.0,Yes,3,0,Medium
+859,Innovate Global Bandwidth Platform,ERP,2574958,279,6,3,Local,Spring Boot,3.9,Yes,2,1,Low
+860,Scale Best-Of-Breed Architectures Platform,Web,1609777,265,3,2,Local,Angular,2.7,Yes,1,0,Medium
+861,Evolve Granular Interfaces Platform,API,4903777,216,6,1,International,Laravel,2.9,No,1,2,Low
+862,Iterate Holistic Systems Platform,Desktop,3549897,203,8,5,International,Angular,2.3,Yes,2,0,Low
+863,Enable Viral Roi Platform,Web,3198108,168,7,3,International,Django,1.4,Yes,3,3,Medium
+864,Syndicate User-Centric Web Services Platform,Desktop,3053129,117,4,5,Local,Spring Boot,3.2,Yes,3,2,High
+865,Grow 24/365 Partnerships Platform,Desktop,4936416,250,6,5,International,Angular,3.3,Yes,1,1,High
+866,Innovate Plug-And-Play Vortals Platform,ERP,1509605,81,12,5,Local,Angular,3.8,Yes,1,2,Medium
+867,Reinvent Compelling E-Markets Platform,ERP,4477865,163,11,5,Local,React,1.5,No,5,2,High
+868,Reinvent Cutting-Edge E-Tailers Platform,Desktop,3570331,289,4,3,Local,Laravel,2.7,Yes,2,2,High
+869,Deploy Sticky Systems Platform,Mobile,2929813,83,12,0,Local,Spring Boot,4.3,No,5,0,Low
+870,Brand 24/7 Technologies Platform,API,4772136,256,11,3,International,Django,2.1,Yes,1,1,High
+871,Embrace Back-End Eyeballs Platform,Mobile,574334,322,10,4,International,Vue,4.4,No,3,0,Low
+872,Re-Contextualize Magnetic Interfaces Platform,Mobile,882625,333,6,2,Local,Spring Boot,1.6,No,2,2,Low
+873,Empower 24/365 E-Tailers Platform,ERP,2588831,167,11,0,Local,Spring Boot,2.4,No,3,0,High
+874,Brand End-To-End Interfaces Platform,ML,2714912,128,9,4,International,Vue,4.9,Yes,3,1,High
+875,Target Compelling E-Markets Platform,Desktop,1982562,191,3,4,Local,Spring Boot,4.0,No,3,1,Medium
+876,Empower Seamless Markets Platform,Mobile,3220115,197,6,4,International,Angular,2.8,No,3,1,Medium
+877,Matrix Global Systems Platform,Web,4660423,152,10,1,Local,Angular,3.3,Yes,3,0,Medium
+878,Seize Interactive Infrastructures Platform,Mobile,1990943,261,12,1,Local,Angular,1.3,Yes,4,3,Low
+879,Drive B2B Interfaces Platform,ERP,4918938,130,3,4,Local,Laravel,2.5,Yes,1,0,Low
+880,Seize Rich Deliverables Platform,Mobile,1201250,197,5,5,Local,Flutter,4.9,Yes,5,2,High
+881,Mesh E-Business Synergies Platform,Web,2197196,131,10,4,International,Flutter,1.7,No,4,1,Low
+882,Syndicate 24/365 Partnerships Platform,Web,2743588,338,4,0,Local,React,3.2,Yes,5,3,Low
+883,Enhance Granular Infrastructures Platform,Web,2381671,72,6,3,International,Angular,2.4,No,2,3,High
+884,Architect Interactive Experiences Platform,ERP,1442952,311,5,0,Local,React,4.8,No,3,0,High
+885,Orchestrate Virtual Content Platform,Desktop,1492799,244,4,0,Local,Angular,2.7,No,5,1,High
+886,Aggregate 24/365 Technologies Platform,API,1760136,214,12,2,International,React,2.1,No,3,2,High
+887,Seize Bricks-And-Clicks Mindshare Platform,Web,518276,136,5,2,Local,Laravel,2.8,No,1,0,High
+888,Maximize Value-Added Metrics Platform,API,2836027,134,4,2,Local,Angular,4.1,No,3,3,Medium
+889,Optimize Intuitive Relationships Platform,API,3972416,230,5,5,Local,Laravel,2.7,No,5,3,High
+890,Optimize Frictionless Vortals Platform,ML,2430340,256,4,4,International,Django,3.3,Yes,1,1,Medium
+891,Strategize Open-Source Initiatives Platform,Web,2205233,68,8,4,International,Angular,4.7,Yes,3,2,Low
+892,Transition Collaborative Metrics Platform,Desktop,4362017,133,11,3,Local,Angular,4.3,Yes,2,0,High
+893,Innovate Front-End Markets Platform,ERP,1700213,253,3,5,International,Vue,1.2,Yes,5,0,Medium
+894,Synergize One-To-One Vortals Platform,ML,1826852,75,5,2,Local,React,2.0,Yes,5,3,Low
+895,Strategize Viral Roi Platform,Mobile,4440672,131,11,5,International,Laravel,2.6,No,4,0,Medium
+896,Generate Global Web Services Platform,Web,1807677,90,3,4,Local,Django,1.6,No,4,3,High
+897,Deliver Cross-Platform Bandwidth Platform,ERP,2664716,352,11,2,Local,Laravel,4.7,No,1,3,Low
+898,Leverage Collaborative Initiatives Platform,ERP,2277246,265,12,0,Local,Laravel,1.7,Yes,4,3,Medium
+899,Implement Intuitive Users Platform,ERP,3898224,254,5,0,International,Spring Boot,2.7,No,1,0,Low
+900,Extend Magnetic E-Services Platform,Desktop,3314140,74,6,2,Local,Django,1.4,Yes,5,0,Medium
+901,Revolutionize Back-End Bandwidth Platform,Mobile,2192199,76,6,2,Local,Django,3.3,No,1,0,Medium
+902,Generate Magnetic E-Markets Platform,Web,3088765,64,8,2,International,Django,1.8,No,3,1,High
+903,Incubate Cross-Media Platforms Platform,ERP,1316881,229,9,5,Local,Django,4.2,Yes,1,3,Medium
+904,Brand User-Centric Relationships Platform,ML,813803,208,5,1,International,React,4.5,Yes,2,1,High
+905,Aggregate User-Centric Supply-Chains Platform,ERP,1681641,142,11,4,International,Laravel,4.1,No,3,2,High
+906,Strategize Granular Functionalities Platform,API,835652,258,6,1,Local,Angular,3.3,No,1,0,Low
+907,Transition Customized Architectures Platform,Desktop,1231215,315,4,3,International,Angular,4.7,Yes,1,2,High
+908,Envisioneer Wireless Solutions Platform,Desktop,3464269,105,4,1,International,Vue,4.9,No,4,1,Low
+909,Engage Proactive Content Platform,ML,4595813,80,8,2,International,Laravel,4.4,Yes,4,2,High
+910,Brand Bricks-And-Clicks Niches Platform,ML,3131048,251,4,5,International,Django,2.8,Yes,5,0,High
+911,Enable Compelling Methodologies Platform,Mobile,566630,139,4,2,International,Angular,3.3,Yes,2,3,Medium
+912,Empower Plug-And-Play Vortals Platform,ERP,1284361,238,10,3,International,React,1.3,Yes,4,3,Low
+913,Harness Killer E-Markets Platform,API,3257508,93,8,2,International,Angular,3.8,No,1,2,Medium
+914,Exploit Wireless Eyeballs Platform,Web,1806451,300,5,5,Local,Vue,3.3,No,1,2,Medium
+915,Scale Sticky E-Commerce Platform,API,2290303,87,6,0,International,Vue,2.0,Yes,1,1,Low
+916,Benchmark B2C Info-Mediaries Platform,Desktop,3897960,101,7,5,International,Flutter,2.7,Yes,3,1,Low
+917,Strategize Seamless Relationships Platform,Web,4094806,235,7,1,Local,Vue,4.8,No,4,1,High
+918,Incentivize User-Centric Solutions Platform,API,3475375,352,9,0,Local,React,3.9,Yes,3,2,Low
+919,Engineer Strategic Communities Platform,Mobile,4347511,135,10,2,Local,Flutter,4.9,No,3,0,Medium
+920,Transform Seamless Systems Platform,Mobile,4269241,356,4,0,Local,Spring Boot,4.9,No,5,1,High
+921,Matrix Integrated Convergence Platform,API,2313090,238,6,1,Local,Vue,4.3,Yes,3,2,High
+922,Streamline Value-Added Metrics Platform,Web,4687011,293,9,3,International,Vue,4.3,No,5,2,Low
+923,Grow Extensible Convergence Platform,Mobile,4348891,279,8,1,Local,Django,2.7,No,4,2,High
+924,Reinvent Global Experiences Platform,ML,1332360,104,4,0,Local,Django,4.7,Yes,4,0,High
+925,Syndicate Compelling E-Commerce Platform,API,4722502,357,3,5,International,Flutter,2.7,Yes,4,3,Low
+926,Facilitate Dynamic Infrastructures Platform,Mobile,4439074,123,8,3,International,Flutter,3.6,No,1,2,Low
+927,Deliver Scalable Platforms Platform,ML,2879046,197,7,2,International,Spring Boot,2.0,No,1,0,Low
+928,Optimize Strategic Roi Platform,Mobile,3640742,325,12,2,International,Angular,4.8,No,2,3,Low
+929,Strategize Distributed Technologies Platform,ML,3799388,86,12,3,Local,Spring Boot,2.6,Yes,4,2,High
+930,Re-Contextualize Real-Time Roi Platform,Mobile,4169190,178,4,5,Local,Django,1.5,No,3,1,Medium
+931,Deploy Robust E-Markets Platform,Mobile,1282274,107,3,3,Local,Spring Boot,4.1,Yes,1,0,High
+932,Utilize Sticky Web Services Platform,API,712146,126,10,5,International,Angular,2.0,Yes,3,1,High
+933,Benchmark Mission-Critical Action-Items Platform,Mobile,3671791,193,3,2,Local,Angular,3.5,Yes,1,3,High
+934,Transition B2B Mindshare Platform,Web,1398224,132,7,2,Local,React,1.3,No,2,3,Low
+935,Repurpose Synergistic Mindshare Platform,API,684188,271,4,3,Local,Angular,3.7,No,3,3,Low
+936,Optimize Plug-And-Play Metrics Platform,Mobile,3006138,65,5,5,Local,React,4.9,No,4,0,Low
+937,Brand World-Class Convergence Platform,ML,2634909,122,6,4,Local,Django,1.1,Yes,2,2,Low
+938,Aggregate User-Centric Technologies Platform,Mobile,747443,227,5,1,Local,Spring Boot,3.8,Yes,3,2,Medium
+939,Integrate Magnetic Partnerships Platform,Mobile,1271498,238,11,5,International,Laravel,4.0,No,4,3,Low
+940,Repurpose Bricks-And-Clicks Solutions Platform,Desktop,1950889,161,7,3,Local,Django,4.2,No,2,1,High
+941,Facilitate Web-Enabled Networks Platform,API,4136223,288,9,4,International,Flutter,2.3,Yes,5,3,Medium
+942,Strategize Dynamic Applications Platform,Mobile,3460469,251,4,3,Local,React,4.8,No,5,3,Medium
+943,Deploy Enterprise E-Commerce Platform,ML,4950141,240,9,0,Local,Angular,4.2,No,2,2,Low
+944,Transform User-Centric Niches Platform,Web,2305095,250,8,1,International,React,1.0,Yes,3,1,Medium
+945,Streamline Wireless Users Platform,ML,3197451,179,11,0,International,Vue,3.4,Yes,1,2,High
+946,Disintermediate One-To-One Vortals Platform,ML,1127670,353,9,5,International,Vue,4.3,Yes,2,0,Medium
+947,Evolve Bleeding-Edge Partnerships Platform,API,892518,200,9,0,Local,Laravel,1.7,No,5,3,Low
+948,Benchmark Virtual Communities Platform,ML,678414,205,3,5,Local,Laravel,2.1,No,1,0,Medium
+949,Engineer Visionary E-Business Platform,ERP,636501,95,10,0,International,Spring Boot,2.2,No,3,3,Low
+950,Mesh Open-Source Schemas Platform,ML,3127099,312,12,0,International,Vue,3.8,No,4,0,Medium
+951,Deliver B2B Supply-Chains Platform,ML,1361875,74,6,0,Local,Angular,1.4,No,4,1,Low
+952,Exploit User-Centric Relationships Platform,Web,2103563,248,11,0,Local,Vue,4.5,Yes,1,0,Medium
+953,Expedite User-Centric Solutions Platform,Web,2712303,228,12,3,International,Spring Boot,1.7,Yes,5,3,Low
+954,Unleash Open-Source Interfaces Platform,Mobile,3178756,135,12,3,International,Spring Boot,1.5,Yes,5,3,High
+955,Mesh Front-End Web-Readiness Platform,API,2853353,224,10,1,Local,Vue,4.1,Yes,3,1,High
+956,Unleash Compelling Channels Platform,ERP,2227140,99,4,3,Local,Angular,1.1,Yes,4,3,Low
+957,Drive Ubiquitous Experiences Platform,API,1376900,234,6,4,International,Flutter,4.8,No,2,0,Low
+958,Re-Contextualize Strategic Web Services Platform,Mobile,3550465,257,10,4,Local,Flutter,2.6,Yes,3,3,Low
+959,Scale Integrated Functionalities Platform,ERP,3076533,355,4,1,International,React,4.0,Yes,1,3,Low
+960,Transform Value-Added Experiences Platform,Desktop,739798,303,11,3,International,Vue,1.5,Yes,3,3,Low
+961,Expedite Front-End Architectures Platform,Mobile,3829673,317,9,4,International,React,2.8,No,1,0,High
+962,Seize Transparent Interfaces Platform,API,4044928,159,7,1,International,Angular,3.4,No,5,3,Low
+963,Utilize Web-Enabled Action-Items Platform,ERP,918352,187,4,1,Local,React,4.6,No,2,0,High
+964,Maximize Best-Of-Breed Eyeballs Platform,Web,2810721,175,12,5,International,Laravel,2.6,Yes,3,3,Low
+965,Redefine Extensible Solutions Platform,Mobile,2207714,237,7,5,International,Spring Boot,1.0,Yes,5,3,High
+966,Implement Web-Enabled E-Business Platform,Desktop,2501685,147,8,5,Local,Angular,1.7,No,2,0,High
+967,Morph Strategic Info-Mediaries Platform,API,4089674,231,3,1,International,React,1.7,Yes,5,2,Medium
+968,Scale 24/7 Eyeballs Platform,ML,508442,310,6,3,Local,React,4.3,No,2,1,Low
+969,Utilize Frictionless Web-Readiness Platform,Web,1338797,215,8,3,International,Spring Boot,2.4,No,4,2,Medium
+970,Mesh Cross-Media E-Business Platform,API,613758,240,7,5,International,Django,4.1,No,1,2,High
+971,Brand Best-Of-Breed E-Commerce Platform,ML,673873,135,9,1,Local,Vue,3.0,Yes,5,3,Medium
+972,Reinvent 24/7 Initiatives Platform,Mobile,1248884,159,9,5,Local,Vue,4.5,No,5,1,Medium
+973,Cultivate Granular Architectures Platform,ERP,3426324,229,9,4,International,Vue,2.2,Yes,5,2,High
+974,Architect Extensible Web-Readiness Platform,Web,4136122,292,12,2,International,React,4.9,No,2,3,High
+975,Maximize Cross-Platform Convergence Platform,Mobile,4888803,208,12,4,Local,Vue,2.9,Yes,3,0,Medium
+976,Engineer Best-Of-Breed Initiatives Platform,Web,2323056,204,12,0,Local,Laravel,2.2,No,3,0,Low
+977,Mesh Clicks-And-Mortar Vortals Platform,Desktop,1655268,239,7,4,Local,React,3.9,Yes,2,3,High
+978,Morph Impactful Deliverables Platform,Web,2939424,172,3,3,International,Angular,4.2,No,4,3,Low
+979,Generate B2C Partnerships Platform,Desktop,3033549,219,5,4,International,Spring Boot,4.5,Yes,2,2,Low
+980,Extend Transparent Users Platform,API,2173721,214,7,0,International,Django,4.7,No,5,1,Medium
+981,Incentivize E-Business Content Platform,API,1305661,130,11,3,International,Django,4.7,No,4,2,Medium
+982,Engineer Ubiquitous Infrastructures Platform,API,4027457,270,10,0,Local,Flutter,2.7,Yes,5,2,Low
+983,Streamline Cutting-Edge Interfaces Platform,ML,4796702,251,5,4,International,React,4.0,No,2,3,High
+984,Engineer End-To-End Architectures Platform,Web,4382313,325,10,0,Local,React,2.1,Yes,3,0,Medium
+985,Visualize B2B Relationships Platform,ML,4538845,229,3,0,Local,Spring Boot,1.8,Yes,5,3,Low
+986,Enhance Cutting-Edge Methodologies Platform,Mobile,1798350,214,7,5,Local,Flutter,2.9,Yes,1,0,Low
+987,Leverage Dynamic Partnerships Platform,Mobile,1515310,326,4,1,Local,React,2.9,No,4,0,Low
+988,Target Dot-Com Technologies Platform,Desktop,3893672,307,5,1,International,Flutter,3.5,No,5,0,Medium
+989,Productize Innovative Channels Platform,Mobile,681679,154,5,5,Local,Angular,3.0,Yes,4,3,Medium
+990,Mesh 24/365 Roi Platform,Desktop,1339025,312,8,5,International,Laravel,2.5,Yes,4,3,Medium
+991,Disintermediate Ubiquitous Convergence Platform,Mobile,734634,205,10,0,International,React,3.3,Yes,5,3,Low
+992,Re-Contextualize Dynamic Web Services Platform,Desktop,1668562,299,10,2,Local,Angular,2.4,Yes,3,3,High
+993,Benchmark Innovative Metrics Platform,Web,1963785,137,8,5,International,Laravel,3.9,Yes,3,2,Medium
+994,Scale Vertical Eyeballs Platform,Web,4557944,252,10,4,Local,Django,3.8,No,2,2,High
+995,Incubate E-Business Metrics Platform,ML,3420034,359,12,3,Local,React,1.1,Yes,2,0,High
+996,Maximize Efficient Solutions Platform,Web,4689555,303,8,1,Local,React,4.6,Yes,4,3,Low
+997,Facilitate Enterprise E-Tailers Platform,Web,2601210,118,3,5,Local,Laravel,4.1,Yes,2,2,Low
+998,Morph Scalable Niches Platform,ERP,4270760,253,5,5,Local,Angular,2.0,No,3,1,Low
+999,Maximize Value-Added Partnerships Platform,ERP,1859705,282,11,1,Local,Django,1.1,Yes,2,0,Low
+1000,Deploy Viral Niches Platform,Web,3516216,268,12,4,Local,Vue,1.7,No,2,1,High
