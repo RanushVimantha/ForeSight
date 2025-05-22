@@ -8,7 +8,8 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const projectRoutes = require('./routes/projectRoutes');
 const riskRoutes = require('./routes/riskRoutes');
-const mitigationRoutes = require('./routes/mitigationRoutes'); // ✅ NEW
+const mitigationRoutes = require('./routes/mitigationRoutes');  // ✅ NEW
+const dashboardRoutes = require('./routes/dashboardRoutes');     // ✅ NEW
 
 const app = express();
 
@@ -19,15 +20,17 @@ app.use(express.json());
 require('./models/userModel');
 require('./models/projectModel');
 require('./models/riskModel');
-require('./models/mitigationModel'); // ✅ NEW
+require('./models/mitigationModel');  // ✅ NEW
 
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/risks', riskRoutes);
-app.use('/api/mitigations', mitigationRoutes); // ✅ NEW
+app.use('/api/mitigations', mitigationRoutes);      // ✅ NEW
+app.use('/api/dashboard', dashboardRoutes);         // ✅ NEW
 
+// Health check route
 app.get('/', (req, res) => {
   res.send('ForeSight backend running!');
 });

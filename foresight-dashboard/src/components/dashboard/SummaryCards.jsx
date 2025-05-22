@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Paper, Typography } from '@mui/material';
-import TrendingUpIcon   from '@mui/icons-material/TrendingUp';
-import WarningIcon      from '@mui/icons-material/Warning';
-import SecurityIcon     from '@mui/icons-material/Security';
-import CheckCircleIcon  from '@mui/icons-material/CheckCircle';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import WarningIcon from '@mui/icons-material/Warning';
+import SecurityIcon from '@mui/icons-material/Security';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const SummaryCards = ({ data }) => {
   const stats = [
@@ -24,7 +24,7 @@ const SummaryCards = ({ data }) => {
     },
     {
       label: 'Incidents Solved',
-      value: data.incidentsSolved,      // ← use this field
+      value: data.incidentsSolved,
       icon: <CheckCircleIcon color="info" />
     },
   ];
@@ -32,22 +32,29 @@ const SummaryCards = ({ data }) => {
   return (
     <Grid container spacing={2}>
       {stats.map((stat, idx) => (
-        <Grid item xs={12} md={3} key={idx}>
+        <Grid item xs={12} sm={6} md={3} key={idx}>
           <Paper
+            elevation={3}
             sx={{
               p: 3,
-              borderRadius: 2,
-              backgroundColor: (theme) => theme.palette.background.paper,
-              color:            (theme) => theme.palette.text.primary,
-              boxShadow:        '0 4px 8px rgba(0,0,0,0.05)'
+              borderRadius: 3,
+              backgroundColor: '#fff',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 1,
+              height: '100%',
             }}
           >
-            <Typography variant="h5" gutterBottom>
+            <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
               {stat.value}
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ display: 'flex', alignItems: 'center', gap: 1 }}
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1,
+              }}
             >
               {stat.icon}
               {stat.label}
