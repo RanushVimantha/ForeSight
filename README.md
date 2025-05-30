@@ -36,6 +36,8 @@ cd foresight-backend
 ```bash
 npm install
 ```
+### Import Foresight Database
+- Use the `foresight_db.sql` which is located in `foresight-backend > db` folder to import foresight database.
 
 ### 🛠️ Create `.env` file:
 ```env
@@ -125,7 +127,7 @@ npm run dev
 |-----------------------|-------------------------------------|
 | Start backend         | `npx nodemon app.js`               |
 | Start AI engine       | `python app.py`                    |
-| Start frontend        | `npm start`                        |
+| Start frontend        | `npm run dev`                      |
 | Install backend deps  | `npm install`                      |
 | Install frontend deps | `npm install`                      |
 | Install AI deps       | `pip install -r requirements.txt`  |
@@ -148,6 +150,7 @@ npm run dev
 ## 🐞 Troubleshooting
 
 - Ensure MySQL is running and accessible.
+- You can find the foresight_db inside `foresight-backend > db` folder.
 - Make sure `.env` values match DB credentials.
 - Backend sync issues? Delete and recreate `foresight_db`.
 - AI not responding? Check if `http://localhost:5001` is reachable.
