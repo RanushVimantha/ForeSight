@@ -101,7 +101,7 @@ cd foresight-dashboard
 
 ### 🔌 Install node modules:
 ```bash
-npm run dev
+npm install
 ```
 
 ### ⚙️ Update API endpoints (in `/api/axiosInstance.js` and `/api/aiService.js`):
@@ -112,7 +112,7 @@ const AI_BASE  = "http://localhost:5001";         // AI engine
 
 ### 🏃‍♂️ Run frontend:
 ```bash
-npm start
+npm run dev
 ```
 
 ✅ Opens: http://localhost:3000
