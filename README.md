@@ -101,7 +101,7 @@ cd foresight-dashboard
 
 ### 🔌 Install node modules:
 ```bash
-npm install
+npm run dev
 ```
 
 ### ⚙️ Update API endpoints (in `/api/axiosInstance.js` and `/api/aiService.js`):
