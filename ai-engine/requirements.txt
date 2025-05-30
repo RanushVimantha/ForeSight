@@ -6,4 +6,7 @@ numpy
 joblib
 sentence-transformers
 torch
+shap
+matplotlib
+scipy
 mysql-connector-python
