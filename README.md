@@ -46,6 +46,9 @@ DB_USER=root
 DB_PASSWORD=yourpassword
 DB_NAME=foresight_db
 PORT=5000
+DB_DIALECT=mysql
+
+JWT_SECRET=supersecretjwtkey
 ```
 
 ### 🏃‍♂️ Run backend:
