@@ -157,6 +157,7 @@ npm run dev
 - Make sure `.env` values match DB credentials.
 - Backend sync issues? Delete and recreate `foresight_db`.
 - AI not responding? Check if `http://localhost:5001` is reachable.
+- Make sure you have python version `Python 3.11.9 or below`. DO NOT INSTALL THE LATEST VERSION IT DOESN'T SUPPORT WITH THE CURRENT MODEL.
 
 ---
 
