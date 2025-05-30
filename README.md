@@ -36,7 +36,7 @@ cd foresight-backend
 ```bash
 npm install
 ```
-### Import Foresight Database
+### ⚙️ Import Foresight Database
 - Use the `foresight_db.sql` which is located in `foresight-backend > db` folder to import foresight database.
 
 ### 🛠️ Create `.env` file:
